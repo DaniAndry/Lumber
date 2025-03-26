@@ -16,8 +16,8 @@ public class Conveyor : MonoBehaviour
 	{
 		animator = GetComponent<Animator>();
 		StartCoroutine(StartCanvasAnimationAfterDelay());
-		StartCoroutine(StartAnimationAfterDelay(10f, "Conveyor2"));
-		StartCoroutine(StartAnimationAfterDelay(35f, "Conveyor3"));
+		StartCoroutine(StartAnimationAfterDelay(8f, "Conveyor2"));
+		StartCoroutine(StartAnimationAfterDelay(25f, "Conveyor3"));
 	}
 
 	private IEnumerator StartAnimationAfterDelay(float delay, string name)

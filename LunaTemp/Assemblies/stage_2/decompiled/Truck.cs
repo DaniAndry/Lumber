@@ -43,7 +43,7 @@ public class Truck : MonoBehaviour
 
 	public int CurrentCargoCount => _currentCargoCount;
 
-	public bool IsAtUnloadPoint => _isAtUnloadPoint;
+	public bool IsAtUnloadPoint { get; set; }
 
 	public event Action OnTruckFull;
 
@@ -150,7 +150,7 @@ public class Truck : MonoBehaviour
 
 	public void SetAtUnloadPoint(bool isAtUnloadPoint)
 	{
-		_isAtUnloadPoint = isAtUnloadPoint;
+		IsAtUnloadPoint = isAtUnloadPoint;
 	}
 
 	private void OnEnable()

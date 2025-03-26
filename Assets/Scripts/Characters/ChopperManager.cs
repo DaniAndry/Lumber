@@ -4,12 +4,12 @@ using UnityEngine;
 public class ChopperManager : MonoBehaviour
 {
     public static ChopperManager Instance { get; private set; }
-    
-    [SerializeField] private List<Chopper> _choppers = new List<Chopper>();
+
+    [SerializeField] private List<Chopper> _choppers;
     
     private Truck _targetTruck;
-    private bool _isTargetTruckSelected = false;
-    
+    private bool _isTargetTruckSelected;
+
     private void Awake()
     {
         if (Instance == null)
@@ -21,57 +21,32 @@ public class ChopperManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
-    private void Start()
+
+    public void ResetTargetTruck()
     {
-        if (_choppers.Count == 0)
-        {
-            Chopper[] foundChoppers = FindObjectsOfType<Chopper>();
-            _choppers.AddRange(foundChoppers);
-        }
+        _isTargetTruckSelected = false;
+        _targetTruck = null;
     }
-    
+
     public Truck GetTargetTruck()
     {
         if (_isTargetTruckSelected && _targetTruck != null && !_targetTruck.IsFull)
         {
             return _targetTruck;
         }
+
+        Truck availableTruck = TruckManager.Instance?.GetAvailableTruck();
         
-        _targetTruck = FindAvailableTruck();
-        _isTargetTruckSelected = _targetTruck != null;
-        
-        return _targetTruck;
-    }
-    
-    private Truck FindAvailableTruck()
-    {
-        if (TruckManager.Instance != null)
+        if (availableTruck != null)
         {
-            return TruckManager.Instance.GetAvailableTruck();
-        }
-        
-        Truck[] trucks = FindObjectsOfType<Truck>();
-        foreach (Truck truck in trucks)
-        {
-            TruckMover mover = truck.GetComponent<TruckMover>();
-            bool isMoving = mover != null && mover.IsMoving;
-            
-            if (truck.RemainingCapacity > 0 && !isMoving)
-            {
-                return truck;
-            }
+            _targetTruck = availableTruck;
+            _isTargetTruckSelected = true;
+            return availableTruck;
         }
         
         return null;
     }
-    
-    public void ResetTargetTruck()
-    {
-        _targetTruck = null;
-        _isTargetTruckSelected = false;
-    }
-    
+
     public bool IsTargetTruck(Truck truck)
     {
         return _isTargetTruckSelected && _targetTruck == truck;

@@ -4,11 +4,11 @@ using UnityEngine;
 public class ChopperManager : MonoBehaviour
 {
 	[SerializeField]
-	private List<Chopper> _choppers = new List<Chopper>();
+	private List<Chopper> _choppers;
 
 	private Truck _targetTruck;
 
-	private bool _isTargetTruckSelected = false;
+	private bool _isTargetTruckSelected;
 
 	public static ChopperManager Instance { get; private set; }
 
@@ -24,13 +24,10 @@ public class ChopperManager : MonoBehaviour
 		}
 	}
 
-	private void Start()
+	public void ResetTargetTruck()
 	{
-		if (_choppers.Count == 0)
-		{
-			Chopper[] foundChoppers = Object.FindObjectsOfType<Chopper>();
-			_choppers.AddRange(foundChoppers);
-		}
+		_isTargetTruckSelected = false;
+		_targetTruck = null;
 	}
 
 	public Truck GetTargetTruck()
@@ -39,35 +36,14 @@ public class ChopperManager : MonoBehaviour
 		{
 			return _targetTruck;
 		}
-		_targetTruck = FindAvailableTruck();
-		_isTargetTruckSelected = _targetTruck != null;
-		return _targetTruck;
-	}
-
-	private Truck FindAvailableTruck()
-	{
-		if (TruckManager.Instance != null)
+		Truck availableTruck = TruckManager.Instance?.GetAvailableTruck();
+		if (availableTruck != null)
 		{
-			return TruckManager.Instance.GetAvailableTruck();
-		}
-		Truck[] trucks = Object.FindObjectsOfType<Truck>();
-		Truck[] array = trucks;
-		foreach (Truck truck in array)
-		{
-			TruckMover mover = truck.GetComponent<TruckMover>();
-			bool isMoving = mover != null && mover.IsMoving;
-			if (truck.RemainingCapacity > 0 && !isMoving)
-			{
-				return truck;
-			}
+			_targetTruck = availableTruck;
+			_isTargetTruckSelected = true;
+			return availableTruck;
 		}
 		return null;
-	}
-
-	public void ResetTargetTruck()
-	{
-		_targetTruck = null;
-		_isTargetTruckSelected = false;
 	}
 
 	public bool IsTargetTruck(Truck truck)

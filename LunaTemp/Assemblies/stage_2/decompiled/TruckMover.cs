@@ -50,10 +50,6 @@ public class TruckMover : MonoBehaviour
 		_unloadPoint = UnityEngine.Object.FindObjectOfType<TruckUnloadPoint>();
 	}
 
-	private void Start()
-	{
-	}
-
 	private void OnDestroy()
 	{
 		if (_truck != null)
@@ -97,14 +93,17 @@ public class TruckMover : MonoBehaviour
 		_truck.SetAtUnloadPoint(true);
 		yield return StartCoroutine(UnloadTruckRoutine());
 		_truck.SetAtUnloadPoint(false);
-		moveTween2 = base.transform.DOMove(_initialPosition, _moveDuration).SetEase(_moveEase);
-		yield return moveTween2.WaitForCompletion();
-		if (_engineSound != null)
+		moveTween2 = base.transform.DOMove(_initialPosition, _moveDuration).SetEase(_moveEase).OnComplete(delegate
 		{
-			_engineSound.Stop();
-		}
-		yield return new WaitForSeconds(0.5f);
-		_isMoving = false;
+			_isMoving = false;
+			_truck.IsAtUnloadPoint = true;
+			Debug.Log(_truck.IsAtUnloadPoint);
+			if (_engineSound != null)
+			{
+				_engineSound.Stop();
+			}
+		});
+		yield return moveTween2.WaitForCompletion();
 	}
 
 	private IEnumerator UnloadTruckRoutine()

@@ -7,33 +7,38 @@ public class CharactersMover : MonoBehaviour
     [SerializeField] private MovePoint[] _normalRoutePoints;
     [SerializeField] private UnloadPoint[] _unloadPoints;
     [SerializeField] private UnloadPoint _defaultUnloadPoint;
+    [SerializeField] private float _checkTruckAvailabilityInterval = 1.0f;
 
     private int _currentPointIndex = 0;
     private float _initialRotationX;
     private float _initialRotationZ;
-    private Character _character;
     private MovePoint[] _currentRoute;
     private bool _isUnloading = false;
     private bool _waitingForTruck = false;
-    private float _checkTruckAvailabilityInterval = 2.0f;
     private bool _visitedDefaultPointBeforeUnload = false;
+    private Character _character;
 
     private void Start()
     {
         _character = GetComponent<Character>();
+        
+        if (_character != null)
+        {
+            _character.OnCargoFull += HandleCargoFull;
+            _character.OnCargoEmpty += HandleCargoEmpty;
+        }
+        
         _initialRotationX = transform.rotation.eulerAngles.x;
         _initialRotationZ = transform.rotation.eulerAngles.z;
-        _currentRoute = _normalRoutePoints;
-
-        _character.OnCargoFull += HandleCargoFull;
-        _character.OnCargoEmpty += HandleCargoEmpty;
-
-        if (TruckManager.Instance != null)
+        
+        if (_normalRoutePoints != null && _normalRoutePoints.Length > 0)
         {
-            TruckManager.Instance.OnAllTrucksFull += HandleAllTrucksFull;
+            _currentRoute = _normalRoutePoints;
         }
 
         MoveToNextPoint();
+
+        InvokeRepeating(nameof(CheckForStuckState), 3.0f, 3.0f);
     }
 
     private void OnDestroy()
@@ -43,12 +48,7 @@ public class CharactersMover : MonoBehaviour
             _character.OnCargoFull -= HandleCargoFull;
             _character.OnCargoEmpty -= HandleCargoEmpty;
         }
-
-        if (TruckManager.Instance != null)
-        {
-            TruckManager.Instance.OnAllTrucksFull -= HandleAllTrucksFull;
-        }
-
+        
         transform.DOKill();
         CancelInvoke();
     }
@@ -123,8 +123,6 @@ public class CharactersMover : MonoBehaviour
         MovePoint currentPoint = _currentRoute[_currentPointIndex];
         Vector3 targetPos = currentPoint.transform.position;
 
-        // Используем более умеренную скорость для точек разгрузки
-        // Сохраняем баланс между скоростью и плавностью
         float moveDuration = currentPoint.MoveDuration;
 
         Vector3 direction = targetPos - transform.position;
@@ -138,14 +136,12 @@ public class CharactersMover : MonoBehaviour
             transform.DORotateQuaternion(finalRotation, 0.3f); 
         }
 
-        // Убираем мгновенное перемещение - вместо этого используем ускоренную анимацию
         bool isUnloadingOperation =
             _isUnloading && (currentPoint is UnloadPoint || currentPoint == _defaultUnloadPoint);
 
-        // Если персонаж очень близко к точке, ускоряем движение, но не телепортируем
         if (isUnloadingOperation && Vector3.Distance(transform.position, targetPos) < 0.5f)
         {
-            moveDuration = 0.3f; // Быстрое, но все еще заметное движение
+            moveDuration = 0.3f; 
         }
 
         transform.DOMove(targetPos, moveDuration)
@@ -153,10 +149,8 @@ public class CharactersMover : MonoBehaviour
             .OnComplete(() => HandleArrivalAtPoint(currentPoint));
     }
 
-    // Выделяем логику обработки прибытия в отдельный метод для лучшей организации
     private void HandleArrivalAtPoint(MovePoint currentPoint)
     {
-        // Логика для точек разгрузки не меняется
         if (_isUnloading && currentPoint == _defaultUnloadPoint && !_visitedDefaultPointBeforeUnload)
         {
             _visitedDefaultPointBeforeUnload = true;
@@ -185,7 +179,6 @@ public class CharactersMover : MonoBehaviour
                 }
                 else
                 {
-                    // Если разгрузка на дефолтной точке успешна, переходим к нормальному маршруту
                     _isUnloading = false;
                     _currentRoute = _normalRoutePoints;
                     _currentPointIndex = 0;
@@ -217,9 +210,7 @@ public class CharactersMover : MonoBehaviour
         {
             _character.UnloadToTruck(unloadPoint.TargetTruck);
 
-            // После успешной разгрузки сразу переходим к нормальному маршруту
-            _isUnloading = false;
-            _currentRoute = _normalRoutePoints;
+            _currentRoute = new MovePoint[] { _defaultUnloadPoint };
             _currentPointIndex = 0;
             transform.DOKill();
             MoveToNextPoint();
@@ -234,12 +225,85 @@ public class CharactersMover : MonoBehaviour
             return;
         }
 
-        // Увеличиваем плавность движения по нормальному маршруту
         _currentPointIndex++;
 
-        // Немного увеличиваем задержку для более плавного движения
-        // Но сохраняем ее достаточно малой, чтобы не было заметной паузы
         DOVirtual.DelayedCall(0.05f, MoveToNextPoint);
+    }
+
+    private void CheckForStuckState()
+    {
+        if (_isUnloading && _character != null && _character.CargoCount > 0)
+        {
+            // Более агрессивная проверка - если персонаж ожидает более 3 секунд,
+            // принудительно ищем альтернативную точку разгрузки
+            if (_waitingForTruck)
+            {
+                UnloadPoint availablePoint = FindNextAvailableUnloadPoint(null);
+                if (availablePoint != null)
+                {
+                    _waitingForTruck = false;
+                    _currentRoute = new MovePoint[] { availablePoint };
+                    _currentPointIndex = 0;
+                    transform.DOKill();
+                    MoveToNextPoint();
+                    return;
+                }
+            }
+
+            // Если персонаж слишком долго находится на точке разгрузки, но не разгружается
+            // (возможно из-за проблем с определением состояния грузовика)
+            if (IsAtDestination() && _currentRoute != null && _currentRoute.Length > 0 && 
+                _currentPointIndex < _currentRoute.Length && _currentRoute[_currentPointIndex] is UnloadPoint)
+            {
+                // Пробуем найти альтернативную точку разгрузки
+                UnloadPoint currentPoint = _currentRoute[_currentPointIndex] as UnloadPoint;
+                UnloadPoint availablePoint = FindNextAvailableUnloadPoint(currentPoint);
+                
+                if (availablePoint != null)
+                {
+                    _currentRoute = new MovePoint[] { availablePoint };
+                    _currentPointIndex = 0;
+                    transform.DOKill();
+                    MoveToNextPoint();
+                    return;
+                }
+            }
+
+            // Проверка на движение к дефолтной точке сохраняется
+            if (!_visitedDefaultPointBeforeUnload)
+            {
+                bool movingToDefaultPoint = false;
+                if (_currentRoute != null && _currentRoute.Length > 0 && _currentPointIndex < _currentRoute.Length)
+                {
+                    movingToDefaultPoint = _currentRoute[_currentPointIndex] == _defaultUnloadPoint;
+                }
+                
+                if (movingToDefaultPoint)
+                {
+                    return;
+                }
+            }
+            
+            // Универсальная проверка для всех других случаев
+            UnloadPoint anyAvailablePoint = FindNextAvailableUnloadPoint(null);
+            if (anyAvailablePoint != null && (!IsAtDestination() || _waitingForTruck))
+            {
+                _waitingForTruck = false;
+                _currentRoute = new MovePoint[] { anyAvailablePoint };
+                _currentPointIndex = 0;
+                transform.DOKill();
+                MoveToNextPoint();
+            }
+        }
+    }
+    
+    private bool IsAtDestination()
+    {
+        if (_currentRoute == null || _currentRoute.Length == 0 || _currentPointIndex >= _currentRoute.Length)
+            return false;
+        
+        MovePoint currentTarget = _currentRoute[_currentPointIndex];
+        return Vector3.Distance(transform.position, currentTarget.transform.position) < 0.2f;
     }
 
     private UnloadPoint FindNextAvailableUnloadPoint(UnloadPoint currentPoint = null)
