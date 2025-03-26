@@ -10,74 +10,75 @@ public class UnloadPoint : MovePoint
 
     public bool CanUnload()
     {
-        if (_targetTruck == null)
+        if (_targetTruck == null || !_targetTruck.IsAtUnloadPoint)
         {
             return false;
         }
 
         TruckMover mover = _targetTruck.GetComponent<TruckMover>();
-        
         bool truckMoving = mover != null && mover.IsMoving;
-        bool truckAtUnloadPoint = _targetTruck.IsAtUnloadPoint;
         
-        // Запрещаем разгрузку, если грузовик в движении или находится на точке разгрузки
-        bool canUnload = _targetTruck.RemainingCapacity > 0 && !truckMoving && !truckAtUnloadPoint;
-        
-        return canUnload;
+        return _targetTruck.RemainingCapacity > 0 && !truckMoving;
     }
     
     // Проверка доступности точки разгрузки для конкретного персонажа
     public bool CanUnload(GameObject character)
     {
-        if (!CanUnload())
+        if (_targetTruck == null)
         {
+            Debug.Log($"[{character.name}] Точка разгрузки {name} не имеет целевого грузовика");
             return false;
         }
+
+        TruckMover mover = _targetTruck.GetComponent<TruckMover>();
+        bool truckMoving = mover != null && mover.IsMoving;
         
-        bool isChopper = character.GetComponent<Chopper>() != null;
+        // Грузовик должен быть НЕ в движении и иметь место для груза
+        bool canUnload = _targetTruck.RemainingCapacity > 0 && !truckMoving;
+        
         bool isForklift = character.GetComponent<Forklift>() != null;
+        bool isChopper = character.GetComponent<Chopper>() != null;
         
-        // Если это Chopper, проверяем, является ли грузовик целевым для Chopper'ов
+        // Специальные правила для Forklift
+        if (isForklift)
+        {
+            // Разрешаем погрузчикам загружать только пустые или частично загруженные грузовики,
+            // если это разрешено настройкой
+            if (_targetTruck.CurrentCargoCount > 0 && !_allowForkliftToLoadHalfFullTrucks)
+            {
+                Debug.Log($"[{character.name}] Грузовик {_targetTruck.name} уже частично загружен, погрузчик не может разгрузиться");
+                return false;
+            }
+        }
+        
+        // Убираем специальные правила для Chopper, чтобы они могли разгружаться на любой доступной точке
+        // Специальные правила для Chopper
+        /*
         if (isChopper)
         {
             // Проверяем через ChopperManager, является ли этот грузовик целевым
             if (ChopperManager.Instance != null)
             {
-                // Если целевой грузовик уже выбран, проверяем, является ли текущий грузовик целевым
-                if (ChopperManager.Instance.IsTargetTruck(_targetTruck) || 
-                    ChopperManager.Instance.GetTargetTruck() == _targetTruck)
+                if (!(ChopperManager.Instance.IsTargetTruck(_targetTruck) || 
+                     ChopperManager.Instance.GetTargetTruck() == _targetTruck))
                 {
-                    return true;
+                    Debug.Log($"[{character.name}] Грузовик {_targetTruck.name} не является целевым для Chopper");
+                    return false;
                 }
-                
-                // Если не смогли найти грузовик через ChopperManager, разрешаем использовать любой
-                if (ChopperManager.Instance.GetTargetTruck() == null)
-                {
-                    return true;
-                }
-                
-                return false;
             }
-            // Если ChopperManager не доступен, разрешаем использовать любой грузовик
-            return true;
         }
+        */
         
-        // Если это Forklift, проверяем не загружается ли грузовик Chopper'ами
-        if (isForklift)
+        // Отладочное сообщение
+        if (canUnload)
         {
-            // Проверяем, загружается ли грузовик Chopper'ами
-            if (_targetTruck.IsBeingLoadedByChopper)
-            {
-                return false;
-            }
-            
-            // Проверяем, наполовину ли заполнен грузовик
-            if (!_allowForkliftToLoadHalfFullTrucks && _targetTruck.CurrentCargoCount > 0)
-            {
-                return false;
-            }
+            Debug.Log($"[{character.name}] Может разгрузиться в точке {name}, грузовик {_targetTruck.name}, оставшаяся емкость: {_targetTruck.RemainingCapacity}");
+        }
+        else
+        {
+            Debug.Log($"[{character.name}] НЕ может разгрузиться в точке {name}, грузовик {_targetTruck.name}, в движении: {truckMoving}, оставшаяся емкость: {_targetTruck.RemainingCapacity}");
         }
         
-        return true;
+        return canUnload;
     }
 }

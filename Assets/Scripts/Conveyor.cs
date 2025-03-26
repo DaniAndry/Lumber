@@ -13,8 +13,8 @@ public class Conveyor : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(StartCanvasAnimationAfterDelay());
-        StartCoroutine(StartAnimationAfterDelay(10f, StateName));
-        StartCoroutine(StartAnimationAfterDelay(35f, StateName2));
+        StartCoroutine(StartAnimationAfterDelay(8f, StateName));
+        StartCoroutine(StartAnimationAfterDelay(25f, StateName2));
     }
 
     private IEnumerator StartAnimationAfterDelay(float delay, string name)

@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class TruckManager : MonoBehaviour
 {
@@ -38,7 +37,6 @@ public class TruckManager : MonoBehaviour
                 Debug.LogWarning($"Truck {truck.name} does not have a TruckMover component. Auto-unloading will not work for this truck.");
             }
             
-            // Подписываемся на событие заполнения грузовика
             truck.OnTruckFull += () => HandleTruckFull(truck);
         }
     }
@@ -50,8 +48,7 @@ public class TruckManager : MonoBehaviour
             truck.OnTruckFull -= () => HandleTruckFull(truck);
         }
     }
-
-    // Обработчик события заполнения грузовика
+    
     private void HandleTruckFull(Truck truck)
     {
         if (!_fullTrucks.Contains(truck))
@@ -59,33 +56,28 @@ public class TruckManager : MonoBehaviour
             _fullTrucks.Add(truck);
         }
         
-        // Проверяем, все ли грузовики заполнены
         if (_sendAllTrucksWhenAllFull)
         {
             CheckAndSendTrucks();
         }
         else
         {
-            // Если не нужно ждать заполнения всех грузовиков, отправляем этот
             OnTruckReadyToSend?.Invoke(truck);
         }
     }
     
-    // Проверяет, все ли грузовики заполнены, и если да, отправляет их
     private void CheckAndSendTrucks()
     {
-        if (_fullTrucks.Count >= 3) // Предполагаем, что у нас 3 грузовика
+        if (_fullTrucks.Count >= 3) 
         {
             _areAllTrucksFull = true;
             OnAllTrucksFull?.Invoke();
             
-            // Отправляем все заполненные грузовики
             foreach (Truck truck in _fullTrucks)
             {
                 OnTruckReadyToSend?.Invoke(truck);
             }
             
-            // Очищаем список заполненных грузовиков
             _fullTrucks.Clear();
             _areAllTrucksFull = false;
         }
@@ -126,7 +118,6 @@ public class TruckManager : MonoBehaviour
         return _areAllTrucksFull;
     }
     
-    // Добавляет грузовик в список заполненных и проверяет, можно ли отправить все грузовики
     public void AddFullTruck(Truck truck)
     {
         if (!_fullTrucks.Contains(truck))
@@ -136,7 +127,6 @@ public class TruckManager : MonoBehaviour
         }
     }
     
-    // Удаляет грузовик из списка заполненных
     public void RemoveFullTruck(Truck truck)
     {
         if (_fullTrucks.Contains(truck))

@@ -1,14 +1,12 @@
 using DG.Tweening;
 using UnityEngine;
+using System.Collections;
 
 public class CharactersMover : MonoBehaviour
 {
-    [Header("Точки маршрута")] [SerializeField]
-    private MovePoint[] _normalRoutePoints;
-
+    [SerializeField] private MovePoint[] _normalRoutePoints;
     [SerializeField] private UnloadPoint[] _unloadPoints;
     [SerializeField] private UnloadPoint _defaultUnloadPoint;
-
 
     private int _currentPointIndex = 0;
     private float _initialRotationX;
@@ -18,6 +16,7 @@ public class CharactersMover : MonoBehaviour
     private bool _isUnloading = false;
     private bool _waitingForTruck = false;
     private float _checkTruckAvailabilityInterval = 2.0f;
+    private bool _visitedDefaultPointBeforeUnload = false;
 
     private void Start()
     {
@@ -60,9 +59,8 @@ public class CharactersMover : MonoBehaviour
         {
             _waitingForTruck = false;
             _isUnloading = false;
-            _currentRoute = _normalRoutePoints;
+            _currentRoute = new MovePoint[] { _defaultUnloadPoint };
             _currentPointIndex = 0;
-
             transform.DOKill();
             MoveToNextPoint();
         }
@@ -78,20 +76,11 @@ public class CharactersMover : MonoBehaviour
                 _waitingForTruck = false;
                 _currentRoute = new MovePoint[] { targetPoint };
                 _currentPointIndex = 0;
-
                 transform.DOKill();
                 MoveToNextPoint();
             }
             else
             {
-                if (ChopperManager.Instance != null && _character is Chopper)
-                {
-                    if (ChopperManager.Instance.GetTargetTruck() == null)
-                    {
-                        ChopperManager.Instance.ResetTargetTruck();
-                    }
-                }
-
                 CancelInvoke(nameof(HandleRetryUnloading));
                 Invoke(nameof(HandleRetryUnloading), _checkTruckAvailabilityInterval);
             }
@@ -100,37 +89,14 @@ public class CharactersMover : MonoBehaviour
 
     private void HandleCargoFull()
     {
-        if (!_isUnloading)
+        if (!_isUnloading && _character != null && _character.IsFull)
         {
             _isUnloading = true;
-
-            if (_defaultUnloadPoint != null)
-            {
-                _currentRoute = new MovePoint[] { _defaultUnloadPoint };
-                _currentPointIndex = 0;
-
-                transform.DOKill();
-                MoveToNextPoint();
-            }
-            else
-            {
-                UnloadPoint targetPoint = FindNextAvailableUnloadPoint(null);
-
-                if (targetPoint != null)
-                {
-                    _currentRoute = new MovePoint[] { targetPoint };
-                    _currentPointIndex = 0;
-
-                    transform.DOKill();
-                    MoveToNextPoint();
-                }
-                else
-                {
-                    _waitingForTruck = true;
-                    CancelInvoke(nameof(HandleRetryUnloading));
-                    Invoke(nameof(HandleRetryUnloading), _checkTruckAvailabilityInterval);
-                }
-            }
+            _visitedDefaultPointBeforeUnload = false;
+            _currentRoute = new MovePoint[] { _defaultUnloadPoint };
+            _currentPointIndex = 0;
+            transform.DOKill();
+            MoveToNextPoint();
         }
     }
 
@@ -140,41 +106,11 @@ public class CharactersMover : MonoBehaviour
         {
             _isUnloading = false;
             _waitingForTruck = false;
-            _currentRoute = _normalRoutePoints;
+            _currentRoute = new MovePoint[] { _defaultUnloadPoint };
             _currentPointIndex = 0;
+            transform.DOKill();
+            MoveToNextPoint();
         }
-    }
-
-    private UnloadPoint FindNearestAvailableUnloadPoint()
-    {
-        float closestDistance = float.MaxValue;
-        UnloadPoint closestPoint = null;
-
-        foreach (UnloadPoint point in _unloadPoints)
-        {
-            if (point.TargetTruck == null)
-            {
-                continue;
-            }
-
-
-            TruckMover mover = point.TargetTruck.GetComponent<TruckMover>();
-            bool truckMoving = mover != null && mover.IsMoving;
-
-            bool canUnload = point.CanUnload(_character.gameObject);
-
-            if (canUnload)
-            {
-                float distance = Vector3.Distance(transform.position, point.transform.position);
-                if (distance < closestDistance)
-                {
-                    closestDistance = distance;
-                    closestPoint = point;
-                }
-            }
-        }
-
-        return closestPoint;
     }
 
     private void MoveToNextPoint()
@@ -186,59 +122,124 @@ public class CharactersMover : MonoBehaviour
 
         MovePoint currentPoint = _currentRoute[_currentPointIndex];
         Vector3 targetPos = currentPoint.transform.position;
-        float moveDuration = currentPoint.MoveDuration;
-        Vector3 lookDirection = targetPos - transform.position;
-        lookDirection.y = 0f;
 
-        if (lookDirection != Vector3.zero)
+        // Используем более умеренную скорость для точек разгрузки
+        // Сохраняем баланс между скоростью и плавностью
+        float moveDuration = currentPoint.MoveDuration;
+
+        Vector3 direction = targetPos - transform.position;
+        direction.y = 0f;
+
+        if (direction != Vector3.zero)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(lookDirection);
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
             float yRotation = targetRotation.eulerAngles.y;
             Quaternion finalRotation = Quaternion.Euler(_initialRotationX, yRotation, _initialRotationZ);
-            transform.DORotateQuaternion(finalRotation, 0.5f);
+            transform.DORotateQuaternion(finalRotation, 0.3f); 
+        }
+
+        // Убираем мгновенное перемещение - вместо этого используем ускоренную анимацию
+        bool isUnloadingOperation =
+            _isUnloading && (currentPoint is UnloadPoint || currentPoint == _defaultUnloadPoint);
+
+        // Если персонаж очень близко к точке, ускоряем движение, но не телепортируем
+        if (isUnloadingOperation && Vector3.Distance(transform.position, targetPos) < 0.5f)
+        {
+            moveDuration = 0.3f; // Быстрое, но все еще заметное движение
         }
 
         transform.DOMove(targetPos, moveDuration)
             .SetEase(Ease.InOutSine)
-            .OnComplete(() =>
+            .OnComplete(() => HandleArrivalAtPoint(currentPoint));
+    }
+
+    // Выделяем логику обработки прибытия в отдельный метод для лучшей организации
+    private void HandleArrivalAtPoint(MovePoint currentPoint)
+    {
+        // Логика для точек разгрузки не меняется
+        if (_isUnloading && currentPoint == _defaultUnloadPoint && !_visitedDefaultPointBeforeUnload)
+        {
+            _visitedDefaultPointBeforeUnload = true;
+
+            if (_defaultUnloadPoint.CanUnload(_character.gameObject))
             {
-                if (currentPoint is UnloadPoint unloadPoint)
+                int logsUnloaded = _character.UnloadToTruck(_defaultUnloadPoint.TargetTruck);
+
+                if (logsUnloaded == 0 && _character.CargoCount > 0)
                 {
-                    if (unloadPoint.TargetTruck != null)
+                    UnloadPoint nextPoint = FindNextAvailableUnloadPoint(_defaultUnloadPoint);
+                    if (nextPoint != null)
                     {
-                        bool truckIsFullBefore = unloadPoint.TargetTruck.IsFull;
-
-                        int logsUnloaded = _character.UnloadToTruck(unloadPoint.TargetTruck);
-
-                        if (logsUnloaded == 0 && _character.CargoCount > 0)
-                        {
-                            UnloadPoint nextPoint = FindNextAvailableUnloadPoint(unloadPoint);
-
-                            if (nextPoint != null && nextPoint != unloadPoint)
-                            {
-                                _currentRoute = new MovePoint[] { nextPoint };
-                                _currentPointIndex = -1;
-                            }
-                            else
-                            {
-                                _isUnloading = false;
-                                _currentRoute = _normalRoutePoints;
-                                _currentPointIndex = 0;
-
-                                _waitingForTruck = true;
-                                Invoke(nameof(HandleRetryUnloading), _checkTruckAvailabilityInterval);
-                            }
-                        }
+                        _currentRoute = new MovePoint[] { nextPoint };
+                        _currentPointIndex = 0;
+                        transform.DOKill();
+                        MoveToNextPoint();
                     }
                     else
                     {
-                        _character.Unload();
+                        _waitingForTruck = true;
+                        Invoke(nameof(HandleRetryUnloading), _checkTruckAvailabilityInterval);
                     }
+
+                    return;
+                }
+                else
+                {
+                    // Если разгрузка на дефолтной точке успешна, переходим к нормальному маршруту
+                    _isUnloading = false;
+                    _currentRoute = _normalRoutePoints;
+                    _currentPointIndex = 0;
+                    transform.DOKill();
+                    MoveToNextPoint();
+                    return;
+                }
+            }
+            else
+            {
+                UnloadPoint nextPoint = FindNextAvailableUnloadPoint(_defaultUnloadPoint);
+                if (nextPoint != null)
+                {
+                    _currentRoute = new MovePoint[] { nextPoint };
+                    _currentPointIndex = 0;
+                    transform.DOKill();
+                    MoveToNextPoint();
+                }
+                else
+                {
+                    _waitingForTruck = true;
+                    Invoke(nameof(HandleRetryUnloading), _checkTruckAvailabilityInterval);
                 }
 
-                _currentPointIndex++;
-                DOVirtual.DelayedCall(currentPoint.Delay, MoveToNextPoint);
-            });
+                return;
+            }
+        }
+        else if (_isUnloading && currentPoint is UnloadPoint unloadPoint && unloadPoint != _defaultUnloadPoint)
+        {
+            _character.UnloadToTruck(unloadPoint.TargetTruck);
+
+            // После успешной разгрузки сразу переходим к нормальному маршруту
+            _isUnloading = false;
+            _currentRoute = _normalRoutePoints;
+            _currentPointIndex = 0;
+            transform.DOKill();
+            MoveToNextPoint();
+            return;
+        }
+        else if (!_isUnloading && currentPoint == _defaultUnloadPoint)
+        {
+            _currentRoute = _normalRoutePoints;
+            _currentPointIndex = 0;
+            transform.DOKill();
+            MoveToNextPoint();
+            return;
+        }
+
+        // Увеличиваем плавность движения по нормальному маршруту
+        _currentPointIndex++;
+
+        // Немного увеличиваем задержку для более плавного движения
+        // Но сохраняем ее достаточно малой, чтобы не было заметной паузы
+        DOVirtual.DelayedCall(0.05f, MoveToNextPoint);
     }
 
     private UnloadPoint FindNextAvailableUnloadPoint(UnloadPoint currentPoint = null)
@@ -247,12 +248,7 @@ public class CharactersMover : MonoBehaviour
         {
             if (point != currentPoint && point.TargetTruck != null)
             {
-                TruckMover mover = point.TargetTruck.GetComponent<TruckMover>();
-                bool truckMoving = mover != null && mover.IsMoving;
-
-                bool canUnload = point.CanUnload(_character.gameObject);
-
-                if (canUnload)
+                if (point.CanUnload(_character.gameObject))
                 {
                     return point;
                 }

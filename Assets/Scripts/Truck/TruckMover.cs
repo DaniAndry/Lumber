@@ -40,11 +40,7 @@ public class TruckMover : MonoBehaviour
         
         _unloadPoint = FindObjectOfType<TruckUnloadPoint>();
     }
-
-    private void Start()
-    {
-    }
-
+    
     private void OnDestroy()
     {
         if (_truck != null)
@@ -88,27 +84,24 @@ public class TruckMover : MonoBehaviour
         Vector3 targetPosition = targetPositionTransform.position;
         Tween moveTween = transform.DOMove(targetPosition, _moveDuration).SetEase(_moveEase);
         yield return moveTween.WaitForCompletion();
-
-        // Устанавливаем флаг, что грузовик находится в точке разгрузки
+        
         _truck.SetAtUnloadPoint(true);
         
         yield return StartCoroutine(UnloadTruckRoutine());
-
-        // Сбрасываем флаг после разгрузки
+        
         _truck.SetAtUnloadPoint(false);
         
-        moveTween = transform.DOMove(_initialPosition, _moveDuration).SetEase(_moveEase);
-        yield return moveTween.WaitForCompletion();
-
-        if (_engineSound != null)
+        moveTween = transform.DOMove(_initialPosition, _moveDuration).SetEase(_moveEase).OnComplete(() =>
         {
-            _engineSound.Stop();
-        }
-
-        // Добавляем небольшую задержку перед тем, как грузовик станет доступным для загрузки
-        yield return new WaitForSeconds(0.5f);
-        
-        _isMoving = false;
+            _isMoving = false;
+            _truck.IsAtUnloadPoint = true; 
+            Debug.Log(_truck.IsAtUnloadPoint);
+            if (_engineSound != null)
+            {
+                _engineSound.Stop();
+            }
+        });
+        yield return moveTween.WaitForCompletion();
     }
 
     private IEnumerator UnloadTruckRoutine()

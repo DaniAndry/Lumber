@@ -25,7 +25,7 @@ public class Truck : MonoBehaviour
     public int MaxCapacity => _maxCapacity;
     public bool IsBeingLoadedByChopper => _isBeingLoadedByChopper;
     public int CurrentCargoCount => _currentCargoCount;
-    public bool IsAtUnloadPoint => _isAtUnloadPoint;
+    public bool IsAtUnloadPoint { get; set; } // Добавляем set для возможности изменения
 
     public event Action OnTruckFull;
     public event Action OnCargoChanged;
@@ -161,7 +161,7 @@ public class Truck : MonoBehaviour
 
     public void SetAtUnloadPoint(bool isAtUnloadPoint)
     {
-        _isAtUnloadPoint = isAtUnloadPoint;
+        IsAtUnloadPoint = isAtUnloadPoint;
     }
 
     private void OnEnable()
