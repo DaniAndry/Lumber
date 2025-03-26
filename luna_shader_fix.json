@@ -1,0 +1,15 @@
+{
+    "optimiseShaderVariantsExport": false,
+    "debugShaderCompilation": true,
+    "verbose": true,
+    "assets": {
+        "includes": [
+            "Assets/TextMesh Pro/Resources/Fonts & Materials/*.mat",
+            "Assets/TextMesh Pro/Resources/Fonts & Materials/*.asset",
+            "Assets/Resources/FBX/**/*.mat",
+            "Assets/Resources/Models/Material/*.mat",
+            "Assets/Resources/male-chopper/chopper.mat",
+            "Assets/money.mat"
+        ]
+    }
+}
