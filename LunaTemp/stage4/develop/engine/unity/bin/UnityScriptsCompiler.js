@@ -1,4 +1,4 @@
-if ( TRACE ) { TRACE( JSON.parse( '["AdaptiveCameraPosition#init","AdaptiveCameraPosition#Awake","AdaptiveCameraPosition#Update","AdaptiveCameraPosition#GetIsPortrait","AdaptiveCameraPosition#UpdateCameraMode","AdaptiveCameraPosition#ForceUpdate","AdaptiveCameraPosition.CameraSettings#init","BalanceManager#CurrentBalance#get","BalanceManager#init","BalanceManager#Awake","BalanceManager#AddMoney","BalanceManager#SpendMoney","Build#SpawnBuild","BuildManager#Awake","BuildManager#OnDestroy","BuildManager#OnBuildSuccess","ButtonLight#init","ButtonLight#Start","ButtonLight#FlashColorRoutine","Character#IsFull#get","Character#CargoCount#get","Character#init","Character#OnTriggerEnter","Character#TakeTree","Character#UnloadToTruck","Character#Unload","CharactersMover#init","CharactersMover#Start","CharactersMover#OnDestroy","CharactersMover#HandleAllTrucksFull","CharactersMover#HandleRetryUnloading","CharactersMover#HandleCargoFull","CharactersMover#HandleCargoEmpty","CharactersMover#FindNearestAvailableUnloadPoint","CharactersMover#MoveToNextPoint","CharactersMover#FindNextAvailableUnloadPoint","ChopperManager#init","ChopperManager#Awake","ChopperManager#Start","ChopperManager#GetTargetTruck","ChopperManager#FindAvailableTruck","ChopperManager#ResetTargetTruck","ChopperManager#IsTargetTruck","ClickCta#Click","Conveyor#init","Conveyor#Start","Conveyor#StartAnimationAfterDelay","Conveyor#StartCanvasAnimationAfterDelay","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","GameManager#init","GameManager#init","GameManager#Awake","GameManager#Start","GameManager#OnDestroy","GameManager#RegisterUserActivity","GameManager#ResetIdleTimer","GameManager#StartIdleCoroutine","GameManager#IdleCoroutine","GameManager#ShowFirstTutorial","GameManager#ShowSecondTutorial","GameManager#Tutorial2Coroutine","GameManager#CheckBalanceThresholds","GameManager#CheckSecondBuilding","GameManager#EnableUpgradeButton","GameManager#OnUpgradeButtonClicked","GameManager#OnSecondButtonClicked","GameManager#StartPackShotCoroutine","GameManager#PackShotIdleCoroutine","GameManager#CheckPackShotActivation","GameManager#DisableTutorial","Garage#OnEnable","Garage#OnChoper","MovePoint#Delay#get","MovePoint#MoveDuration#get","MoneyBalance#Money#get","MoneyBalance#init","MoneyBalance#Start","MoneyBalance#SetMoney","MoneyBalance#TakeMoney","MoneyBalance#UpdateText","MoneyBalance#AnimateMoneyChange","MoneyController#Instance#get","MoneyController#Awake","MoneyController#Start","MoneyController#OnDestroy","MoneyController#HandleMoneyChanged","MoneyController#TryBuild","MoneyController#ActivateBuildWithDelay","MoneyController#ChangeBalance","MoneyController#ChangeBalance$1","MoneyController#ChangeBalanceWithVisual$1","MoneyController#ChangeBalanceWithVisual","MoneyController#GetBalance","MoneyFlyAnimation#init","MoneyFlyAnimation#Awake","MoneyFlyAnimation#InitPool","MoneyFlyAnimation#FlyCoins","MoneyFlyAnimation#FlyCoinsFromUIToWorld","MoneyFlyAnimation#FlyCoinsFromWorldToUI","MoneyFlyAnimation#FlyCoinsFromUIToWorldCoroutine","MoneyFlyAnimation#GetCoinFromPool","SimpleAudioManager#init","SimpleAudioManager#init","SimpleAudioManager#Awake","SimpleAudioManager#Update","SimpleAudioManager#PlayProgressBarSound","SimpleAudioManager#PlayConveyorAnimationSound","SimpleAudioManager#PlayLogLoadSound","SimpleAudioManager#PlayButtonClickSound","SimpleAudioManager#PlayHouseAppearSound","SimpleAudioManager#PlaySound","Tree#init","Tree#Start","Tree#OnTriggerEnter","Tree#FlashColorRoutine","Tree#Take","Truck#IsFull#get","Truck#RemainingCapacity#get","Truck#MaxCapacity#get","Truck#IsBeingLoadedByChopper#get","Truck#CurrentCargoCount#get","Truck#IsAtUnloadPoint#get","Truck#init","Truck#Start","Truck#LoadLog","Truck#LoadLogs","Truck#LoadLogs$1","Truck#ResetChoppers","Truck#Clear","Truck#SetAtUnloadPoint","Truck#OnEnable","Truck#OnDisable","Truck#NotifyTruckManagerOnFull","Truck#UpdateProgressBar","TruckManager#Trucks#get","TruckManager#init","TruckManager#Awake","TruckManager#Start","TruckManager#OnDestroy","TruckManager#HandleTruckFull","TruckManager#CheckAndSendTrucks","TruckManager#GetAvailableTruck","TruckManager#GetTruckByIndex","TruckManager#GetAllTrucks","TruckManager#AreAllTrucksFull","TruckManager#AddFullTruck","TruckManager#RemoveFullTruck","TruckMover#IsMoving#get","TruckMover#init","TruckMover#Awake","TruckMover#Start","TruckMover#OnDestroy","TruckMover#HandleTruckReadyToSend","TruckMover#HandleTruckFull","TruckMover#MoveToUnloadAndBackRoutine","TruckMover#UnloadTruckRoutine","TruckProgressBarSetup#init","TruckProgressBarSetup#Start","TruckProgressBarSetup#AssignProgressBar","TruckUnloadPoint#UnloadDuration#get","TruckUnloadPoint#StopPosition#get","TruckUnloadPoint#init","UnloadPoint#TargetTruck#get","UnloadPoint#init","UnloadPoint#CanUnload","UnloadPoint#CanUnload$1"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["AdaptiveCameraPosition#init","AdaptiveCameraPosition#Awake","AdaptiveCameraPosition#Update","AdaptiveCameraPosition#GetIsPortrait","AdaptiveCameraPosition#UpdateCameraMode","AdaptiveCameraPosition#ForceUpdate","AdaptiveCameraPosition.CameraSettings#init","BalanceManager#CurrentBalance#get","BalanceManager#init","BalanceManager#Awake","BalanceManager#AddMoney","BalanceManager#SpendMoney","Build#SpawnBuild","BuildManager#Awake","BuildManager#OnDestroy","BuildManager#OnBuildSuccess","BuildManager#GetConstructedBuildingsCount","ButtonLight#init","ButtonLight#Start","ButtonLight#StartFlashing","ButtonLight#FlashColorRoutine","Character#IsFull#get","Character#CargoCount#get","Character#init","Character#OnTriggerEnter","Character#TakeTree","Character#UnloadToTruck","Character#Unload","CharactersMover#init","CharactersMover#Start","CharactersMover#OnDestroy","CharactersMover#HandleAllTrucksFull","CharactersMover#HandleRetryUnloading","CharactersMover#HandleCargoFull","CharactersMover#HandleCargoEmpty","CharactersMover#MoveToNextPoint","CharactersMover#HandleArrivalAtPoint","CharactersMover#CheckForStuckState","CharactersMover#IsAtDestination","CharactersMover#FindNextAvailableUnloadPoint","ChopperManager#Awake","ChopperManager#ResetTargetTruck","ChopperManager#GetTargetTruck","ChopperManager#IsTargetTruck","ClickCta#Click","Conveyor#init","Conveyor#Start","Conveyor#StartAnimationAfterDelay","Conveyor#StartCanvasAnimationAfterDelay","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","GameManager#init","GameManager#init","GameManager#Awake","GameManager#Start","GameManager#CheckBuiltBuildingsStatus","GameManager#InitializeBuildButtons","GameManager#OnDestroy","GameManager#RegisterUserActivity","GameManager#ResetIdleTimer","GameManager#StartIdleCoroutine","GameManager#IdleCoroutine","GameManager#ShowFirstTutorial","GameManager#ShowSecondTutorial","GameManager#Tutorial2Coroutine","GameManager#HighlightActiveBuildButtons","GameManager#CheckBalanceThresholds","GameManager#CheckSecondBuilding","GameManager#EnableUpgradeButton","GameManager#OnUpgradeButtonClicked","GameManager#OnSecondButtonClicked","GameManager#StartPackShotCoroutine","GameManager#PackShotIdleCoroutine","GameManager#CheckPackShotActivation","GameManager#DisableTutorial","Garage#OnEnable","Garage#OnChoper","MovePoint#Delay#get","MovePoint#MoveDuration#get","MoneyBalance#Money#get","MoneyBalance#init","MoneyBalance#Start","MoneyBalance#SetMoney","MoneyBalance#TakeMoney","MoneyBalance#UpdateText","MoneyBalance#AnimateMoneyChange","MoneyController#Instance#get","MoneyController#Awake","MoneyController#Start","MoneyController#OnDestroy","MoneyController#HandleMoneyChanged","MoneyController#TryBuild","MoneyController#ActivateBuildWithDelay","MoneyController#ChangeBalance","MoneyController#ChangeBalance$1","MoneyController#ChangeBalanceWithVisual$1","MoneyController#ChangeBalanceWithVisual","MoneyController#GetBalance","MoneyFlyAnimation#init","MoneyFlyAnimation#Awake","MoneyFlyAnimation#InitPool","MoneyFlyAnimation#FlyCoins","MoneyFlyAnimation#FlyCoinsFromUIToWorld","MoneyFlyAnimation#FlyCoinsFromWorldToUI","MoneyFlyAnimation#FlyCoinsFromUIToWorldCoroutine","MoneyFlyAnimation#GetCoinFromPool","SimpleAudioManager#init","SimpleAudioManager#init","SimpleAudioManager#Awake","SimpleAudioManager#Update","SimpleAudioManager#PlayProgressBarSound","SimpleAudioManager#PlayConveyorAnimationSound","SimpleAudioManager#PlayLogLoadSound","SimpleAudioManager#PlayButtonClickSound","SimpleAudioManager#PlayHouseAppearSound","SimpleAudioManager#PlaySound","Tree#init","Tree#Start","Tree#OnTriggerEnter","Tree#FlashColorRoutine","Tree#Take","Truck#IsFull#get","Truck#RemainingCapacity#get","Truck#MaxCapacity#get","Truck#IsBeingLoadedByChopper#get","Truck#CurrentCargoCount#get","Truck#init","Truck#Start","Truck#LoadLog","Truck#LoadLogs","Truck#LoadLogs$1","Truck#ResetChoppers","Truck#Clear","Truck#SetAtUnloadPoint","Truck#OnEnable","Truck#OnDisable","Truck#NotifyTruckManagerOnFull","Truck#UpdateProgressBar","TruckManager#Trucks#get","TruckManager#init","TruckManager#Awake","TruckManager#Start","TruckManager#OnDestroy","TruckManager#HandleTruckFull","TruckManager#CheckAndSendTrucks","TruckManager#GetAvailableTruck","TruckManager#GetTruckByIndex","TruckManager#GetAllTrucks","TruckManager#AreAllTrucksFull","TruckManager#AddFullTruck","TruckManager#RemoveFullTruck","TruckMover#IsMoving#get","TruckMover#init","TruckMover#Awake","TruckMover#OnDestroy","TruckMover#HandleTruckReadyToSend","TruckMover#HandleTruckFull","TruckMover#MoveToUnloadAndBackRoutine","TruckMover#UnloadTruckRoutine","TruckProgressBarSetup#init","TruckProgressBarSetup#Start","TruckProgressBarSetup#AssignProgressBar","TruckUnloadPoint#UnloadDuration#get","TruckUnloadPoint#StopPosition#get","TruckUnloadPoint#init","UnloadPoint#TargetTruck#get","UnloadPoint#init","UnloadPoint#CanUnload","UnloadPoint#CanUnload$1"]' ) ); }
 /**
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -268,7 +268,8 @@ if ( TRACE ) { TRACE( "Build#SpawnBuild", this ); }
             _build1: null,
             _build2: null,
             _build3: null,
-            _moneyController: null
+            _moneyController: null,
+            _animator: null
         },
         methods: {
             /*BuildManager.Awake start.*/
@@ -285,6 +286,8 @@ if ( TRACE ) { TRACE( "BuildManager#Awake", this ); }
                     this._moneyController.TryBuild(100, this._build3);
                 }));
                 this._moneyController.addOnBuildSuccess(Bridge.fn.cacheBind(this, this.OnBuildSuccess));
+                this._moneyController.addOnBuildSuccess(Bridge.fn.cacheBind(this, this.OnBuildSuccess));
+                this._animator = this.GetComponent(UnityEngine.Animator);
             },
             /*BuildManager.Awake end.*/
 
@@ -316,6 +319,24 @@ if ( TRACE ) { TRACE( "BuildManager#OnBuildSuccess", this ); }
             },
             /*BuildManager.OnBuildSuccess end.*/
 
+            /*BuildManager.GetConstructedBuildingsCount start.*/
+            GetConstructedBuildingsCount: function () {
+if ( TRACE ) { TRACE( "BuildManager#GetConstructedBuildingsCount", this ); }
+
+                var count = 0;
+                if (UnityEngine.MonoBehaviour.op_Inequality(this._buildButton1, null) && !this._buildButton1.gameObject.activeInHierarchy) {
+                    count = (count + 1) | 0;
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this._buildButton2, null) && !this._buildButton2.gameObject.activeInHierarchy) {
+                    count = (count + 1) | 0;
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this._buildButton3, null) && !this._buildButton3.gameObject.activeInHierarchy) {
+                    count = (count + 1) | 0;
+                }
+                return count;
+            },
+            /*BuildManager.GetConstructedBuildingsCount end.*/
+
 
         }
     });
@@ -330,7 +351,8 @@ if ( TRACE ) { TRACE( "BuildManager#OnBuildSuccess", this ); }
             _flashColor: null,
             flashSpeed: 0,
             pauseBetweenFlashes: 0,
-            flashCount: 0
+            flashCount: 0,
+            _flashCoroutine: null
         },
         ctors: {
             init: function () {
@@ -353,10 +375,25 @@ if ( TRACE ) { TRACE( "ButtonLight#Start", this ); }
                 if (this.TryGetComponent$1(UnityEngine.Renderer, renderer)) {
                     this._material = renderer.v.material;
                     this._originalColor = this._material.color.$clone();
-                    this.StartCoroutine$1(this.FlashColorRoutine());
                 }
             },
             /*ButtonLight.Start end.*/
+
+            /*ButtonLight.StartFlashing start.*/
+            StartFlashing: function () {
+if ( TRACE ) { TRACE( "ButtonLight#StartFlashing", this ); }
+
+                if (this._flashCoroutine != null) {
+                    this.StopCoroutine$2(this._flashCoroutine);
+                }
+                var renderer = { };
+                if (this._material == null && this.TryGetComponent$1(UnityEngine.Renderer, renderer)) {
+                    this._material = renderer.v.material;
+                    this._originalColor = this._material.color.$clone();
+                }
+                this._flashCoroutine = this.StartCoroutine$1(this.FlashColorRoutine());
+            },
+            /*ButtonLight.StartFlashing end.*/
 
             /*ButtonLight.FlashColorRoutine start.*/
             FlashColorRoutine: function () {
@@ -599,23 +636,25 @@ if ( TRACE ) { TRACE( "Character#Unload", this ); }
             _normalRoutePoints: null,
             _unloadPoints: null,
             _defaultUnloadPoint: null,
+            _checkTruckAvailabilityInterval: 0,
             _currentPointIndex: 0,
             _initialRotationX: 0,
             _initialRotationZ: 0,
-            _character: null,
             _currentRoute: null,
             _isUnloading: false,
             _waitingForTruck: false,
-            _checkTruckAvailabilityInterval: 0
+            _visitedDefaultPointBeforeUnload: false,
+            _character: null
         },
         ctors: {
             init: function () {
 if ( TRACE ) { TRACE( "CharactersMover#init", this ); }
 
+                this._checkTruckAvailabilityInterval = 1.0;
                 this._currentPointIndex = 0;
                 this._isUnloading = false;
                 this._waitingForTruck = false;
-                this._checkTruckAvailabilityInterval = 2.0;
+                this._visitedDefaultPointBeforeUnload = false;
             }
         },
         methods: {
@@ -624,16 +663,17 @@ if ( TRACE ) { TRACE( "CharactersMover#init", this ); }
 if ( TRACE ) { TRACE( "CharactersMover#Start", this ); }
 
                 this._character = this.GetComponent(Character);
+                if (UnityEngine.MonoBehaviour.op_Inequality(this._character, null)) {
+                    this._character.addOnCargoFull(Bridge.fn.cacheBind(this, this.HandleCargoFull));
+                    this._character.addOnCargoEmpty(Bridge.fn.cacheBind(this, this.HandleCargoEmpty));
+                }
                 this._initialRotationX = this.transform.rotation.getPositiveEulerAngles().x;
                 this._initialRotationZ = this.transform.rotation.getPositiveEulerAngles().z;
-                this._currentRoute = this._normalRoutePoints;
-                this._character.addOnCargoFull(Bridge.fn.cacheBind(this, this.HandleCargoFull));
-                this._character.addOnCargoEmpty(Bridge.fn.cacheBind(this, this.HandleCargoEmpty));
-                if (UnityEngine.MonoBehaviour.op_Inequality(TruckManager.Instance, null)) {
-                    var instance = TruckManager.Instance;
-                    instance.OnAllTrucksFull = Bridge.fn.combine(instance.OnAllTrucksFull, Bridge.fn.cacheBind(this, this.HandleAllTrucksFull));
+                if (this._normalRoutePoints != null && this._normalRoutePoints.length !== 0) {
+                    this._currentRoute = this._normalRoutePoints;
                 }
                 this.MoveToNextPoint();
+                this.InvokeRepeating("CheckForStuckState", 3.0, 3.0);
             },
             /*CharactersMover.Start end.*/
 
@@ -644,10 +684,6 @@ if ( TRACE ) { TRACE( "CharactersMover#OnDestroy", this ); }
                 if (UnityEngine.MonoBehaviour.op_Inequality(this._character, null)) {
                     this._character.removeOnCargoFull(Bridge.fn.cacheBind(this, this.HandleCargoFull));
                     this._character.removeOnCargoEmpty(Bridge.fn.cacheBind(this, this.HandleCargoEmpty));
-                }
-                if (UnityEngine.MonoBehaviour.op_Inequality(TruckManager.Instance, null)) {
-                    var instance = TruckManager.Instance;
-                    instance.OnAllTrucksFull = Bridge.fn.remove(instance.OnAllTrucksFull, Bridge.fn.cacheBind(this, this.HandleAllTrucksFull));
                 }
                 DG.Tweening.ShortcutExtensions.DOKill(this.transform);
                 this.CancelInvoke();
@@ -661,7 +697,7 @@ if ( TRACE ) { TRACE( "CharactersMover#HandleAllTrucksFull", this ); }
                 if (this._waitingForTruck) {
                     this._waitingForTruck = false;
                     this._isUnloading = false;
-                    this._currentRoute = this._normalRoutePoints;
+                    this._currentRoute = System.Array.init([this._defaultUnloadPoint], MovePoint);
                     this._currentPointIndex = 0;
                     DG.Tweening.ShortcutExtensions.DOKill(this.transform);
                     this.MoveToNextPoint();
@@ -673,22 +709,18 @@ if ( TRACE ) { TRACE( "CharactersMover#HandleAllTrucksFull", this ); }
             HandleRetryUnloading: function () {
 if ( TRACE ) { TRACE( "CharactersMover#HandleRetryUnloading", this ); }
 
-                if (!this._waitingForTruck) {
-                    return;
-                }
-                var targetPoint = this.FindNextAvailableUnloadPoint();
-                if (UnityEngine.MonoBehaviour.op_Inequality(targetPoint, null)) {
-                    this._waitingForTruck = false;
-                    this._currentRoute = System.Array.init([targetPoint], MovePoint);
-                    this._currentPointIndex = 0;
-                    DG.Tweening.ShortcutExtensions.DOKill(this.transform);
-                    this.MoveToNextPoint();
-                } else {
-                    if (UnityEngine.MonoBehaviour.op_Inequality(ChopperManager.Instance, null) && Bridge.is(this._character, Chopper) && UnityEngine.MonoBehaviour.op_Equality(ChopperManager.Instance.GetTargetTruck(), null)) {
-                        ChopperManager.Instance.ResetTargetTruck();
+                if (this._waitingForTruck) {
+                    var targetPoint = this.FindNextAvailableUnloadPoint();
+                    if (UnityEngine.MonoBehaviour.op_Inequality(targetPoint, null)) {
+                        this._waitingForTruck = false;
+                        this._currentRoute = System.Array.init([targetPoint], MovePoint);
+                        this._currentPointIndex = 0;
+                        DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                        this.MoveToNextPoint();
+                    } else {
+                        this.CancelInvoke$1("HandleRetryUnloading");
+                        this.Invoke("HandleRetryUnloading", this._checkTruckAvailabilityInterval);
                     }
-                    this.CancelInvoke$1("HandleRetryUnloading");
-                    this.Invoke("HandleRetryUnloading", this._checkTruckAvailabilityInterval);
                 }
             },
             /*CharactersMover.HandleRetryUnloading end.*/
@@ -697,27 +729,13 @@ if ( TRACE ) { TRACE( "CharactersMover#HandleRetryUnloading", this ); }
             HandleCargoFull: function () {
 if ( TRACE ) { TRACE( "CharactersMover#HandleCargoFull", this ); }
 
-                if (this._isUnloading) {
-                    return;
-                }
-                this._isUnloading = true;
-                if (UnityEngine.MonoBehaviour.op_Inequality(this._defaultUnloadPoint, null)) {
+                if (!this._isUnloading && UnityEngine.MonoBehaviour.op_Inequality(this._character, null) && this._character.IsFull) {
+                    this._isUnloading = true;
+                    this._visitedDefaultPointBeforeUnload = false;
                     this._currentRoute = System.Array.init([this._defaultUnloadPoint], MovePoint);
                     this._currentPointIndex = 0;
                     DG.Tweening.ShortcutExtensions.DOKill(this.transform);
                     this.MoveToNextPoint();
-                    return;
-                }
-                var targetPoint = this.FindNextAvailableUnloadPoint();
-                if (UnityEngine.MonoBehaviour.op_Inequality(targetPoint, null)) {
-                    this._currentRoute = System.Array.init([targetPoint], MovePoint);
-                    this._currentPointIndex = 0;
-                    DG.Tweening.ShortcutExtensions.DOKill(this.transform);
-                    this.MoveToNextPoint();
-                } else {
-                    this._waitingForTruck = true;
-                    this.CancelInvoke$1("HandleRetryUnloading");
-                    this.Invoke("HandleRetryUnloading", this._checkTruckAvailabilityInterval);
                 }
             },
             /*CharactersMover.HandleCargoFull end.*/
@@ -729,45 +747,13 @@ if ( TRACE ) { TRACE( "CharactersMover#HandleCargoEmpty", this ); }
                 if (this._isUnloading) {
                     this._isUnloading = false;
                     this._waitingForTruck = false;
-                    this._currentRoute = this._normalRoutePoints;
+                    this._currentRoute = System.Array.init([this._defaultUnloadPoint], MovePoint);
                     this._currentPointIndex = 0;
+                    DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                    this.MoveToNextPoint();
                 }
             },
             /*CharactersMover.HandleCargoEmpty end.*/
-
-            /*CharactersMover.FindNearestAvailableUnloadPoint start.*/
-            FindNearestAvailableUnloadPoint: function () {
-if ( TRACE ) { TRACE( "CharactersMover#FindNearestAvailableUnloadPoint", this ); }
-
-                var $t;
-                var closestDistance = 3.40282347E+38;
-                var closestPoint = null;
-                var unloadPoints = this._unloadPoints;
-                $t = Bridge.getEnumerator(unloadPoints);
-                try {
-                    while ($t.moveNext()) {
-                        var point = $t.Current;
-                        if (UnityEngine.MonoBehaviour.op_Equality(point.TargetTruck, null)) {
-                            continue;
-                        }
-                        var mover = point.TargetTruck.GetComponent(TruckMover);
-                        var truckMoving = UnityEngine.MonoBehaviour.op_Inequality(mover, null) && mover.IsMoving;
-                        if (point.CanUnload$1(this._character.gameObject)) {
-                            var distance = pc.Vec3.distance( this.transform.position, point.transform.position );
-                            if (distance < closestDistance) {
-                                closestDistance = distance;
-                                closestPoint = point;
-                            }
-                        }
-                    }
-                } finally {
-                    if (Bridge.is($t, System.IDisposable)) {
-                        $t.System$IDisposable$Dispose();
-                    }
-                }
-                return closestPoint;
-            },
-            /*CharactersMover.FindNearestAvailableUnloadPoint end.*/
 
             /*CharactersMover.MoveToNextPoint start.*/
             MoveToNextPoint: function () {
@@ -778,41 +764,148 @@ if ( TRACE ) { TRACE( "CharactersMover#MoveToNextPoint", this ); }
                 }
                 var currentPoint = this._currentRoute[this._currentPointIndex];
                 var targetPos = currentPoint.transform.position.$clone();
-                var moveDuration = currentPoint.MoveDuration;
-                var lookDirection = targetPos.$clone().sub( this.transform.position );
-                lookDirection.y = 0.0;
-                if (!pc.Vec3.equals( lookDirection, pc.Vec3.ZERO.clone() )) {
-                    var yRotation = new pc.Quat().setLookAt( lookDirection, pc.Vec3.UP ).getPositiveEulerAngles().y;
+                var moveDuration;
+                if (this._isUnloading && Bridge.is(currentPoint, UnloadPoint) && this._visitedDefaultPointBeforeUnload) {
+                    var customSpeed = 5.0;
+                    var distance = pc.Vec3.distance( this.transform.position, currentPoint.transform.position );
+                    moveDuration = distance / customSpeed;
+                } else {
+                    moveDuration = currentPoint.MoveDuration;
+                }
+                var direction = targetPos.$clone().sub( this.transform.position );
+                direction.y = 0.0;
+                if (!pc.Vec3.equals( direction, pc.Vec3.ZERO.clone() )) {
+                    var yRotation = new pc.Quat().setLookAt( direction, pc.Vec3.UP ).getPositiveEulerAngles().y;
                     var finalRotation = new pc.Quat().setFromEulerAngles_Unity( this._initialRotationX, yRotation, this._initialRotationZ );
-                    DG.Tweening.ShortcutExtensions.DORotateQuaternion(this.transform, finalRotation.$clone(), 0.5);
+                    DG.Tweening.ShortcutExtensions.DORotateQuaternion(this.transform, finalRotation.$clone(), 0.3);
+                }
+                if (this._isUnloading && (Bridge.is(currentPoint, UnloadPoint) || UnityEngine.MonoBehaviour.op_Equality(currentPoint, this._defaultUnloadPoint)) && pc.Vec3.distance( this.transform.position, targetPos ) < 0.5) {
+                    moveDuration = 0.3;
                 }
                 DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOMove(this.transform, targetPos.$clone(), moveDuration), DG.Tweening.Ease.InOutSine), Bridge.fn.bind(this, function () {
-                    var unloadPoint;
-                    if (UnityEngine.MonoBehaviour.op_Inequality(((unloadPoint = Bridge.as(currentPoint, UnloadPoint))), null)) {
-                        if (UnityEngine.MonoBehaviour.op_Inequality(unloadPoint.TargetTruck, null)) {
-                            var isFull = unloadPoint.TargetTruck.IsFull;
-                            if (this._character.UnloadToTruck(unloadPoint.TargetTruck) === 0 && this._character.CargoCount > 0) {
-                                var unloadPoint2 = this.FindNextAvailableUnloadPoint(unloadPoint);
-                                if (UnityEngine.MonoBehaviour.op_Inequality(unloadPoint2, null) && UnityEngine.MonoBehaviour.op_Inequality(unloadPoint2, unloadPoint)) {
-                                    this._currentRoute = System.Array.init([unloadPoint2], MovePoint);
-                                    this._currentPointIndex = -1;
-                                } else {
-                                    this._isUnloading = false;
-                                    this._currentRoute = this._normalRoutePoints;
-                                    this._currentPointIndex = 0;
-                                    this._waitingForTruck = true;
-                                    this.Invoke("HandleRetryUnloading", this._checkTruckAvailabilityInterval);
-                                }
-                            }
-                        } else {
-                            this._character.Unload();
-                        }
-                    }
-                    this._currentPointIndex = (this._currentPointIndex + 1) | 0;
-                    DG.Tweening.DOVirtual.DelayedCall(currentPoint.Delay, Bridge.fn.cacheBind(this, this.MoveToNextPoint));
+                    this.HandleArrivalAtPoint(currentPoint);
                 }));
             },
             /*CharactersMover.MoveToNextPoint end.*/
+
+            /*CharactersMover.HandleArrivalAtPoint start.*/
+            HandleArrivalAtPoint: function (currentPoint) {
+if ( TRACE ) { TRACE( "CharactersMover#HandleArrivalAtPoint", this ); }
+
+                if (this._isUnloading && UnityEngine.MonoBehaviour.op_Equality(currentPoint, this._defaultUnloadPoint) && !this._visitedDefaultPointBeforeUnload) {
+                    this._visitedDefaultPointBeforeUnload = true;
+                    if (this._defaultUnloadPoint.CanUnload$1(this._character.gameObject)) {
+                        if (this._character.UnloadToTruck(this._defaultUnloadPoint.TargetTruck) === 0 && this._character.CargoCount > 0) {
+                            var nextPoint = this.FindNextAvailableUnloadPoint(this._defaultUnloadPoint);
+                            if (UnityEngine.MonoBehaviour.op_Inequality(nextPoint, null)) {
+                                this._currentRoute = System.Array.init([nextPoint], MovePoint);
+                                this._currentPointIndex = 0;
+                                DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                                this.MoveToNextPoint();
+                            } else {
+                                this._waitingForTruck = true;
+                                this.Invoke("HandleRetryUnloading", this._checkTruckAvailabilityInterval);
+                            }
+                        } else {
+                            this._isUnloading = false;
+                            this._currentRoute = this._normalRoutePoints;
+                            this._currentPointIndex = 0;
+                            DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                            this.MoveToNextPoint();
+                        }
+                    } else {
+                        var nextPoint2 = this.FindNextAvailableUnloadPoint(this._defaultUnloadPoint);
+                        if (UnityEngine.MonoBehaviour.op_Inequality(nextPoint2, null)) {
+                            this._currentRoute = System.Array.init([nextPoint2], MovePoint);
+                            this._currentPointIndex = 0;
+                            DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                            this.MoveToNextPoint();
+                        } else {
+                            this._waitingForTruck = true;
+                            this.Invoke("HandleRetryUnloading", this._checkTruckAvailabilityInterval);
+                        }
+                    }
+                } else {
+                    var unloadPoint;
+                    if (this._isUnloading && UnityEngine.MonoBehaviour.op_Inequality(((unloadPoint = Bridge.as(currentPoint, UnloadPoint))), null) && UnityEngine.MonoBehaviour.op_Inequality(unloadPoint, this._defaultUnloadPoint)) {
+                        this._character.UnloadToTruck(unloadPoint.TargetTruck);
+                        this._currentRoute = System.Array.init([this._defaultUnloadPoint], MovePoint);
+                        this._currentPointIndex = 0;
+                        DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                        this.MoveToNextPoint();
+                    } else if (!this._isUnloading && UnityEngine.MonoBehaviour.op_Equality(currentPoint, this._defaultUnloadPoint)) {
+                        this._currentRoute = this._normalRoutePoints;
+                        this._currentPointIndex = 0;
+                        DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                        this.MoveToNextPoint();
+                    } else {
+                        this._currentPointIndex = (this._currentPointIndex + 1) | 0;
+                        DG.Tweening.DOVirtual.DelayedCall(0.05, Bridge.fn.cacheBind(this, this.MoveToNextPoint));
+                    }
+                }
+            },
+            /*CharactersMover.HandleArrivalAtPoint end.*/
+
+            /*CharactersMover.CheckForStuckState start.*/
+            CheckForStuckState: function () {
+if ( TRACE ) { TRACE( "CharactersMover#CheckForStuckState", this ); }
+
+                if (!this._isUnloading || !(UnityEngine.MonoBehaviour.op_Inequality(this._character, null)) || this._character.CargoCount <= 0) {
+                    return;
+                }
+                if (this._waitingForTruck) {
+                    var availablePoint = this.FindNextAvailableUnloadPoint();
+                    if (UnityEngine.MonoBehaviour.op_Inequality(availablePoint, null)) {
+                        this._waitingForTruck = false;
+                        this._currentRoute = System.Array.init([availablePoint], MovePoint);
+                        this._currentPointIndex = 0;
+                        DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                        this.MoveToNextPoint();
+                        return;
+                    }
+                }
+                if (this.IsAtDestination() && this._currentRoute != null && this._currentRoute.length !== 0 && this._currentPointIndex < this._currentRoute.length && Bridge.is(this._currentRoute[this._currentPointIndex], UnloadPoint)) {
+                    var currentPoint = Bridge.as(this._currentRoute[this._currentPointIndex], UnloadPoint);
+                    var availablePoint2 = this.FindNextAvailableUnloadPoint(currentPoint);
+                    if (UnityEngine.MonoBehaviour.op_Inequality(availablePoint2, null)) {
+                        this._currentRoute = System.Array.init([availablePoint2], MovePoint);
+                        this._currentPointIndex = 0;
+                        DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                        this.MoveToNextPoint();
+                        return;
+                    }
+                }
+                if (!this._visitedDefaultPointBeforeUnload) {
+                    var movingToDefaultPoint = false;
+                    if (this._currentRoute != null && this._currentRoute.length !== 0 && this._currentPointIndex < this._currentRoute.length) {
+                        movingToDefaultPoint = UnityEngine.MonoBehaviour.op_Equality(this._currentRoute[this._currentPointIndex], this._defaultUnloadPoint);
+                    }
+                    if (movingToDefaultPoint) {
+                        return;
+                    }
+                }
+                var anyAvailablePoint = this.FindNextAvailableUnloadPoint();
+                if (UnityEngine.MonoBehaviour.op_Inequality(anyAvailablePoint, null) && (!this.IsAtDestination() || this._waitingForTruck)) {
+                    this._waitingForTruck = false;
+                    this._currentRoute = System.Array.init([anyAvailablePoint], MovePoint);
+                    this._currentPointIndex = 0;
+                    DG.Tweening.ShortcutExtensions.DOKill(this.transform);
+                    this.MoveToNextPoint();
+                }
+            },
+            /*CharactersMover.CheckForStuckState end.*/
+
+            /*CharactersMover.IsAtDestination start.*/
+            IsAtDestination: function () {
+if ( TRACE ) { TRACE( "CharactersMover#IsAtDestination", this ); }
+
+                if (this._currentRoute == null || this._currentRoute.length === 0 || this._currentPointIndex >= this._currentRoute.length) {
+                    return false;
+                }
+                var currentTarget = this._currentRoute[this._currentPointIndex];
+                return pc.Vec3.distance( this.transform.position, currentTarget.transform.position ) < 0.2;
+            },
+            /*CharactersMover.IsAtDestination end.*/
 
             /*CharactersMover.FindNextAvailableUnloadPoint start.*/
             FindNextAvailableUnloadPoint: function (currentPoint) {
@@ -825,12 +918,8 @@ if ( TRACE ) { TRACE( "CharactersMover#FindNextAvailableUnloadPoint", this ); }
                 try {
                     while ($t.moveNext()) {
                         var point = $t.Current;
-                        if (UnityEngine.MonoBehaviour.op_Inequality(point, currentPoint) && UnityEngine.MonoBehaviour.op_Inequality(point.TargetTruck, null)) {
-                            var mover = point.TargetTruck.GetComponent(TruckMover);
-                            var truckMoving = UnityEngine.MonoBehaviour.op_Inequality(mover, null) && mover.IsMoving;
-                            if (point.CanUnload$1(this._character.gameObject)) {
-                                return point;
-                            }
+                        if (UnityEngine.MonoBehaviour.op_Inequality(point, currentPoint) && UnityEngine.MonoBehaviour.op_Inequality(point.TargetTruck, null) && point.CanUnload$1(this._character.gameObject)) {
+                            return point;
                         }
                     }
                 } finally {
@@ -860,14 +949,6 @@ if ( TRACE ) { TRACE( "CharactersMover#FindNextAvailableUnloadPoint", this ); }
             _targetTruck: null,
             _isTargetTruckSelected: false
         },
-        ctors: {
-            init: function () {
-if ( TRACE ) { TRACE( "ChopperManager#init", this ); }
-
-                this._choppers = new (System.Collections.Generic.List$1(Chopper)).ctor();
-                this._isTargetTruckSelected = false;
-            }
-        },
         methods: {
             /*ChopperManager.Awake start.*/
             Awake: function () {
@@ -881,67 +962,32 @@ if ( TRACE ) { TRACE( "ChopperManager#Awake", this ); }
             },
             /*ChopperManager.Awake end.*/
 
-            /*ChopperManager.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "ChopperManager#Start", this ); }
+            /*ChopperManager.ResetTargetTruck start.*/
+            ResetTargetTruck: function () {
+if ( TRACE ) { TRACE( "ChopperManager#ResetTargetTruck", this ); }
 
-                if (this._choppers.Count === 0) {
-                    var foundChoppers = UnityEngine.Object.FindObjectsOfType(Chopper);
-                    this._choppers.AddRange(foundChoppers);
-                }
+                this._isTargetTruckSelected = false;
+                this._targetTruck = null;
             },
-            /*ChopperManager.Start end.*/
+            /*ChopperManager.ResetTargetTruck end.*/
 
             /*ChopperManager.GetTargetTruck start.*/
             GetTargetTruck: function () {
 if ( TRACE ) { TRACE( "ChopperManager#GetTargetTruck", this ); }
 
+                var $t;
                 if (this._isTargetTruckSelected && UnityEngine.MonoBehaviour.op_Inequality(this._targetTruck, null) && !this._targetTruck.IsFull) {
                     return this._targetTruck;
                 }
-                this._targetTruck = this.FindAvailableTruck();
-                this._isTargetTruckSelected = UnityEngine.MonoBehaviour.op_Inequality(this._targetTruck, null);
-                return this._targetTruck;
-            },
-            /*ChopperManager.GetTargetTruck end.*/
-
-            /*ChopperManager.FindAvailableTruck start.*/
-            FindAvailableTruck: function () {
-if ( TRACE ) { TRACE( "ChopperManager#FindAvailableTruck", this ); }
-
-                var $t;
-                if (UnityEngine.MonoBehaviour.op_Inequality(TruckManager.Instance, null)) {
-                    return TruckManager.Instance.GetAvailableTruck();
-                }
-                var trucks = UnityEngine.Object.FindObjectsOfType(Truck);
-                var array = trucks;
-                $t = Bridge.getEnumerator(array);
-                try {
-                    while ($t.moveNext()) {
-                        var truck = $t.Current;
-                        var mover = truck.GetComponent(TruckMover);
-                        var isMoving = UnityEngine.MonoBehaviour.op_Inequality(mover, null) && mover.IsMoving;
-                        if (truck.RemainingCapacity > 0 && !isMoving) {
-                            return truck;
-                        }
-                    }
-                } finally {
-                    if (Bridge.is($t, System.IDisposable)) {
-                        $t.System$IDisposable$Dispose();
-                    }
+                var availableTruck = UnityEngine.MonoBehaviour.op_Inequality(($t = TruckManager.Instance), null) ? $t.GetAvailableTruck() : null;
+                if (UnityEngine.MonoBehaviour.op_Inequality(availableTruck, null)) {
+                    this._targetTruck = availableTruck;
+                    this._isTargetTruckSelected = true;
+                    return availableTruck;
                 }
                 return null;
             },
-            /*ChopperManager.FindAvailableTruck end.*/
-
-            /*ChopperManager.ResetTargetTruck start.*/
-            ResetTargetTruck: function () {
-if ( TRACE ) { TRACE( "ChopperManager#ResetTargetTruck", this ); }
-
-                this._targetTruck = null;
-                this._isTargetTruckSelected = false;
-            },
-            /*ChopperManager.ResetTargetTruck end.*/
+            /*ChopperManager.GetTargetTruck end.*/
 
             /*ChopperManager.IsTargetTruck start.*/
             IsTargetTruck: function (truck) {
@@ -1001,8 +1047,8 @@ if ( TRACE ) { TRACE( "Conveyor#Start", this ); }
 
                 this.animator = this.GetComponent(UnityEngine.Animator);
                 this.StartCoroutine$1(this.StartCanvasAnimationAfterDelay());
-                this.StartCoroutine$1(this.StartAnimationAfterDelay(10.0, "Conveyor2"));
-                this.StartCoroutine$1(this.StartAnimationAfterDelay(35.0, "Conveyor3"));
+                this.StartCoroutine$1(this.StartAnimationAfterDelay(8.0, "Conveyor2"));
+                this.StartCoroutine$1(this.StartAnimationAfterDelay(25.0, "Conveyor3"));
             },
             /*Conveyor.Start end.*/
 
@@ -2896,6 +2942,7 @@ if ( TRACE ) { TRACE( "GameManager#init", this ); }
             tutorialObject: null,
             tutorialAnimator: null,
             idleTimeForTutorial: 0,
+            buildButtonLights: null,
             upgradeButton: null,
             upgradeButtonGameObject: null,
             secondRequiredButton: null,
@@ -2906,9 +2953,12 @@ if ( TRACE ) { TRACE( "GameManager#init", this ); }
             tutorial2Shown: false,
             upgradeButtonEnabled: false,
             userIdle: false,
+            isLight: false,
             idleTimer: 0,
             idleTimerForPackShot: 0,
+            firstBuildingActive: false,
             secondBuildingActive: false,
+            thirdBuildingActive: false,
             userClickedButton: false,
             packShotCoroutine: null,
             idleCoroutine: null,
@@ -2921,13 +2971,16 @@ if ( TRACE ) { TRACE( "GameManager#init", this ); }
 if ( TRACE ) { TRACE( "GameManager#init", this ); }
 
                 this.idleTimeForTutorial = 3.0;
+                this.buildButtonLights = new (System.Collections.Generic.List$1(ButtonLight)).ctor();
                 this.tutorialShown = false;
                 this.tutorial2Shown = false;
                 this.upgradeButtonEnabled = false;
                 this.userIdle = true;
                 this.idleTimer = 0.0;
                 this.idleTimerForPackShot = 0.0;
+                this.firstBuildingActive = false;
                 this.secondBuildingActive = false;
+                this.thirdBuildingActive = false;
                 this.userClickedButton = false;
                 this.isUpgradeClicked = false;
                 this.isSecondButtonClicked = false;
@@ -2975,9 +3028,61 @@ if ( TRACE ) { TRACE( "GameManager#Start", this ); }
                 if (UnityEngine.MonoBehaviour.op_Inequality(this.moneyController, null) && this.moneyController.GetBalance() >= 100) {
                     this.EnableUpgradeButton();
                 }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.buildManager, null) && this.buildManager.GetConstructedBuildingsCount() > 0) {
+                    this.tutorialShown = true;
+                    this.userClickedButton = true;
+                    this.CheckBuiltBuildingsStatus();
+                }
+                this.InitializeBuildButtons();
                 this.StartIdleCoroutine();
+                this.HighlightActiveBuildButtons();
             },
             /*GameManager.Start end.*/
+
+            /*GameManager.CheckBuiltBuildingsStatus start.*/
+            CheckBuiltBuildingsStatus: function () {
+if ( TRACE ) { TRACE( "GameManager#CheckBuiltBuildingsStatus", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.buildManager, null)) {
+                    if (!this.buildManager._buildButton1.gameObject.activeInHierarchy) {
+                        this.firstBuildingActive = true;
+                    }
+                    if (!this.buildManager._buildButton2.gameObject.activeInHierarchy) {
+                        this.secondBuildingActive = true;
+                    }
+                    if (!this.buildManager._buildButton3.gameObject.activeInHierarchy) {
+                        this.thirdBuildingActive = true;
+                    }
+                }
+            },
+            /*GameManager.CheckBuiltBuildingsStatus end.*/
+
+            /*GameManager.InitializeBuildButtons start.*/
+            InitializeBuildButtons: function () {
+if ( TRACE ) { TRACE( "GameManager#InitializeBuildButtons", this ); }
+
+                var $t;
+                if (this.buildButtonLights.Count !== 0) {
+                    return;
+                }
+                var allLights = UnityEngine.Object.FindObjectsOfType(ButtonLight);
+                var array = allLights;
+                $t = Bridge.getEnumerator(array);
+                try {
+                    while ($t.moveNext()) {
+                        var light = $t.Current;
+                        if (UnityEngine.MonoBehaviour.op_Inequality(light, null) && light.gameObject.activeInHierarchy) {
+                            this.buildButtonLights.add(light);
+                            UnityEngine.Debug.Log$1("\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0430 \u043a\u043d\u043e\u043f\u043a\u0430 \u043f\u043e\u0434\u0441\u0432\u0435\u0442\u043a\u0438: " + (light.gameObject.name || ""));
+                        }
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
+            },
+            /*GameManager.InitializeBuildButtons end.*/
 
             /*GameManager.OnDestroy start.*/
             OnDestroy: function () {
@@ -3057,7 +3162,7 @@ if ( TRACE ) { TRACE( "GameManager#IdleCoroutine", this ); }
                                 case 2: {
                                     this.idleTimer += 1.0;
                                         this.userIdle = true;
-                                        if (this.idleTimer >= this.idleTimeForTutorial && !this.tutorialShown && !this.secondBuildingActive && !this.userClickedButton) {
+                                        if (this.idleTimer >= this.idleTimeForTutorial && !this.tutorialShown && !this.secondBuildingActive && !this.thirdBuildingActive && !this.userClickedButton) {
                                             this.ShowFirstTutorial();
                                         }
 
@@ -3095,7 +3200,7 @@ if ( TRACE ) { TRACE( "GameManager#ShowFirstTutorial", this ); }
             ShowSecondTutorial: function () {
 if ( TRACE ) { TRACE( "GameManager#ShowSecondTutorial", this ); }
 
-                if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null) && UnityEngine.Component.op_Inequality(this.tutorialAnimator, null) && !this.tutorial2Shown && !this.secondBuildingActive) {
+                if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null) && UnityEngine.Component.op_Inequality(this.tutorialAnimator, null) && !this.tutorial2Shown && !this.secondBuildingActive && !this.thirdBuildingActive) {
                     this.tutorialObject.SetActive(true);
                     this.tutorialAnimator.Play$2("Tutorial2");
                     this.tutorial2Shown = true;
@@ -3117,14 +3222,15 @@ if ( TRACE ) { TRACE( "GameManager#Tutorial2Coroutine", this ); }
                         for (;;) {
                             switch ($step) {
                                 case 0: {
-                                    $enumerator.current = new UnityEngine.WaitForSeconds(1.0);
+                                    this.InitializeBuildButtons();
+                                        this.HighlightActiveBuildButtons();
+                                        this.isLight = true;
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(3.0);
                                         $step = 1;
                                         return true;
                                 }
                                 case 1: {
-                                    if (!this.tutorial2Shown && !this.secondBuildingActive) {
-                                            this.ShowSecondTutorial();
-                                        }
+                                    this.ShowSecondTutorial();
 
                                 }
                                 default: {
@@ -3141,11 +3247,37 @@ if ( TRACE ) { TRACE( "GameManager#Tutorial2Coroutine", this ); }
             },
             /*GameManager.Tutorial2Coroutine end.*/
 
+            /*GameManager.HighlightActiveBuildButtons start.*/
+            HighlightActiveBuildButtons: function () {
+if ( TRACE ) { TRACE( "GameManager#HighlightActiveBuildButtons", this ); }
+
+                var $t;
+                if (this.buildButtonLights.Count === 0 && !this.isLight) {
+                    this.InitializeBuildButtons();
+                }
+                $t = Bridge.getEnumerator(this.buildButtonLights);
+                try {
+                    while ($t.moveNext()) {
+                        var button = $t.Current;
+                        if (UnityEngine.MonoBehaviour.op_Inequality(button, null) && button.gameObject.activeInHierarchy) {
+                            button.StartFlashing();
+                        }
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
+            },
+            /*GameManager.HighlightActiveBuildButtons end.*/
+
             /*GameManager.CheckBalanceThresholds start.*/
             CheckBalanceThresholds: function (newBalance) {
 if ( TRACE ) { TRACE( "GameManager#CheckBalanceThresholds", this ); }
 
-                if (newBalance >= 20 && !this.tutorial2Shown && !this.secondBuildingActive) {
+                UnityEngine.Debug.Log$1(System.String.format("\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u0431\u0430\u043b\u0430\u043d\u0441\u0430: {0}, \u043f\u043e\u0440\u043e\u0433: {1}, tutorial2Shown: {2}, firstBuilding: {3}, secondBuilding: {4}", Bridge.box(newBalance, System.Int32), Bridge.box(20, System.Int32), Bridge.box(this.tutorial2Shown, System.Boolean, System.Boolean.toString), Bridge.box(this.firstBuildingActive, System.Boolean, System.Boolean.toString), Bridge.box(this.secondBuildingActive, System.Boolean, System.Boolean.toString)));
+                if (newBalance >= 20 && !this.tutorial2Shown && !this.secondBuildingActive && !this.thirdBuildingActive) {
+                    UnityEngine.Debug.Log$1("\u0423\u0441\u043b\u043e\u0432\u0438\u0435 \u0434\u043b\u044f \u043f\u043e\u043a\u0430\u0437\u0430 \u0432\u0442\u043e\u0440\u043e\u0433\u043e \u0442\u0443\u0442\u043e\u0440\u0438\u0430\u043b\u0430 \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u043e!");
                     if (this.tutorial2Coroutine != null) {
                         this.StopCoroutine$2(this.tutorial2Coroutine);
                     }
@@ -3164,11 +3296,21 @@ if ( TRACE ) { TRACE( "GameManager#CheckBalanceThresholds", this ); }
             CheckSecondBuilding: function (builtObject) {
 if ( TRACE ) { TRACE( "GameManager#CheckSecondBuilding", this ); }
 
-                if (UnityEngine.GameObject.op_Inequality(builtObject, null)) {
-                    this.secondBuildingActive = true;
-                    if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null)) {
-                        this.tutorialObject.SetActive(false);
+                if (!(UnityEngine.GameObject.op_Inequality(builtObject, null))) {
+                    return;
+                }
+                this.userClickedButton = true;
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.buildManager, null)) {
+                    if (UnityEngine.GameObject.op_Equality(builtObject, this.buildManager._build1)) {
+                        this.firstBuildingActive = true;
+                    } else if (UnityEngine.GameObject.op_Equality(builtObject, this.buildManager._build2)) {
+                        this.secondBuildingActive = true;
+                    } else if (UnityEngine.GameObject.op_Equality(builtObject, this.buildManager._build3)) {
+                        this.thirdBuildingActive = true;
                     }
+                }
+                if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null) && this.tutorialObject.activeSelf) {
+                    this.tutorialObject.SetActive(false);
                 }
             },
             /*GameManager.CheckSecondBuilding end.*/
@@ -3180,6 +3322,7 @@ if ( TRACE ) { TRACE( "GameManager#EnableUpgradeButton", this ); }
                 if (UnityEngine.MonoBehaviour.op_Inequality(this.upgradeButton, null)) {
                     this.upgradeButton.gameObject.SetActive(true);
                     this.upgradeButtonGameObject.SetActive(true);
+                    this.HighlightActiveBuildButtons();
                     this.StartPackShotCoroutine();
                     this.upgradeButtonEnabled = true;
                     this.idleTimerForPackShot = 0.0;
@@ -3205,7 +3348,10 @@ if ( TRACE ) { TRACE( "GameManager#OnUpgradeButtonClicked", this ); }
             OnSecondButtonClicked: function () {
 if ( TRACE ) { TRACE( "GameManager#OnSecondButtonClicked", this ); }
 
-                this.isSecondButtonClicked = true;
+                if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null)) {
+                    this.tutorialObject.SetActive(false);
+                }
+                this.secondBuildingActive = true;
                 this.userClickedButton = true;
                 this.CheckPackShotActivation();
                 if (this.packShotCoroutine != null) {
@@ -3423,7 +3569,7 @@ if ( TRACE ) { TRACE( "MoneyBalance#AnimateMoneyChange", this ); }
                                             DG.Tweening.TweenExtensions.Kill(this.moneyTween);
                                         }
                                         startValue = this._money;
-                                        this.moneyTween = DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions), DG.Tweening.DOTween.To$2(function () {
+                                        this.moneyTween = DG.Tweening.TweenSettingsExtensions.SetUpdate(DG.Tweening.Core.TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions), DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions), DG.Tweening.DOTween.To$2(function () {
                                             return startValue;
                                         }, Bridge.fn.bind(this, function (x) {
                                             startValue = x;
@@ -3432,8 +3578,7 @@ if ( TRACE ) { TRACE( "MoneyBalance#AnimateMoneyChange", this ); }
                                             this._money = targetValue;
                                             this.UpdateText(this._money);
                                             !Bridge.staticEquals(this.OnMoneyChanged, null) ? this.OnMoneyChanged(this._money) : null;
-                                        }));
-                                        !Bridge.staticEquals(this.OnMoneyChanged, null) ? this.OnMoneyChanged(targetValue) : null;
+                                        })), true);
 
                                 }
                                 default: {
@@ -4205,7 +4350,8 @@ if ( TRACE ) { TRACE( "Tree#Take", this ); }
             _isBeingLoadedByChopper: false,
             _firstChopper: null,
             _secondChopper: null,
-            _isAtUnloadPoint: false
+            _isAtUnloadPoint: false,
+            IsAtUnloadPoint: false
         },
         events: {
             OnTruckFull: null,
@@ -4245,13 +4391,6 @@ if ( TRACE ) { TRACE( "Truck#IsBeingLoadedByChopper#get", this ); }
 if ( TRACE ) { TRACE( "Truck#CurrentCargoCount#get", this ); }
 
                     return this._currentCargoCount;
-                }
-            },
-            IsAtUnloadPoint: {
-                get: function () {
-if ( TRACE ) { TRACE( "Truck#IsAtUnloadPoint#get", this ); }
-
-                    return this._isAtUnloadPoint;
                 }
             }
         },
@@ -4384,7 +4523,7 @@ if ( TRACE ) { TRACE( "Truck#Clear", this ); }
             SetAtUnloadPoint: function (isAtUnloadPoint) {
 if ( TRACE ) { TRACE( "Truck#SetAtUnloadPoint", this ); }
 
-                this._isAtUnloadPoint = isAtUnloadPoint;
+                this.IsAtUnloadPoint = isAtUnloadPoint;
             },
             /*Truck.SetAtUnloadPoint end.*/
 
@@ -4706,12 +4845,6 @@ if ( TRACE ) { TRACE( "TruckMover#Awake", this ); }
             },
             /*TruckMover.Awake end.*/
 
-            /*TruckMover.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "TruckMover#Start", this ); }
- },
-            /*TruckMover.Start end.*/
-
             /*TruckMover.OnDestroy start.*/
             OnDestroy: function () {
 if ( TRACE ) { TRACE( "TruckMover#OnDestroy", this ); }
@@ -4781,21 +4914,18 @@ if ( TRACE ) { TRACE( "TruckMover#MoveToUnloadAndBackRoutine", this ); }
                                 }
                                 case 2: {
                                     this._truck.SetAtUnloadPoint(false);
-                                        moveTween2 = DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOMove(this.transform, this._initialPosition.$clone(), this._moveDuration), this._moveEase);
+                                        moveTween2 = DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOMove(this.transform, this._initialPosition.$clone(), this._moveDuration), this._moveEase), Bridge.fn.bind(this, function () {
+                                            this._isMoving = false;
+                                            this._truck.IsAtUnloadPoint = true;
+                                            if (UnityEngine.Component.op_Inequality(this._engineSound, null)) {
+                                                this._engineSound.Stop();
+                                            }
+                                        }));
                                         $enumerator.current = DG.Tweening.TweenExtensions.WaitForCompletion(moveTween2);
                                         $step = 3;
                                         return true;
                                 }
                                 case 3: {
-                                    if (UnityEngine.Component.op_Inequality(this._engineSound, null)) {
-                                            this._engineSound.Stop();
-                                        }
-                                        $enumerator.current = new UnityEngine.WaitForSeconds(0.5);
-                                        $step = 4;
-                                        return true;
-                                }
-                                case 4: {
-                                    this._isMoving = false;
 
                                 }
                                 default: {
@@ -5011,13 +5141,12 @@ if ( TRACE ) { TRACE( "UnloadPoint#init", this ); }
             CanUnload: function () {
 if ( TRACE ) { TRACE( "UnloadPoint#CanUnload", this ); }
 
-                if (UnityEngine.MonoBehaviour.op_Equality(this._targetTruck, null)) {
+                if (UnityEngine.MonoBehaviour.op_Equality(this._targetTruck, null) || !this._targetTruck.IsAtUnloadPoint) {
                     return false;
                 }
                 var mover = this._targetTruck.GetComponent(TruckMover);
                 var truckMoving = UnityEngine.MonoBehaviour.op_Inequality(mover, null) && mover.IsMoving;
-                var truckAtUnloadPoint = this._targetTruck.IsAtUnloadPoint;
-                return this._targetTruck.RemainingCapacity > 0 && !truckMoving && !truckAtUnloadPoint;
+                return this._targetTruck.RemainingCapacity > 0 && !truckMoving;
             },
             /*UnloadPoint.CanUnload end.*/
 
@@ -5025,32 +5154,18 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload", this ); }
             CanUnload$1: function (character) {
 if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
 
-                if (!this.CanUnload()) {
+                if (UnityEngine.MonoBehaviour.op_Equality(this._targetTruck, null)) {
                     return false;
                 }
-                var isChopper = UnityEngine.MonoBehaviour.op_Inequality(character.GetComponent(Chopper), null);
+                var mover = this._targetTruck.GetComponent(TruckMover);
+                var truckMoving = UnityEngine.MonoBehaviour.op_Inequality(mover, null) && mover.IsMoving;
+                var canUnload = this._targetTruck.RemainingCapacity > 0 && !truckMoving;
                 var isForklift = UnityEngine.MonoBehaviour.op_Inequality(character.GetComponent(Forklift), null);
-                if (isChopper) {
-                    if (UnityEngine.MonoBehaviour.op_Inequality(ChopperManager.Instance, null)) {
-                        if (ChopperManager.Instance.IsTargetTruck(this._targetTruck) || UnityEngine.MonoBehaviour.op_Equality(ChopperManager.Instance.GetTargetTruck(), this._targetTruck)) {
-                            return true;
-                        }
-                        if (UnityEngine.MonoBehaviour.op_Equality(ChopperManager.Instance.GetTargetTruck(), null)) {
-                            return true;
-                        }
-                        return false;
-                    }
-                    return true;
+                var isChopper = UnityEngine.MonoBehaviour.op_Inequality(character.GetComponent(Chopper), null);
+                if (isForklift && this._targetTruck.CurrentCargoCount > 0 && !this._allowForkliftToLoadHalfFullTrucks) {
+                    return false;
                 }
-                if (isForklift) {
-                    if (this._targetTruck.IsBeingLoadedByChopper) {
-                        return false;
-                    }
-                    if (!this._allowForkliftToLoadHalfFullTrucks && this._targetTruck.CurrentCargoCount > 0) {
-                        return false;
-                    }
-                }
-                return true;
+                return canUnload;
             },
             /*UnloadPoint.CanUnload$1 end.*/
 
@@ -5083,11 +5198,11 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
     /*Build end.*/
 
     /*BuildManager start.*/
-    $m("BuildManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"OnBuildSuccess","t":8,"pi":[{"n":"buildObject","pt":$n[1].GameObject,"ps":0}],"sn":"OnBuildSuccess","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_build1","t":4,"rt":$n[1].GameObject,"sn":"_build1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_build2","t":4,"rt":$n[1].GameObject,"sn":"_build2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_build3","t":4,"rt":$n[1].GameObject,"sn":"_build3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButton1","t":4,"rt":$n[2].Button,"sn":"_buildButton1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButton2","t":4,"rt":$n[2].Button,"sn":"_buildButton2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButton3","t":4,"rt":$n[2].Button,"sn":"_buildButton3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButtonObject1","t":4,"rt":$n[1].GameObject,"sn":"_buildButtonObject1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButtonObject2","t":4,"rt":$n[1].GameObject,"sn":"_buildButtonObject2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moneyController","t":4,"rt":MoneyController,"sn":"_moneyController"}]}; }, $n);
+    $m("BuildManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"GetConstructedBuildingsCount","t":8,"sn":"GetConstructedBuildingsCount","rt":$n[0].Int32,"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"OnBuildSuccess","t":8,"pi":[{"n":"buildObject","pt":$n[1].GameObject,"ps":0}],"sn":"OnBuildSuccess","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"_animator","t":4,"rt":$n[1].Animator,"sn":"_animator"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_build1","t":4,"rt":$n[1].GameObject,"sn":"_build1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_build2","t":4,"rt":$n[1].GameObject,"sn":"_build2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_build3","t":4,"rt":$n[1].GameObject,"sn":"_build3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButton1","t":4,"rt":$n[2].Button,"sn":"_buildButton1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButton2","t":4,"rt":$n[2].Button,"sn":"_buildButton2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButton3","t":4,"rt":$n[2].Button,"sn":"_buildButton3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButtonObject1","t":4,"rt":$n[1].GameObject,"sn":"_buildButtonObject1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButtonObject2","t":4,"rt":$n[1].GameObject,"sn":"_buildButtonObject2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moneyController","t":4,"rt":MoneyController,"sn":"_moneyController"}]}; }, $n);
     /*BuildManager end.*/
 
     /*ButtonLight start.*/
-    $m("ButtonLight", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"FlashColorRoutine","t":8,"sn":"FlashColorRoutine","rt":$n[3].IEnumerator},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"_flashColor","t":4,"rt":$n[1].Color,"sn":"_flashColor"},{"a":1,"n":"_material","t":4,"rt":$n[1].Material,"sn":"_material"},{"a":1,"n":"_originalColor","t":4,"rt":$n[1].Color,"sn":"_originalColor"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"flashCount","t":4,"rt":$n[0].Int32,"sn":"flashCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"flashSpeed","t":4,"rt":$n[0].Single,"sn":"flashSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pauseBetweenFlashes","t":4,"rt":$n[0].Single,"sn":"pauseBetweenFlashes","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    $m("ButtonLight", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"FlashColorRoutine","t":8,"sn":"FlashColorRoutine","rt":$n[3].IEnumerator},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"StartFlashing","t":8,"sn":"StartFlashing","rt":$n[0].Void},{"a":1,"n":"_flashColor","t":4,"rt":$n[1].Color,"sn":"_flashColor"},{"a":1,"n":"_flashCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"_flashCoroutine"},{"a":1,"n":"_material","t":4,"rt":$n[1].Material,"sn":"_material"},{"a":1,"n":"_originalColor","t":4,"rt":$n[1].Color,"sn":"_originalColor"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"flashCount","t":4,"rt":$n[0].Int32,"sn":"flashCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"flashSpeed","t":4,"rt":$n[0].Single,"sn":"flashSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pauseBetweenFlashes","t":4,"rt":$n[0].Single,"sn":"pauseBetweenFlashes","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*ButtonLight end.*/
 
     /*Character start.*/
@@ -5095,7 +5210,7 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
     /*Character end.*/
 
     /*CharactersMover start.*/
-    $m("CharactersMover", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"FindNearestAvailableUnloadPoint","t":8,"sn":"FindNearestAvailableUnloadPoint","rt":UnloadPoint},{"a":1,"n":"FindNextAvailableUnloadPoint","t":8,"pi":[{"n":"currentPoint","dv":null,"o":true,"pt":UnloadPoint,"ps":0}],"sn":"FindNextAvailableUnloadPoint","rt":UnloadPoint,"p":[UnloadPoint]},{"a":1,"n":"HandleAllTrucksFull","t":8,"sn":"HandleAllTrucksFull","rt":$n[0].Void},{"a":1,"n":"HandleCargoEmpty","t":8,"sn":"HandleCargoEmpty","rt":$n[0].Void},{"a":1,"n":"HandleCargoFull","t":8,"sn":"HandleCargoFull","rt":$n[0].Void},{"a":1,"n":"HandleRetryUnloading","t":8,"sn":"HandleRetryUnloading","rt":$n[0].Void},{"a":1,"n":"MoveToNextPoint","t":8,"sn":"MoveToNextPoint","rt":$n[0].Void},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"_character","t":4,"rt":Character,"sn":"_character"},{"a":1,"n":"_checkTruckAvailabilityInterval","t":4,"rt":$n[0].Single,"sn":"_checkTruckAvailabilityInterval","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_currentPointIndex","t":4,"rt":$n[0].Int32,"sn":"_currentPointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_currentRoute","t":4,"rt":System.Array.type(MovePoint),"sn":"_currentRoute"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_defaultUnloadPoint","t":4,"rt":UnloadPoint,"sn":"_defaultUnloadPoint"},{"a":1,"n":"_initialRotationX","t":4,"rt":$n[0].Single,"sn":"_initialRotationX","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_initialRotationZ","t":4,"rt":$n[0].Single,"sn":"_initialRotationZ","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_isUnloading","t":4,"rt":$n[0].Boolean,"sn":"_isUnloading","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u0422\u043e\u0447\u043a\u0438 \u043c\u0430\u0440\u0448\u0440\u0443\u0442\u0430"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_normalRoutePoints","t":4,"rt":System.Array.type(MovePoint),"sn":"_normalRoutePoints"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_unloadPoints","t":4,"rt":System.Array.type(UnloadPoint),"sn":"_unloadPoints"},{"a":1,"n":"_waitingForTruck","t":4,"rt":$n[0].Boolean,"sn":"_waitingForTruck","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
+    $m("CharactersMover", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"CheckForStuckState","t":8,"sn":"CheckForStuckState","rt":$n[0].Void},{"a":1,"n":"FindNextAvailableUnloadPoint","t":8,"pi":[{"n":"currentPoint","dv":null,"o":true,"pt":UnloadPoint,"ps":0}],"sn":"FindNextAvailableUnloadPoint","rt":UnloadPoint,"p":[UnloadPoint]},{"a":1,"n":"HandleAllTrucksFull","t":8,"sn":"HandleAllTrucksFull","rt":$n[0].Void},{"a":1,"n":"HandleArrivalAtPoint","t":8,"pi":[{"n":"currentPoint","pt":MovePoint,"ps":0}],"sn":"HandleArrivalAtPoint","rt":$n[0].Void,"p":[MovePoint]},{"a":1,"n":"HandleCargoEmpty","t":8,"sn":"HandleCargoEmpty","rt":$n[0].Void},{"a":1,"n":"HandleCargoFull","t":8,"sn":"HandleCargoFull","rt":$n[0].Void},{"a":1,"n":"HandleRetryUnloading","t":8,"sn":"HandleRetryUnloading","rt":$n[0].Void},{"a":1,"n":"IsAtDestination","t":8,"sn":"IsAtDestination","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"MoveToNextPoint","t":8,"sn":"MoveToNextPoint","rt":$n[0].Void},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"_character","t":4,"rt":Character,"sn":"_character"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_checkTruckAvailabilityInterval","t":4,"rt":$n[0].Single,"sn":"_checkTruckAvailabilityInterval","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_currentPointIndex","t":4,"rt":$n[0].Int32,"sn":"_currentPointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_currentRoute","t":4,"rt":System.Array.type(MovePoint),"sn":"_currentRoute"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_defaultUnloadPoint","t":4,"rt":UnloadPoint,"sn":"_defaultUnloadPoint"},{"a":1,"n":"_initialRotationX","t":4,"rt":$n[0].Single,"sn":"_initialRotationX","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_initialRotationZ","t":4,"rt":$n[0].Single,"sn":"_initialRotationZ","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_isUnloading","t":4,"rt":$n[0].Boolean,"sn":"_isUnloading","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_normalRoutePoints","t":4,"rt":System.Array.type(MovePoint),"sn":"_normalRoutePoints"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_unloadPoints","t":4,"rt":System.Array.type(UnloadPoint),"sn":"_unloadPoints"},{"a":1,"n":"_visitedDefaultPointBeforeUnload","t":4,"rt":$n[0].Boolean,"sn":"_visitedDefaultPointBeforeUnload","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_waitingForTruck","t":4,"rt":$n[0].Boolean,"sn":"_waitingForTruck","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
     /*CharactersMover end.*/
 
     /*Chopper start.*/
@@ -5103,7 +5218,7 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
     /*Chopper end.*/
 
     /*ChopperManager start.*/
-    $m("ChopperManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"FindAvailableTruck","t":8,"sn":"FindAvailableTruck","rt":Truck},{"a":2,"n":"GetTargetTruck","t":8,"sn":"GetTargetTruck","rt":Truck},{"a":2,"n":"IsTargetTruck","t":8,"pi":[{"n":"truck","pt":Truck,"ps":0}],"sn":"IsTargetTruck","rt":$n[0].Boolean,"p":[Truck],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"ResetTargetTruck","t":8,"sn":"ResetTargetTruck","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"Instance","is":true,"t":16,"rt":ChopperManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":ChopperManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[ChopperManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_choppers","t":4,"rt":$n[4].List$1(Chopper),"sn":"_choppers"},{"a":1,"n":"_isTargetTruckSelected","t":4,"rt":$n[0].Boolean,"sn":"_isTargetTruckSelected","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_targetTruck","t":4,"rt":Truck,"sn":"_targetTruck"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":ChopperManager,"sn":"Instance"}]}; }, $n);
+    $m("ChopperManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"GetTargetTruck","t":8,"sn":"GetTargetTruck","rt":Truck},{"a":2,"n":"IsTargetTruck","t":8,"pi":[{"n":"truck","pt":Truck,"ps":0}],"sn":"IsTargetTruck","rt":$n[0].Boolean,"p":[Truck],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"ResetTargetTruck","t":8,"sn":"ResetTargetTruck","rt":$n[0].Void},{"a":2,"n":"Instance","is":true,"t":16,"rt":ChopperManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":ChopperManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[ChopperManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_choppers","t":4,"rt":$n[4].List$1(Chopper),"sn":"_choppers"},{"a":1,"n":"_isTargetTruckSelected","t":4,"rt":$n[0].Boolean,"sn":"_isTargetTruckSelected","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_targetTruck","t":4,"rt":Truck,"sn":"_targetTruck"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":ChopperManager,"sn":"Instance"}]}; }, $n);
     /*ChopperManager end.*/
 
     /*ClickCta start.*/
@@ -5119,7 +5234,7 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
     /*Forklift end.*/
 
     /*GameManager start.*/
-    $m("GameManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CheckBalanceThresholds","t":8,"pi":[{"n":"newBalance","pt":$n[0].Int32,"ps":0}],"sn":"CheckBalanceThresholds","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"CheckPackShotActivation","t":8,"sn":"CheckPackShotActivation","rt":$n[0].Void},{"a":1,"n":"CheckSecondBuilding","t":8,"pi":[{"n":"builtObject","pt":$n[1].GameObject,"ps":0}],"sn":"CheckSecondBuilding","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":2,"n":"DisableTutorial","t":8,"sn":"DisableTutorial","rt":$n[0].Void},{"a":1,"n":"EnableUpgradeButton","t":8,"sn":"EnableUpgradeButton","rt":$n[0].Void},{"a":1,"n":"IdleCoroutine","t":8,"sn":"IdleCoroutine","rt":$n[3].IEnumerator},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"OnSecondButtonClicked","t":8,"sn":"OnSecondButtonClicked","rt":$n[0].Void},{"a":1,"n":"OnUpgradeButtonClicked","t":8,"sn":"OnUpgradeButtonClicked","rt":$n[0].Void},{"a":1,"n":"PackShotIdleCoroutine","t":8,"sn":"PackShotIdleCoroutine","rt":$n[3].IEnumerator},{"a":2,"n":"RegisterUserActivity","t":8,"sn":"RegisterUserActivity","rt":$n[0].Void},{"a":1,"n":"ResetIdleTimer","t":8,"sn":"ResetIdleTimer","rt":$n[0].Void},{"a":1,"n":"ShowFirstTutorial","t":8,"sn":"ShowFirstTutorial","rt":$n[0].Void},{"a":1,"n":"ShowSecondTutorial","t":8,"sn":"ShowSecondTutorial","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"StartIdleCoroutine","t":8,"sn":"StartIdleCoroutine","rt":$n[0].Void},{"a":1,"n":"StartPackShotCoroutine","t":8,"sn":"StartPackShotCoroutine","rt":$n[0].Void},{"a":1,"n":"Tutorial2Coroutine","t":8,"sn":"Tutorial2Coroutine","rt":$n[3].IEnumerator},{"a":2,"n":"Instance","is":true,"t":16,"rt":GameManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":GameManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[GameManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":1,"n":"TUTORIAL2_BALANCE_THRESHOLD","is":true,"t":4,"rt":$n[0].Int32,"sn":"TUTORIAL2_BALANCE_THRESHOLD","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"UPGRADE_BUTTON_BALANCE_THRESHOLD","is":true,"t":4,"rt":$n[0].Int32,"sn":"UPGRADE_BUTTON_BALANCE_THRESHOLD","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"buildManager","t":4,"rt":BuildManager,"sn":"buildManager"},{"a":1,"n":"idleCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"idleCoroutine"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"idleTimeForTutorial","t":4,"rt":$n[0].Single,"sn":"idleTimeForTutorial","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"idleTimer","t":4,"rt":$n[0].Single,"sn":"idleTimer","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"idleTimerForPackShot","t":4,"rt":$n[0].Single,"sn":"idleTimerForPackShot","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isSecondButtonClicked","t":4,"rt":$n[0].Boolean,"sn":"isSecondButtonClicked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isUpgradeClicked","t":4,"rt":$n[0].Boolean,"sn":"isUpgradeClicked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u041f\u0440\u0438\u0432\u044f\u0437\u043a\u0438 \u043a \u0438\u0433\u0440\u043e\u0432\u044b\u043c \u043e\u0431\u044a\u0435\u043a\u0442\u0430\u043c"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"moneyController","t":4,"rt":MoneyController,"sn":"moneyController"},{"a":1,"n":"packShotCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"packShotCoroutine"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"packShotObject","t":4,"rt":$n[1].GameObject,"sn":"packShotObject"},{"a":1,"n":"secondBuildingActive","t":4,"rt":$n[0].Boolean,"sn":"secondBuildingActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"secondRequiredButton","t":4,"rt":$n[2].Button,"sn":"secondRequiredButton"},{"a":1,"n":"tutorial2Coroutine","t":4,"rt":$n[1].Coroutine,"sn":"tutorial2Coroutine"},{"a":1,"n":"tutorial2Shown","t":4,"rt":$n[0].Boolean,"sn":"tutorial2Shown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tutorialAnimator","t":4,"rt":$n[1].Animator,"sn":"tutorialAnimator"},{"at":[new UnityEngine.HeaderAttribute("\u0422\u0443\u0442\u043e\u0440\u0438\u0430\u043b"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tutorialObject","t":4,"rt":$n[1].GameObject,"sn":"tutorialObject"},{"a":1,"n":"tutorialShown","t":4,"rt":$n[0].Boolean,"sn":"tutorialShown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u0411\u0430\u043b\u0430\u043d\u0441 \u0438 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u044f"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"upgradeButton","t":4,"rt":$n[2].Button,"sn":"upgradeButton"},{"a":1,"n":"upgradeButtonEnabled","t":4,"rt":$n[0].Boolean,"sn":"upgradeButtonEnabled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"upgradeButtonGameObject","t":4,"rt":$n[1].GameObject,"sn":"upgradeButtonGameObject"},{"a":1,"n":"userClickedButton","t":4,"rt":$n[0].Boolean,"sn":"userClickedButton","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"userIdle","t":4,"rt":$n[0].Boolean,"sn":"userIdle","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":GameManager,"sn":"Instance"}]}; }, $n);
+    $m("GameManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CheckBalanceThresholds","t":8,"pi":[{"n":"newBalance","pt":$n[0].Int32,"ps":0}],"sn":"CheckBalanceThresholds","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"CheckBuiltBuildingsStatus","t":8,"sn":"CheckBuiltBuildingsStatus","rt":$n[0].Void},{"a":1,"n":"CheckPackShotActivation","t":8,"sn":"CheckPackShotActivation","rt":$n[0].Void},{"a":1,"n":"CheckSecondBuilding","t":8,"pi":[{"n":"builtObject","pt":$n[1].GameObject,"ps":0}],"sn":"CheckSecondBuilding","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":2,"n":"DisableTutorial","t":8,"sn":"DisableTutorial","rt":$n[0].Void},{"a":1,"n":"EnableUpgradeButton","t":8,"sn":"EnableUpgradeButton","rt":$n[0].Void},{"a":1,"n":"HighlightActiveBuildButtons","t":8,"sn":"HighlightActiveBuildButtons","rt":$n[0].Void},{"a":1,"n":"IdleCoroutine","t":8,"sn":"IdleCoroutine","rt":$n[3].IEnumerator},{"a":1,"n":"InitializeBuildButtons","t":8,"sn":"InitializeBuildButtons","rt":$n[0].Void},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"OnSecondButtonClicked","t":8,"sn":"OnSecondButtonClicked","rt":$n[0].Void},{"a":1,"n":"OnUpgradeButtonClicked","t":8,"sn":"OnUpgradeButtonClicked","rt":$n[0].Void},{"a":1,"n":"PackShotIdleCoroutine","t":8,"sn":"PackShotIdleCoroutine","rt":$n[3].IEnumerator},{"a":2,"n":"RegisterUserActivity","t":8,"sn":"RegisterUserActivity","rt":$n[0].Void},{"a":1,"n":"ResetIdleTimer","t":8,"sn":"ResetIdleTimer","rt":$n[0].Void},{"a":1,"n":"ShowFirstTutorial","t":8,"sn":"ShowFirstTutorial","rt":$n[0].Void},{"a":1,"n":"ShowSecondTutorial","t":8,"sn":"ShowSecondTutorial","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"StartIdleCoroutine","t":8,"sn":"StartIdleCoroutine","rt":$n[0].Void},{"a":1,"n":"StartPackShotCoroutine","t":8,"sn":"StartPackShotCoroutine","rt":$n[0].Void},{"a":1,"n":"Tutorial2Coroutine","t":8,"sn":"Tutorial2Coroutine","rt":$n[3].IEnumerator},{"a":2,"n":"Instance","is":true,"t":16,"rt":GameManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":GameManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[GameManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":1,"n":"TUTORIAL2_BALANCE_THRESHOLD","is":true,"t":4,"rt":$n[0].Int32,"sn":"TUTORIAL2_BALANCE_THRESHOLD","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"UPGRADE_BUTTON_BALANCE_THRESHOLD","is":true,"t":4,"rt":$n[0].Int32,"sn":"UPGRADE_BUTTON_BALANCE_THRESHOLD","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.HeaderAttribute("\u041f\u043e\u0434\u0441\u0432\u0435\u0442\u043a\u0430 \u043a\u043d\u043e\u043f\u043e\u043a"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"buildButtonLights","t":4,"rt":$n[4].List$1(ButtonLight),"sn":"buildButtonLights"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"buildManager","t":4,"rt":BuildManager,"sn":"buildManager"},{"a":1,"n":"firstBuildingActive","t":4,"rt":$n[0].Boolean,"sn":"firstBuildingActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"idleCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"idleCoroutine"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"idleTimeForTutorial","t":4,"rt":$n[0].Single,"sn":"idleTimeForTutorial","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"idleTimer","t":4,"rt":$n[0].Single,"sn":"idleTimer","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"idleTimerForPackShot","t":4,"rt":$n[0].Single,"sn":"idleTimerForPackShot","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isLight","t":4,"rt":$n[0].Boolean,"sn":"isLight","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isSecondButtonClicked","t":4,"rt":$n[0].Boolean,"sn":"isSecondButtonClicked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isUpgradeClicked","t":4,"rt":$n[0].Boolean,"sn":"isUpgradeClicked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u041f\u0440\u0438\u0432\u044f\u0437\u043a\u0438 \u043a \u0438\u0433\u0440\u043e\u0432\u044b\u043c \u043e\u0431\u044a\u0435\u043a\u0442\u0430\u043c"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"moneyController","t":4,"rt":MoneyController,"sn":"moneyController"},{"a":1,"n":"packShotCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"packShotCoroutine"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"packShotObject","t":4,"rt":$n[1].GameObject,"sn":"packShotObject"},{"a":1,"n":"secondBuildingActive","t":4,"rt":$n[0].Boolean,"sn":"secondBuildingActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"secondRequiredButton","t":4,"rt":$n[2].Button,"sn":"secondRequiredButton"},{"a":1,"n":"thirdBuildingActive","t":4,"rt":$n[0].Boolean,"sn":"thirdBuildingActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"tutorial2Coroutine","t":4,"rt":$n[1].Coroutine,"sn":"tutorial2Coroutine"},{"a":1,"n":"tutorial2Shown","t":4,"rt":$n[0].Boolean,"sn":"tutorial2Shown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tutorialAnimator","t":4,"rt":$n[1].Animator,"sn":"tutorialAnimator"},{"at":[new UnityEngine.HeaderAttribute("\u0422\u0443\u0442\u043e\u0440\u0438\u0430\u043b"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tutorialObject","t":4,"rt":$n[1].GameObject,"sn":"tutorialObject"},{"a":1,"n":"tutorialShown","t":4,"rt":$n[0].Boolean,"sn":"tutorialShown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u0411\u0430\u043b\u0430\u043d\u0441 \u0438 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u044f"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"upgradeButton","t":4,"rt":$n[2].Button,"sn":"upgradeButton"},{"a":1,"n":"upgradeButtonEnabled","t":4,"rt":$n[0].Boolean,"sn":"upgradeButtonEnabled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"upgradeButtonGameObject","t":4,"rt":$n[1].GameObject,"sn":"upgradeButtonGameObject"},{"a":1,"n":"userClickedButton","t":4,"rt":$n[0].Boolean,"sn":"userClickedButton","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"userIdle","t":4,"rt":$n[0].Boolean,"sn":"userIdle","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":GameManager,"sn":"Instance"}]}; }, $n);
     /*GameManager end.*/
 
     /*Garage start.*/
@@ -5159,7 +5274,7 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
     /*Tree end.*/
 
     /*Truck start.*/
-    $m("Truck", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Clear","t":8,"sn":"Clear","rt":$n[0].Void},{"a":2,"n":"LoadLog","t":8,"sn":"LoadLog","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"LoadLogs","t":8,"pi":[{"n":"count","pt":$n[0].Int32,"ps":0}],"sn":"LoadLogs","rt":$n[0].Int32,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"LoadLogs","t":8,"pi":[{"n":"count","pt":$n[0].Int32,"ps":0},{"n":"loader","pt":$n[1].GameObject,"ps":1}],"sn":"LoadLogs$1","rt":$n[0].Int32,"p":[$n[0].Int32,$n[1].GameObject],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"NotifyTruckManagerOnFull","t":8,"sn":"NotifyTruckManagerOnFull","rt":$n[0].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"ResetChoppers","t":8,"sn":"ResetChoppers","rt":$n[0].Void},{"a":2,"n":"SetAtUnloadPoint","t":8,"pi":[{"n":"isAtUnloadPoint","pt":$n[0].Boolean,"ps":0}],"sn":"SetAtUnloadPoint","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"UpdateProgressBar","t":8,"sn":"UpdateProgressBar","rt":$n[0].Void},{"a":2,"n":"CurrentCargoCount","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_CurrentCargoCount","t":8,"rt":$n[0].Int32,"fg":"CurrentCargoCount","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"CurrentCargoCount"},{"a":2,"n":"IsAtUnloadPoint","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsAtUnloadPoint","t":8,"rt":$n[0].Boolean,"fg":"IsAtUnloadPoint","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsAtUnloadPoint"},{"a":2,"n":"IsBeingLoadedByChopper","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsBeingLoadedByChopper","t":8,"rt":$n[0].Boolean,"fg":"IsBeingLoadedByChopper","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsBeingLoadedByChopper"},{"a":2,"n":"IsFull","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsFull","t":8,"rt":$n[0].Boolean,"fg":"IsFull","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsFull"},{"a":2,"n":"MaxCapacity","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_MaxCapacity","t":8,"rt":$n[0].Int32,"fg":"MaxCapacity","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"MaxCapacity"},{"a":2,"n":"RemainingCapacity","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_RemainingCapacity","t":8,"rt":$n[0].Int32,"fg":"RemainingCapacity","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"RemainingCapacity"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_cargoSlots","t":4,"rt":$n[4].List$1(UnityEngine.GameObject),"sn":"_cargoSlots"},{"a":1,"n":"_currentCargoCount","t":4,"rt":$n[0].Int32,"sn":"_currentCargoCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_firstChopper","t":4,"rt":$n[1].GameObject,"sn":"_firstChopper"},{"a":1,"n":"_isAtUnloadPoint","t":4,"rt":$n[0].Boolean,"sn":"_isAtUnloadPoint","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isBeingLoadedByChopper","t":4,"rt":$n[0].Boolean,"sn":"_isBeingLoadedByChopper","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("Audio"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_logLoadSoundName","t":4,"rt":$n[0].String,"sn":"_logLoadSoundName"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_maxCapacity","t":4,"rt":$n[0].Int32,"sn":"_maxCapacity","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_playCargoSounds","t":4,"rt":$n[0].Boolean,"sn":"_playCargoSounds","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_secondChopper","t":4,"rt":$n[1].GameObject,"sn":"_secondChopper"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_truckFullSoundName","t":4,"rt":$n[0].String,"sn":"_truckFullSoundName"},{"a":2,"n":"progressBarImage","t":4,"rt":$n[2].Image,"sn":"progressBarImage"},{"a":2,"n":"OnCargoChanged","t":2,"ad":{"a":2,"n":"add_OnCargoChanged","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addOnCargoChanged","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_OnCargoChanged","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeOnCargoChanged","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"OnTruckFull","t":2,"ad":{"a":2,"n":"add_OnTruckFull","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addOnTruckFull","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_OnTruckFull","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeOnTruckFull","rt":$n[0].Void,"p":[Function]}}]}; }, $n);
+    $m("Truck", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Clear","t":8,"sn":"Clear","rt":$n[0].Void},{"a":2,"n":"LoadLog","t":8,"sn":"LoadLog","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"LoadLogs","t":8,"pi":[{"n":"count","pt":$n[0].Int32,"ps":0}],"sn":"LoadLogs","rt":$n[0].Int32,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"LoadLogs","t":8,"pi":[{"n":"count","pt":$n[0].Int32,"ps":0},{"n":"loader","pt":$n[1].GameObject,"ps":1}],"sn":"LoadLogs$1","rt":$n[0].Int32,"p":[$n[0].Int32,$n[1].GameObject],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"NotifyTruckManagerOnFull","t":8,"sn":"NotifyTruckManagerOnFull","rt":$n[0].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"ResetChoppers","t":8,"sn":"ResetChoppers","rt":$n[0].Void},{"a":2,"n":"SetAtUnloadPoint","t":8,"pi":[{"n":"isAtUnloadPoint","pt":$n[0].Boolean,"ps":0}],"sn":"SetAtUnloadPoint","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"UpdateProgressBar","t":8,"sn":"UpdateProgressBar","rt":$n[0].Void},{"a":2,"n":"CurrentCargoCount","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_CurrentCargoCount","t":8,"rt":$n[0].Int32,"fg":"CurrentCargoCount","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"CurrentCargoCount"},{"a":2,"n":"IsAtUnloadPoint","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsAtUnloadPoint","t":8,"rt":$n[0].Boolean,"fg":"IsAtUnloadPoint","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"s":{"a":2,"n":"set_IsAtUnloadPoint","t":8,"p":[$n[0].Boolean],"rt":$n[0].Void,"fs":"IsAtUnloadPoint"},"fn":"IsAtUnloadPoint"},{"a":2,"n":"IsBeingLoadedByChopper","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsBeingLoadedByChopper","t":8,"rt":$n[0].Boolean,"fg":"IsBeingLoadedByChopper","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsBeingLoadedByChopper"},{"a":2,"n":"IsFull","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsFull","t":8,"rt":$n[0].Boolean,"fg":"IsFull","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsFull"},{"a":2,"n":"MaxCapacity","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_MaxCapacity","t":8,"rt":$n[0].Int32,"fg":"MaxCapacity","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"MaxCapacity"},{"a":2,"n":"RemainingCapacity","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_RemainingCapacity","t":8,"rt":$n[0].Int32,"fg":"RemainingCapacity","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"RemainingCapacity"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_cargoSlots","t":4,"rt":$n[4].List$1(UnityEngine.GameObject),"sn":"_cargoSlots"},{"a":1,"n":"_currentCargoCount","t":4,"rt":$n[0].Int32,"sn":"_currentCargoCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_firstChopper","t":4,"rt":$n[1].GameObject,"sn":"_firstChopper"},{"a":1,"n":"_isAtUnloadPoint","t":4,"rt":$n[0].Boolean,"sn":"_isAtUnloadPoint","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isBeingLoadedByChopper","t":4,"rt":$n[0].Boolean,"sn":"_isBeingLoadedByChopper","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("Audio"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_logLoadSoundName","t":4,"rt":$n[0].String,"sn":"_logLoadSoundName"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_maxCapacity","t":4,"rt":$n[0].Int32,"sn":"_maxCapacity","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_playCargoSounds","t":4,"rt":$n[0].Boolean,"sn":"_playCargoSounds","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_secondChopper","t":4,"rt":$n[1].GameObject,"sn":"_secondChopper"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_truckFullSoundName","t":4,"rt":$n[0].String,"sn":"_truckFullSoundName"},{"a":2,"n":"progressBarImage","t":4,"rt":$n[2].Image,"sn":"progressBarImage"},{"a":2,"n":"OnCargoChanged","t":2,"ad":{"a":2,"n":"add_OnCargoChanged","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addOnCargoChanged","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_OnCargoChanged","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeOnCargoChanged","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"OnTruckFull","t":2,"ad":{"a":2,"n":"add_OnTruckFull","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addOnTruckFull","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_OnTruckFull","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeOnTruckFull","rt":$n[0].Void,"p":[Function]}},{"a":1,"backing":true,"n":"<IsAtUnloadPoint>k__BackingField","t":4,"rt":$n[0].Boolean,"sn":"IsAtUnloadPoint","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
     /*Truck end.*/
 
     /*TruckManager start.*/
@@ -5167,7 +5282,7 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
     /*TruckManager end.*/
 
     /*TruckMover start.*/
-    $m("TruckMover", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"HandleTruckFull","t":8,"sn":"HandleTruckFull","rt":$n[0].Void},{"a":1,"n":"HandleTruckReadyToSend","t":8,"pi":[{"n":"truck","pt":Truck,"ps":0}],"sn":"HandleTruckReadyToSend","rt":$n[0].Void,"p":[Truck]},{"a":1,"n":"MoveToUnloadAndBackRoutine","t":8,"pi":[{"n":"targetPositionTransform","pt":$n[1].Transform,"ps":0}],"sn":"MoveToUnloadAndBackRoutine","rt":$n[3].IEnumerator,"p":[$n[1].Transform]},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"UnloadTruckRoutine","t":8,"sn":"UnloadTruckRoutine","rt":$n[3].IEnumerator},{"a":2,"n":"IsMoving","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsMoving","t":8,"rt":$n[0].Boolean,"fg":"IsMoving","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsMoving"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_engineSound","t":4,"rt":$n[1].AudioSource,"sn":"_engineSound"},{"a":1,"n":"_initialPosition","t":4,"rt":$n[1].Vector3,"sn":"_initialPosition"},{"a":1,"n":"_initialRotation","t":4,"rt":$n[1].Quaternion,"sn":"_initialRotation"},{"a":1,"n":"_isMoving","t":4,"rt":$n[0].Boolean,"sn":"_isMoving","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_moveDuration","t":4,"rt":$n[0].Single,"sn":"_moveDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moveEase","t":4,"rt":$n[6].Ease,"sn":"_moveEase","box":function ($v) { return Bridge.box($v, DG.Tweening.Ease, System.Enum.toStringFn(DG.Tweening.Ease));}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_startPosition","t":4,"rt":$n[1].Transform,"sn":"_startPosition"},{"a":1,"n":"_truck","t":4,"rt":Truck,"sn":"_truck"},{"a":1,"n":"_unloadPoint","t":4,"rt":TruckUnloadPoint,"sn":"_unloadPoint"}]}; }, $n);
+    $m("TruckMover", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"HandleTruckFull","t":8,"sn":"HandleTruckFull","rt":$n[0].Void},{"a":1,"n":"HandleTruckReadyToSend","t":8,"pi":[{"n":"truck","pt":Truck,"ps":0}],"sn":"HandleTruckReadyToSend","rt":$n[0].Void,"p":[Truck]},{"a":1,"n":"MoveToUnloadAndBackRoutine","t":8,"pi":[{"n":"targetPositionTransform","pt":$n[1].Transform,"ps":0}],"sn":"MoveToUnloadAndBackRoutine","rt":$n[3].IEnumerator,"p":[$n[1].Transform]},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"UnloadTruckRoutine","t":8,"sn":"UnloadTruckRoutine","rt":$n[3].IEnumerator},{"a":2,"n":"IsMoving","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsMoving","t":8,"rt":$n[0].Boolean,"fg":"IsMoving","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsMoving"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_engineSound","t":4,"rt":$n[1].AudioSource,"sn":"_engineSound"},{"a":1,"n":"_initialPosition","t":4,"rt":$n[1].Vector3,"sn":"_initialPosition"},{"a":1,"n":"_initialRotation","t":4,"rt":$n[1].Quaternion,"sn":"_initialRotation"},{"a":1,"n":"_isMoving","t":4,"rt":$n[0].Boolean,"sn":"_isMoving","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_moveDuration","t":4,"rt":$n[0].Single,"sn":"_moveDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moveEase","t":4,"rt":$n[6].Ease,"sn":"_moveEase","box":function ($v) { return Bridge.box($v, DG.Tweening.Ease, System.Enum.toStringFn(DG.Tweening.Ease));}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_startPosition","t":4,"rt":$n[1].Transform,"sn":"_startPosition"},{"a":1,"n":"_truck","t":4,"rt":Truck,"sn":"_truck"},{"a":1,"n":"_unloadPoint","t":4,"rt":TruckUnloadPoint,"sn":"_unloadPoint"}]}; }, $n);
     /*TruckMover end.*/
 
     /*TruckProgressBarSetup start.*/
@@ -5179,7 +5294,7 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
     /*TruckUnloadPoint end.*/
 
     /*UnloadPoint start.*/
-    $m("UnloadPoint", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"CanUnload","t":8,"sn":"CanUnload","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"CanUnload","t":8,"pi":[{"n":"character","pt":$n[1].GameObject,"ps":0}],"sn":"CanUnload$1","rt":$n[0].Boolean,"p":[$n[1].GameObject],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"TargetTruck","t":16,"rt":Truck,"g":{"a":2,"n":"get_TargetTruck","t":8,"rt":Truck,"fg":"TargetTruck"},"fn":"TargetTruck"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_allowForkliftToLoadHalfFullTrucks","t":4,"rt":$n[0].Boolean,"sn":"_allowForkliftToLoadHalfFullTrucks","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_targetTruck","t":4,"rt":Truck,"sn":"_targetTruck"}]}; }, $n);
+    $m("UnloadPoint", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"CanUnload","t":8,"sn":"CanUnload","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"CanUnload","t":8,"pi":[{"n":"character","pt":$n[1].GameObject,"ps":0}],"sn":"CanUnload$1","rt":$n[0].Boolean,"p":[$n[1].GameObject],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"TargetTruck","t":16,"rt":Truck,"g":{"a":2,"n":"get_TargetTruck","t":8,"rt":Truck,"fg":"TargetTruck"},"fn":"TargetTruck"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"_allowForkliftToLoadHalfFullTrucks","t":4,"rt":$n[0].Boolean,"sn":"_allowForkliftToLoadHalfFullTrucks","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_targetTruck","t":4,"rt":Truck,"sn":"_targetTruck"}]}; }, $n);
     /*UnloadPoint end.*/
 
     /*Wall start.*/

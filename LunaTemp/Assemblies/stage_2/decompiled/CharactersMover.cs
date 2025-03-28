@@ -128,7 +128,17 @@ public class CharactersMover : MonoBehaviour
 		}
 		MovePoint currentPoint = _currentRoute[_currentPointIndex];
 		Vector3 targetPos = currentPoint.transform.position;
-		float moveDuration = currentPoint.MoveDuration;
+		float moveDuration;
+		if (_isUnloading && currentPoint is UnloadPoint && _visitedDefaultPointBeforeUnload)
+		{
+			float customSpeed = 5f;
+			float distance = Vector3.Distance(base.transform.position, currentPoint.transform.position);
+			moveDuration = distance / customSpeed;
+		}
+		else
+		{
+			moveDuration = currentPoint.MoveDuration;
+		}
 		Vector3 direction = targetPos - base.transform.position;
 		direction.y = 0f;
 		if (direction != Vector3.zero)

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,9 @@ public class GameManager : MonoBehaviour
     [Header("Туториал")] [SerializeField] private GameObject tutorialObject;
     [SerializeField] private Animator tutorialAnimator;
     [SerializeField] private float idleTimeForTutorial = 3f;
+    
+    [Header("Подсветка кнопок")]
+    [SerializeField] private List<ButtonLight> buildButtonLights = new List<ButtonLight>();
 
     [Header("Баланс и улучшения")] [SerializeField]
     private Button upgradeButton;
@@ -30,9 +34,14 @@ public class GameManager : MonoBehaviour
     private bool tutorial2Shown = false;
     private bool upgradeButtonEnabled = false;
     private bool userIdle = true;
+    private bool isLight;
     private float idleTimer = 0f;
     private float idleTimerForPackShot = 0f;
+    
+    private bool firstBuildingActive = false;
     private bool secondBuildingActive = false;
+    private bool thirdBuildingActive = false;
+    
     private bool userClickedButton = false;
 
     private Coroutine packShotCoroutine;
@@ -91,8 +100,54 @@ public class GameManager : MonoBehaviour
         {
             EnableUpgradeButton();
         }
+        
+        // Проверяем наличие построенных зданий при старте
+        if (buildManager != null && buildManager.GetConstructedBuildingsCount() > 0)
+        {
+            tutorialShown = true;
+            userClickedButton = true;
+            
+            // Проверяем состояние каждого здания
+            CheckBuiltBuildingsStatus();
+        }
+        
+        // Инициализируем кнопки с подсветкой (но не запускаем подсветку)
+        InitializeBuildButtons();
 
         StartIdleCoroutine();
+        HighlightActiveBuildButtons();
+    }
+    
+    // Проверяет, какие здания уже построены
+    private void CheckBuiltBuildingsStatus()
+    {
+        if (buildManager != null)
+        {
+            if (!buildManager._buildButton1.gameObject.activeInHierarchy)
+                firstBuildingActive = true;
+                
+            if (!buildManager._buildButton2.gameObject.activeInHierarchy)
+                secondBuildingActive = true;
+                
+            if (!buildManager._buildButton3.gameObject.activeInHierarchy)
+                thirdBuildingActive = true;
+        }
+    }
+
+    private void InitializeBuildButtons()
+    {
+        if (buildButtonLights.Count == 0)
+        {
+            ButtonLight[] allLights = FindObjectsOfType<ButtonLight>();
+            foreach (ButtonLight light in allLights)
+            {
+                if (light != null && light.gameObject.activeInHierarchy)
+                {
+                    buildButtonLights.Add(light);
+                    Debug.Log($"Добавлена кнопка подсветки: {light.gameObject.name}");
+                }
+            }
+        }
     }
 
     private void OnDestroy()
@@ -150,7 +205,7 @@ public class GameManager : MonoBehaviour
             idleTimer += 1f;
             userIdle = true;
 
-            if (idleTimer >= idleTimeForTutorial && !tutorialShown && !secondBuildingActive && !userClickedButton)
+            if (idleTimer >= idleTimeForTutorial && !tutorialShown && !secondBuildingActive && !thirdBuildingActive && !userClickedButton)
             {
                 ShowFirstTutorial();
             }
@@ -166,7 +221,7 @@ public class GameManager : MonoBehaviour
 
     private void ShowSecondTutorial()
     {
-        if (tutorialObject != null && tutorialAnimator != null && !tutorial2Shown && !secondBuildingActive)
+        if (tutorialObject != null && tutorialAnimator != null && !tutorial2Shown && !secondBuildingActive && !thirdBuildingActive)
         {
             tutorialObject.SetActive(true);
             tutorialAnimator.Play("Tutorial2");
@@ -176,23 +231,48 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Tutorial2Coroutine()
     {
-        yield return new WaitForSeconds(1f);
+        InitializeBuildButtons();
+        
+        HighlightActiveBuildButtons();
+        isLight = true; 
+        
+        yield return new WaitForSeconds(3f);
+        
+        ShowSecondTutorial();
+    }
 
-        if (!tutorial2Shown && !secondBuildingActive)
+    private void HighlightActiveBuildButtons()
+    {
+        
+        if (buildButtonLights.Count == 0&& !isLight)
         {
-            ShowSecondTutorial();
+            InitializeBuildButtons();
+        }
+        
+        foreach (ButtonLight button in buildButtonLights)
+        {
+            if (button != null && button.gameObject.activeInHierarchy)
+            {
+                button.StartFlashing();
+            }
         }
     }
 
     private void CheckBalanceThresholds(int newBalance)
     {
-        if (newBalance >= TUTORIAL2_BALANCE_THRESHOLD && !tutorial2Shown && !secondBuildingActive)
+        // Добавим дополнительную проверку для отладки
+        Debug.Log($"Проверка баланса: {newBalance}, порог: {TUTORIAL2_BALANCE_THRESHOLD}, tutorial2Shown: {tutorial2Shown}, firstBuilding: {firstBuildingActive}, secondBuilding: {secondBuildingActive}");
+        
+        // Показ второго туториала при достижении порога, если не показан и построено не более 1 здания
+        if (newBalance >= TUTORIAL2_BALANCE_THRESHOLD && !tutorial2Shown && !secondBuildingActive && !thirdBuildingActive)
         {
+            Debug.Log("Условие для показа второго туториала выполнено!");
+            
             if (tutorial2Coroutine != null)
             {
                 StopCoroutine(tutorial2Coroutine);
             }
-
+            
             tutorial2Coroutine = StartCoroutine(Tutorial2Coroutine());
         }
 
@@ -211,9 +291,21 @@ public class GameManager : MonoBehaviour
     {
         if (builtObject != null)
         {
-            secondBuildingActive = true;
-
-            if (tutorialObject != null)
+            userClickedButton = true;
+            
+            // Определяем, какое здание было построено
+            if (buildManager != null)
+            {
+                if (builtObject == buildManager._build1)
+                    firstBuildingActive = true;
+                else if (builtObject == buildManager._build2)
+                    secondBuildingActive = true;
+                else if (builtObject == buildManager._build3)
+                    thirdBuildingActive = true;
+            }
+            
+            // Скрываем туториал, если он активен
+            if (tutorialObject != null && tutorialObject.activeSelf)
             {
                 tutorialObject.SetActive(false);
             }
@@ -226,6 +318,7 @@ public class GameManager : MonoBehaviour
         {
             upgradeButton.gameObject.SetActive(true);
             upgradeButtonGameObject.SetActive(true);
+            HighlightActiveBuildButtons();
             StartPackShotCoroutine();
             upgradeButtonEnabled = true;
             idleTimerForPackShot = 0f;
@@ -252,7 +345,12 @@ public class GameManager : MonoBehaviour
 
     private void OnSecondButtonClicked()
     {
-        isSecondButtonClicked = true;
+        if (tutorialObject != null)
+        {
+            tutorialObject.SetActive(false);
+        }
+
+        secondBuildingActive = true;
         userClickedButton = true;
         CheckPackShotActivation();
 

@@ -95,7 +95,6 @@ public class TruckMover : MonoBehaviour
         {
             _isMoving = false;
             _truck.IsAtUnloadPoint = true; 
-            Debug.Log(_truck.IsAtUnloadPoint);
             if (_engineSound != null)
             {
                 _engineSound.Stop();

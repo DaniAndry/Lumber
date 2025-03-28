@@ -123,7 +123,18 @@ public class CharactersMover : MonoBehaviour
         MovePoint currentPoint = _currentRoute[_currentPointIndex];
         Vector3 targetPos = currentPoint.transform.position;
 
-        float moveDuration = currentPoint.MoveDuration;
+        float moveDuration;
+
+        if (_isUnloading && currentPoint is UnloadPoint && _visitedDefaultPointBeforeUnload)
+        {
+            float customSpeed = 5f;
+            float distance = Vector3.Distance(transform.position, currentPoint.transform.position);
+            moveDuration = distance / customSpeed;
+        }
+        else
+        {
+            moveDuration = currentPoint.MoveDuration;
+        }
 
         Vector3 direction = targetPos - transform.position;
         direction.y = 0f;
@@ -234,8 +245,6 @@ public class CharactersMover : MonoBehaviour
     {
         if (_isUnloading && _character != null && _character.CargoCount > 0)
         {
-            // Более агрессивная проверка - если персонаж ожидает более 3 секунд,
-            // принудительно ищем альтернативную точку разгрузки
             if (_waitingForTruck)
             {
                 UnloadPoint availablePoint = FindNextAvailableUnloadPoint(null);
@@ -250,12 +259,10 @@ public class CharactersMover : MonoBehaviour
                 }
             }
 
-            // Если персонаж слишком долго находится на точке разгрузки, но не разгружается
-            // (возможно из-за проблем с определением состояния грузовика)
+
             if (IsAtDestination() && _currentRoute != null && _currentRoute.Length > 0 && 
                 _currentPointIndex < _currentRoute.Length && _currentRoute[_currentPointIndex] is UnloadPoint)
             {
-                // Пробуем найти альтернативную точку разгрузки
                 UnloadPoint currentPoint = _currentRoute[_currentPointIndex] as UnloadPoint;
                 UnloadPoint availablePoint = FindNextAvailableUnloadPoint(currentPoint);
                 
@@ -268,8 +275,7 @@ public class CharactersMover : MonoBehaviour
                     return;
                 }
             }
-
-            // Проверка на движение к дефолтной точке сохраняется
+            
             if (!_visitedDefaultPointBeforeUnload)
             {
                 bool movingToDefaultPoint = false;
@@ -284,7 +290,6 @@ public class CharactersMover : MonoBehaviour
                 }
             }
             
-            // Универсальная проверка для всех других случаев
             UnloadPoint anyAvailablePoint = FindNextAvailableUnloadPoint(null);
             if (anyAvailablePoint != null && (!IsAtDestination() || _waitingForTruck))
             {

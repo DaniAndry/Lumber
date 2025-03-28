@@ -10,15 +10,32 @@ public class ButtonLight : MonoBehaviour
     [SerializeField] private float flashSpeed = 0.3f;            
     [SerializeField] private float pauseBetweenFlashes = 0.1f;   
     [SerializeField] private int flashCount = 3;
+    
+    private Coroutine _flashCoroutine;
 
     private void Start()
     {
-        if (TryGetComponent <Renderer>(out Renderer renderer))
+        if (TryGetComponent<Renderer>(out Renderer renderer))
         {
             _material = renderer.material;
             _originalColor = _material.color;
-            StartCoroutine(FlashColorRoutine());
         }
+    }
+    
+    public void StartFlashing()
+    {
+        if (_flashCoroutine != null)
+        {
+            StopCoroutine(_flashCoroutine);
+        }
+        
+        if (_material == null && TryGetComponent<Renderer>(out Renderer renderer))
+        {
+            _material = renderer.material;
+            _originalColor = _material.color;
+        }
+        
+        _flashCoroutine = StartCoroutine(FlashColorRoutine());
     }
 
     private IEnumerator FlashColorRoutine()
@@ -45,8 +62,7 @@ public class ButtonLight : MonoBehaviour
 
             yield return new WaitForSeconds(pauseBetweenFlashes);
         }
-
-        // Проигрываем звук нажатия кнопки
+        
         SimpleAudioManager.Instance?.PlayButtonClickSound();
     }
 }

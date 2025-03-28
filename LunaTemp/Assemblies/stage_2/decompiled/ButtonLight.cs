@@ -18,14 +18,29 @@ public class ButtonLight : MonoBehaviour
 	[SerializeField]
 	private int flashCount = 3;
 
+	private Coroutine _flashCoroutine;
+
 	private void Start()
 	{
 		if (TryGetComponent<Renderer>(out var renderer))
 		{
 			_material = renderer.material;
 			_originalColor = _material.color;
-			StartCoroutine(FlashColorRoutine());
 		}
+	}
+
+	public void StartFlashing()
+	{
+		if (_flashCoroutine != null)
+		{
+			StopCoroutine(_flashCoroutine);
+		}
+		if (_material == null && TryGetComponent<Renderer>(out var renderer))
+		{
+			_material = renderer.material;
+			_originalColor = _material.color;
+		}
+		_flashCoroutine = StartCoroutine(FlashColorRoutine());
 	}
 
 	private IEnumerator FlashColorRoutine()

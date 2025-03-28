@@ -4,31 +4,33 @@ using UnityEngine.UI;
 public class BuildManager : MonoBehaviour
 {
 	[SerializeField]
-	private Button _buildButton1;
+	public Button _buildButton1;
 
 	[SerializeField]
-	private Button _buildButton2;
+	public Button _buildButton2;
 
 	[SerializeField]
-	private Button _buildButton3;
+	public Button _buildButton3;
 
 	[SerializeField]
-	private GameObject _buildButtonObject1;
+	public GameObject _buildButtonObject1;
 
 	[SerializeField]
-	private GameObject _buildButtonObject2;
+	public GameObject _buildButtonObject2;
 
 	[SerializeField]
-	private GameObject _build1;
+	public GameObject _build1;
 
 	[SerializeField]
-	private GameObject _build2;
+	public GameObject _build2;
 
 	[SerializeField]
-	private GameObject _build3;
+	public GameObject _build3;
 
 	[SerializeField]
 	private MoneyController _moneyController;
+
+	private Animator _animator;
 
 	private void Awake()
 	{
@@ -45,6 +47,8 @@ public class BuildManager : MonoBehaviour
 			_moneyController.TryBuild(100, _build3);
 		});
 		_moneyController.OnBuildSuccess += OnBuildSuccess;
+		_moneyController.OnBuildSuccess += OnBuildSuccess;
+		_animator = GetComponent<Animator>();
 	}
 
 	private void OnDestroy()
@@ -71,5 +75,23 @@ public class BuildManager : MonoBehaviour
 		{
 			_buildButton3.gameObject.SetActive(false);
 		}
+	}
+
+	public int GetConstructedBuildingsCount()
+	{
+		int count = 0;
+		if (_buildButton1 != null && !_buildButton1.gameObject.activeInHierarchy)
+		{
+			count++;
+		}
+		if (_buildButton2 != null && !_buildButton2.gameObject.activeInHierarchy)
+		{
+			count++;
+		}
+		if (_buildButton3 != null && !_buildButton3.gameObject.activeInHierarchy)
+		{
+			count++;
+		}
+		return count;
 	}
 }

@@ -1,4 +1,4 @@
-if ( TRACE ) { TRACE( JSON.parse( '["AdaptiveCameraPosition#init","AdaptiveCameraPosition#Awake","AdaptiveCameraPosition#Update","AdaptiveCameraPosition#GetIsPortrait","AdaptiveCameraPosition#UpdateCameraMode","AdaptiveCameraPosition#ForceUpdate","AdaptiveCameraPosition.CameraSettings#init","BalanceManager#CurrentBalance#get","BalanceManager#init","BalanceManager#Awake","BalanceManager#AddMoney","BalanceManager#SpendMoney","Build#SpawnBuild","BuildManager#Awake","BuildManager#OnDestroy","BuildManager#OnBuildSuccess","ButtonLight#init","ButtonLight#Start","ButtonLight#FlashColorRoutine","Character#IsFull#get","Character#CargoCount#get","Character#init","Character#OnTriggerEnter","Character#TakeTree","Character#UnloadToTruck","Character#Unload","CharactersMover#init","CharactersMover#Start","CharactersMover#OnDestroy","CharactersMover#HandleAllTrucksFull","CharactersMover#HandleRetryUnloading","CharactersMover#HandleCargoFull","CharactersMover#HandleCargoEmpty","CharactersMover#MoveToNextPoint","CharactersMover#HandleArrivalAtPoint","CharactersMover#CheckForStuckState","CharactersMover#IsAtDestination","CharactersMover#FindNextAvailableUnloadPoint","ChopperManager#Awake","ChopperManager#ResetTargetTruck","ChopperManager#GetTargetTruck","ChopperManager#IsTargetTruck","ClickCta#Click","Conveyor#init","Conveyor#Start","Conveyor#StartAnimationAfterDelay","Conveyor#StartCanvasAnimationAfterDelay","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","GameManager#init","GameManager#init","GameManager#Awake","GameManager#Start","GameManager#OnDestroy","GameManager#RegisterUserActivity","GameManager#ResetIdleTimer","GameManager#StartIdleCoroutine","GameManager#IdleCoroutine","GameManager#ShowFirstTutorial","GameManager#ShowSecondTutorial","GameManager#Tutorial2Coroutine","GameManager#CheckBalanceThresholds","GameManager#CheckSecondBuilding","GameManager#EnableUpgradeButton","GameManager#OnUpgradeButtonClicked","GameManager#OnSecondButtonClicked","GameManager#StartPackShotCoroutine","GameManager#PackShotIdleCoroutine","GameManager#CheckPackShotActivation","GameManager#DisableTutorial","Garage#OnEnable","Garage#OnChoper","MovePoint#Delay#get","MovePoint#MoveDuration#get","MoneyBalance#Money#get","MoneyBalance#init","MoneyBalance#Start","MoneyBalance#SetMoney","MoneyBalance#TakeMoney","MoneyBalance#UpdateText","MoneyBalance#AnimateMoneyChange","MoneyController#Instance#get","MoneyController#Awake","MoneyController#Start","MoneyController#OnDestroy","MoneyController#HandleMoneyChanged","MoneyController#TryBuild","MoneyController#ActivateBuildWithDelay","MoneyController#ChangeBalance","MoneyController#ChangeBalance$1","MoneyController#ChangeBalanceWithVisual$1","MoneyController#ChangeBalanceWithVisual","MoneyController#GetBalance","MoneyFlyAnimation#init","MoneyFlyAnimation#Awake","MoneyFlyAnimation#InitPool","MoneyFlyAnimation#FlyCoins","MoneyFlyAnimation#FlyCoinsFromUIToWorld","MoneyFlyAnimation#FlyCoinsFromWorldToUI","MoneyFlyAnimation#FlyCoinsFromUIToWorldCoroutine","MoneyFlyAnimation#GetCoinFromPool","SimpleAudioManager#init","SimpleAudioManager#init","SimpleAudioManager#Awake","SimpleAudioManager#Update","SimpleAudioManager#PlayProgressBarSound","SimpleAudioManager#PlayConveyorAnimationSound","SimpleAudioManager#PlayLogLoadSound","SimpleAudioManager#PlayButtonClickSound","SimpleAudioManager#PlayHouseAppearSound","SimpleAudioManager#PlaySound","Tree#init","Tree#Start","Tree#OnTriggerEnter","Tree#FlashColorRoutine","Tree#Take","Truck#IsFull#get","Truck#RemainingCapacity#get","Truck#MaxCapacity#get","Truck#IsBeingLoadedByChopper#get","Truck#CurrentCargoCount#get","Truck#init","Truck#Start","Truck#LoadLog","Truck#LoadLogs","Truck#LoadLogs$1","Truck#ResetChoppers","Truck#Clear","Truck#SetAtUnloadPoint","Truck#OnEnable","Truck#OnDisable","Truck#NotifyTruckManagerOnFull","Truck#UpdateProgressBar","TruckManager#Trucks#get","TruckManager#init","TruckManager#Awake","TruckManager#Start","TruckManager#OnDestroy","TruckManager#HandleTruckFull","TruckManager#CheckAndSendTrucks","TruckManager#GetAvailableTruck","TruckManager#GetTruckByIndex","TruckManager#GetAllTrucks","TruckManager#AreAllTrucksFull","TruckManager#AddFullTruck","TruckManager#RemoveFullTruck","TruckMover#IsMoving#get","TruckMover#init","TruckMover#Awake","TruckMover#OnDestroy","TruckMover#HandleTruckReadyToSend","TruckMover#HandleTruckFull","TruckMover#MoveToUnloadAndBackRoutine","TruckMover#UnloadTruckRoutine","TruckProgressBarSetup#init","TruckProgressBarSetup#Start","TruckProgressBarSetup#AssignProgressBar","TruckUnloadPoint#UnloadDuration#get","TruckUnloadPoint#StopPosition#get","TruckUnloadPoint#init","UnloadPoint#TargetTruck#get","UnloadPoint#init","UnloadPoint#CanUnload","UnloadPoint#CanUnload$1"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["AdaptiveCameraPosition#init","AdaptiveCameraPosition#Awake","AdaptiveCameraPosition#Update","AdaptiveCameraPosition#GetIsPortrait","AdaptiveCameraPosition#UpdateCameraMode","AdaptiveCameraPosition#ForceUpdate","AdaptiveCameraPosition.CameraSettings#init","BalanceManager#CurrentBalance#get","BalanceManager#init","BalanceManager#Awake","BalanceManager#AddMoney","BalanceManager#SpendMoney","Build#SpawnBuild","BuildManager#Awake","BuildManager#OnDestroy","BuildManager#OnBuildSuccess","BuildManager#GetConstructedBuildingsCount","ButtonLight#init","ButtonLight#Start","ButtonLight#StartFlashing","ButtonLight#FlashColorRoutine","Character#IsFull#get","Character#CargoCount#get","Character#init","Character#OnTriggerEnter","Character#TakeTree","Character#UnloadToTruck","Character#Unload","CharactersMover#init","CharactersMover#Start","CharactersMover#OnDestroy","CharactersMover#HandleAllTrucksFull","CharactersMover#HandleRetryUnloading","CharactersMover#HandleCargoFull","CharactersMover#HandleCargoEmpty","CharactersMover#MoveToNextPoint","CharactersMover#HandleArrivalAtPoint","CharactersMover#CheckForStuckState","CharactersMover#IsAtDestination","CharactersMover#FindNextAvailableUnloadPoint","ChopperManager#Awake","ChopperManager#ResetTargetTruck","ChopperManager#GetTargetTruck","ChopperManager#IsTargetTruck","ClickCta#Click","Conveyor#init","Conveyor#Start","Conveyor#StartAnimationAfterDelay","Conveyor#StartCanvasAnimationAfterDelay","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","GameManager#init","GameManager#init","GameManager#Awake","GameManager#Start","GameManager#CheckBuiltBuildingsStatus","GameManager#InitializeBuildButtons","GameManager#OnDestroy","GameManager#RegisterUserActivity","GameManager#ResetIdleTimer","GameManager#StartIdleCoroutine","GameManager#IdleCoroutine","GameManager#ShowFirstTutorial","GameManager#ShowSecondTutorial","GameManager#Tutorial2Coroutine","GameManager#HighlightActiveBuildButtons","GameManager#CheckBalanceThresholds","GameManager#CheckSecondBuilding","GameManager#EnableUpgradeButton","GameManager#OnUpgradeButtonClicked","GameManager#OnSecondButtonClicked","GameManager#StartPackShotCoroutine","GameManager#PackShotIdleCoroutine","GameManager#CheckPackShotActivation","GameManager#DisableTutorial","Garage#OnEnable","Garage#OnChoper","MovePoint#Delay#get","MovePoint#MoveDuration#get","MoneyBalance#Money#get","MoneyBalance#init","MoneyBalance#Start","MoneyBalance#SetMoney","MoneyBalance#TakeMoney","MoneyBalance#UpdateText","MoneyBalance#AnimateMoneyChange","MoneyController#Instance#get","MoneyController#Awake","MoneyController#Start","MoneyController#OnDestroy","MoneyController#HandleMoneyChanged","MoneyController#TryBuild","MoneyController#ActivateBuildWithDelay","MoneyController#ChangeBalance","MoneyController#ChangeBalance$1","MoneyController#ChangeBalanceWithVisual$1","MoneyController#ChangeBalanceWithVisual","MoneyController#GetBalance","MoneyFlyAnimation#init","MoneyFlyAnimation#Awake","MoneyFlyAnimation#InitPool","MoneyFlyAnimation#FlyCoins","MoneyFlyAnimation#FlyCoinsFromUIToWorld","MoneyFlyAnimation#FlyCoinsFromWorldToUI","MoneyFlyAnimation#FlyCoinsFromUIToWorldCoroutine","MoneyFlyAnimation#GetCoinFromPool","SimpleAudioManager#init","SimpleAudioManager#init","SimpleAudioManager#Awake","SimpleAudioManager#Update","SimpleAudioManager#PlayProgressBarSound","SimpleAudioManager#PlayConveyorAnimationSound","SimpleAudioManager#PlayLogLoadSound","SimpleAudioManager#PlayButtonClickSound","SimpleAudioManager#PlayHouseAppearSound","SimpleAudioManager#PlaySound","Tree#init","Tree#Start","Tree#OnTriggerEnter","Tree#FlashColorRoutine","Tree#Take","Truck#IsFull#get","Truck#RemainingCapacity#get","Truck#MaxCapacity#get","Truck#IsBeingLoadedByChopper#get","Truck#CurrentCargoCount#get","Truck#init","Truck#Start","Truck#LoadLog","Truck#LoadLogs","Truck#LoadLogs$1","Truck#ResetChoppers","Truck#Clear","Truck#SetAtUnloadPoint","Truck#OnEnable","Truck#OnDisable","Truck#NotifyTruckManagerOnFull","Truck#UpdateProgressBar","TruckManager#Trucks#get","TruckManager#init","TruckManager#Awake","TruckManager#Start","TruckManager#OnDestroy","TruckManager#HandleTruckFull","TruckManager#CheckAndSendTrucks","TruckManager#GetAvailableTruck","TruckManager#GetTruckByIndex","TruckManager#GetAllTrucks","TruckManager#AreAllTrucksFull","TruckManager#AddFullTruck","TruckManager#RemoveFullTruck","TruckMover#IsMoving#get","TruckMover#init","TruckMover#Awake","TruckMover#OnDestroy","TruckMover#HandleTruckReadyToSend","TruckMover#HandleTruckFull","TruckMover#MoveToUnloadAndBackRoutine","TruckMover#UnloadTruckRoutine","TruckProgressBarSetup#init","TruckProgressBarSetup#Start","TruckProgressBarSetup#AssignProgressBar","TruckUnloadPoint#UnloadDuration#get","TruckUnloadPoint#StopPosition#get","TruckUnloadPoint#init","UnloadPoint#TargetTruck#get","UnloadPoint#init","UnloadPoint#CanUnload","UnloadPoint#CanUnload$1"]' ) ); }
 /**
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -268,7 +268,8 @@ if ( TRACE ) { TRACE( "Build#SpawnBuild", this ); }
             _build1: null,
             _build2: null,
             _build3: null,
-            _moneyController: null
+            _moneyController: null,
+            _animator: null
         },
         methods: {
             /*BuildManager.Awake start.*/
@@ -285,6 +286,8 @@ if ( TRACE ) { TRACE( "BuildManager#Awake", this ); }
                     this._moneyController.TryBuild(100, this._build3);
                 }));
                 this._moneyController.addOnBuildSuccess(Bridge.fn.cacheBind(this, this.OnBuildSuccess));
+                this._moneyController.addOnBuildSuccess(Bridge.fn.cacheBind(this, this.OnBuildSuccess));
+                this._animator = this.GetComponent(UnityEngine.Animator);
             },
             /*BuildManager.Awake end.*/
 
@@ -316,6 +319,24 @@ if ( TRACE ) { TRACE( "BuildManager#OnBuildSuccess", this ); }
             },
             /*BuildManager.OnBuildSuccess end.*/
 
+            /*BuildManager.GetConstructedBuildingsCount start.*/
+            GetConstructedBuildingsCount: function () {
+if ( TRACE ) { TRACE( "BuildManager#GetConstructedBuildingsCount", this ); }
+
+                var count = 0;
+                if (UnityEngine.MonoBehaviour.op_Inequality(this._buildButton1, null) && !this._buildButton1.gameObject.activeInHierarchy) {
+                    count = (count + 1) | 0;
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this._buildButton2, null) && !this._buildButton2.gameObject.activeInHierarchy) {
+                    count = (count + 1) | 0;
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this._buildButton3, null) && !this._buildButton3.gameObject.activeInHierarchy) {
+                    count = (count + 1) | 0;
+                }
+                return count;
+            },
+            /*BuildManager.GetConstructedBuildingsCount end.*/
+
 
         }
     });
@@ -330,7 +351,8 @@ if ( TRACE ) { TRACE( "BuildManager#OnBuildSuccess", this ); }
             _flashColor: null,
             flashSpeed: 0,
             pauseBetweenFlashes: 0,
-            flashCount: 0
+            flashCount: 0,
+            _flashCoroutine: null
         },
         ctors: {
             init: function () {
@@ -353,10 +375,25 @@ if ( TRACE ) { TRACE( "ButtonLight#Start", this ); }
                 if (this.TryGetComponent$1(UnityEngine.Renderer, renderer)) {
                     this._material = renderer.v.material;
                     this._originalColor = this._material.color.$clone();
-                    this.StartCoroutine$1(this.FlashColorRoutine());
                 }
             },
             /*ButtonLight.Start end.*/
+
+            /*ButtonLight.StartFlashing start.*/
+            StartFlashing: function () {
+if ( TRACE ) { TRACE( "ButtonLight#StartFlashing", this ); }
+
+                if (this._flashCoroutine != null) {
+                    this.StopCoroutine$2(this._flashCoroutine);
+                }
+                var renderer = { };
+                if (this._material == null && this.TryGetComponent$1(UnityEngine.Renderer, renderer)) {
+                    this._material = renderer.v.material;
+                    this._originalColor = this._material.color.$clone();
+                }
+                this._flashCoroutine = this.StartCoroutine$1(this.FlashColorRoutine());
+            },
+            /*ButtonLight.StartFlashing end.*/
 
             /*ButtonLight.FlashColorRoutine start.*/
             FlashColorRoutine: function () {
@@ -727,7 +764,14 @@ if ( TRACE ) { TRACE( "CharactersMover#MoveToNextPoint", this ); }
                 }
                 var currentPoint = this._currentRoute[this._currentPointIndex];
                 var targetPos = currentPoint.transform.position.$clone();
-                var moveDuration = currentPoint.MoveDuration;
+                var moveDuration;
+                if (this._isUnloading && Bridge.is(currentPoint, UnloadPoint) && this._visitedDefaultPointBeforeUnload) {
+                    var customSpeed = 5.0;
+                    var distance = pc.Vec3.distance( this.transform.position, currentPoint.transform.position );
+                    moveDuration = distance / customSpeed;
+                } else {
+                    moveDuration = currentPoint.MoveDuration;
+                }
                 var direction = targetPos.$clone().sub( this.transform.position );
                 direction.y = 0.0;
                 if (!pc.Vec3.equals( direction, pc.Vec3.ZERO.clone() )) {
@@ -2898,6 +2942,7 @@ if ( TRACE ) { TRACE( "GameManager#init", this ); }
             tutorialObject: null,
             tutorialAnimator: null,
             idleTimeForTutorial: 0,
+            buildButtonLights: null,
             upgradeButton: null,
             upgradeButtonGameObject: null,
             secondRequiredButton: null,
@@ -2908,9 +2953,12 @@ if ( TRACE ) { TRACE( "GameManager#init", this ); }
             tutorial2Shown: false,
             upgradeButtonEnabled: false,
             userIdle: false,
+            isLight: false,
             idleTimer: 0,
             idleTimerForPackShot: 0,
+            firstBuildingActive: false,
             secondBuildingActive: false,
+            thirdBuildingActive: false,
             userClickedButton: false,
             packShotCoroutine: null,
             idleCoroutine: null,
@@ -2923,13 +2971,16 @@ if ( TRACE ) { TRACE( "GameManager#init", this ); }
 if ( TRACE ) { TRACE( "GameManager#init", this ); }
 
                 this.idleTimeForTutorial = 3.0;
+                this.buildButtonLights = new (System.Collections.Generic.List$1(ButtonLight)).ctor();
                 this.tutorialShown = false;
                 this.tutorial2Shown = false;
                 this.upgradeButtonEnabled = false;
                 this.userIdle = true;
                 this.idleTimer = 0.0;
                 this.idleTimerForPackShot = 0.0;
+                this.firstBuildingActive = false;
                 this.secondBuildingActive = false;
+                this.thirdBuildingActive = false;
                 this.userClickedButton = false;
                 this.isUpgradeClicked = false;
                 this.isSecondButtonClicked = false;
@@ -2977,9 +3028,61 @@ if ( TRACE ) { TRACE( "GameManager#Start", this ); }
                 if (UnityEngine.MonoBehaviour.op_Inequality(this.moneyController, null) && this.moneyController.GetBalance() >= 100) {
                     this.EnableUpgradeButton();
                 }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.buildManager, null) && this.buildManager.GetConstructedBuildingsCount() > 0) {
+                    this.tutorialShown = true;
+                    this.userClickedButton = true;
+                    this.CheckBuiltBuildingsStatus();
+                }
+                this.InitializeBuildButtons();
                 this.StartIdleCoroutine();
+                this.HighlightActiveBuildButtons();
             },
             /*GameManager.Start end.*/
+
+            /*GameManager.CheckBuiltBuildingsStatus start.*/
+            CheckBuiltBuildingsStatus: function () {
+if ( TRACE ) { TRACE( "GameManager#CheckBuiltBuildingsStatus", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.buildManager, null)) {
+                    if (!this.buildManager._buildButton1.gameObject.activeInHierarchy) {
+                        this.firstBuildingActive = true;
+                    }
+                    if (!this.buildManager._buildButton2.gameObject.activeInHierarchy) {
+                        this.secondBuildingActive = true;
+                    }
+                    if (!this.buildManager._buildButton3.gameObject.activeInHierarchy) {
+                        this.thirdBuildingActive = true;
+                    }
+                }
+            },
+            /*GameManager.CheckBuiltBuildingsStatus end.*/
+
+            /*GameManager.InitializeBuildButtons start.*/
+            InitializeBuildButtons: function () {
+if ( TRACE ) { TRACE( "GameManager#InitializeBuildButtons", this ); }
+
+                var $t;
+                if (this.buildButtonLights.Count !== 0) {
+                    return;
+                }
+                var allLights = UnityEngine.Object.FindObjectsOfType(ButtonLight);
+                var array = allLights;
+                $t = Bridge.getEnumerator(array);
+                try {
+                    while ($t.moveNext()) {
+                        var light = $t.Current;
+                        if (UnityEngine.MonoBehaviour.op_Inequality(light, null) && light.gameObject.activeInHierarchy) {
+                            this.buildButtonLights.add(light);
+                            UnityEngine.Debug.Log$1("\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0430 \u043a\u043d\u043e\u043f\u043a\u0430 \u043f\u043e\u0434\u0441\u0432\u0435\u0442\u043a\u0438: " + (light.gameObject.name || ""));
+                        }
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
+            },
+            /*GameManager.InitializeBuildButtons end.*/
 
             /*GameManager.OnDestroy start.*/
             OnDestroy: function () {
@@ -3059,7 +3162,7 @@ if ( TRACE ) { TRACE( "GameManager#IdleCoroutine", this ); }
                                 case 2: {
                                     this.idleTimer += 1.0;
                                         this.userIdle = true;
-                                        if (this.idleTimer >= this.idleTimeForTutorial && !this.tutorialShown && !this.secondBuildingActive && !this.userClickedButton) {
+                                        if (this.idleTimer >= this.idleTimeForTutorial && !this.tutorialShown && !this.secondBuildingActive && !this.thirdBuildingActive && !this.userClickedButton) {
                                             this.ShowFirstTutorial();
                                         }
 
@@ -3097,7 +3200,7 @@ if ( TRACE ) { TRACE( "GameManager#ShowFirstTutorial", this ); }
             ShowSecondTutorial: function () {
 if ( TRACE ) { TRACE( "GameManager#ShowSecondTutorial", this ); }
 
-                if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null) && UnityEngine.Component.op_Inequality(this.tutorialAnimator, null) && !this.tutorial2Shown && !this.secondBuildingActive) {
+                if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null) && UnityEngine.Component.op_Inequality(this.tutorialAnimator, null) && !this.tutorial2Shown && !this.secondBuildingActive && !this.thirdBuildingActive) {
                     this.tutorialObject.SetActive(true);
                     this.tutorialAnimator.Play$2("Tutorial2");
                     this.tutorial2Shown = true;
@@ -3119,14 +3222,15 @@ if ( TRACE ) { TRACE( "GameManager#Tutorial2Coroutine", this ); }
                         for (;;) {
                             switch ($step) {
                                 case 0: {
-                                    $enumerator.current = new UnityEngine.WaitForSeconds(1.0);
+                                    this.InitializeBuildButtons();
+                                        this.HighlightActiveBuildButtons();
+                                        this.isLight = true;
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(3.0);
                                         $step = 1;
                                         return true;
                                 }
                                 case 1: {
-                                    if (!this.tutorial2Shown && !this.secondBuildingActive) {
-                                            this.ShowSecondTutorial();
-                                        }
+                                    this.ShowSecondTutorial();
 
                                 }
                                 default: {
@@ -3143,11 +3247,37 @@ if ( TRACE ) { TRACE( "GameManager#Tutorial2Coroutine", this ); }
             },
             /*GameManager.Tutorial2Coroutine end.*/
 
+            /*GameManager.HighlightActiveBuildButtons start.*/
+            HighlightActiveBuildButtons: function () {
+if ( TRACE ) { TRACE( "GameManager#HighlightActiveBuildButtons", this ); }
+
+                var $t;
+                if (this.buildButtonLights.Count === 0 && !this.isLight) {
+                    this.InitializeBuildButtons();
+                }
+                $t = Bridge.getEnumerator(this.buildButtonLights);
+                try {
+                    while ($t.moveNext()) {
+                        var button = $t.Current;
+                        if (UnityEngine.MonoBehaviour.op_Inequality(button, null) && button.gameObject.activeInHierarchy) {
+                            button.StartFlashing();
+                        }
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
+            },
+            /*GameManager.HighlightActiveBuildButtons end.*/
+
             /*GameManager.CheckBalanceThresholds start.*/
             CheckBalanceThresholds: function (newBalance) {
 if ( TRACE ) { TRACE( "GameManager#CheckBalanceThresholds", this ); }
 
-                if (newBalance >= 20 && !this.tutorial2Shown && !this.secondBuildingActive) {
+                UnityEngine.Debug.Log$1(System.String.format("\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u0431\u0430\u043b\u0430\u043d\u0441\u0430: {0}, \u043f\u043e\u0440\u043e\u0433: {1}, tutorial2Shown: {2}, firstBuilding: {3}, secondBuilding: {4}", Bridge.box(newBalance, System.Int32), Bridge.box(20, System.Int32), Bridge.box(this.tutorial2Shown, System.Boolean, System.Boolean.toString), Bridge.box(this.firstBuildingActive, System.Boolean, System.Boolean.toString), Bridge.box(this.secondBuildingActive, System.Boolean, System.Boolean.toString)));
+                if (newBalance >= 20 && !this.tutorial2Shown && !this.secondBuildingActive && !this.thirdBuildingActive) {
+                    UnityEngine.Debug.Log$1("\u0423\u0441\u043b\u043e\u0432\u0438\u0435 \u0434\u043b\u044f \u043f\u043e\u043a\u0430\u0437\u0430 \u0432\u0442\u043e\u0440\u043e\u0433\u043e \u0442\u0443\u0442\u043e\u0440\u0438\u0430\u043b\u0430 \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u043e!");
                     if (this.tutorial2Coroutine != null) {
                         this.StopCoroutine$2(this.tutorial2Coroutine);
                     }
@@ -3166,11 +3296,21 @@ if ( TRACE ) { TRACE( "GameManager#CheckBalanceThresholds", this ); }
             CheckSecondBuilding: function (builtObject) {
 if ( TRACE ) { TRACE( "GameManager#CheckSecondBuilding", this ); }
 
-                if (UnityEngine.GameObject.op_Inequality(builtObject, null)) {
-                    this.secondBuildingActive = true;
-                    if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null)) {
-                        this.tutorialObject.SetActive(false);
+                if (!(UnityEngine.GameObject.op_Inequality(builtObject, null))) {
+                    return;
+                }
+                this.userClickedButton = true;
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.buildManager, null)) {
+                    if (UnityEngine.GameObject.op_Equality(builtObject, this.buildManager._build1)) {
+                        this.firstBuildingActive = true;
+                    } else if (UnityEngine.GameObject.op_Equality(builtObject, this.buildManager._build2)) {
+                        this.secondBuildingActive = true;
+                    } else if (UnityEngine.GameObject.op_Equality(builtObject, this.buildManager._build3)) {
+                        this.thirdBuildingActive = true;
                     }
+                }
+                if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null) && this.tutorialObject.activeSelf) {
+                    this.tutorialObject.SetActive(false);
                 }
             },
             /*GameManager.CheckSecondBuilding end.*/
@@ -3182,6 +3322,7 @@ if ( TRACE ) { TRACE( "GameManager#EnableUpgradeButton", this ); }
                 if (UnityEngine.MonoBehaviour.op_Inequality(this.upgradeButton, null)) {
                     this.upgradeButton.gameObject.SetActive(true);
                     this.upgradeButtonGameObject.SetActive(true);
+                    this.HighlightActiveBuildButtons();
                     this.StartPackShotCoroutine();
                     this.upgradeButtonEnabled = true;
                     this.idleTimerForPackShot = 0.0;
@@ -3207,7 +3348,10 @@ if ( TRACE ) { TRACE( "GameManager#OnUpgradeButtonClicked", this ); }
             OnSecondButtonClicked: function () {
 if ( TRACE ) { TRACE( "GameManager#OnSecondButtonClicked", this ); }
 
-                this.isSecondButtonClicked = true;
+                if (UnityEngine.GameObject.op_Inequality(this.tutorialObject, null)) {
+                    this.tutorialObject.SetActive(false);
+                }
+                this.secondBuildingActive = true;
                 this.userClickedButton = true;
                 this.CheckPackShotActivation();
                 if (this.packShotCoroutine != null) {
@@ -3425,7 +3569,7 @@ if ( TRACE ) { TRACE( "MoneyBalance#AnimateMoneyChange", this ); }
                                             DG.Tweening.TweenExtensions.Kill(this.moneyTween);
                                         }
                                         startValue = this._money;
-                                        this.moneyTween = DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions), DG.Tweening.DOTween.To$2(function () {
+                                        this.moneyTween = DG.Tweening.TweenSettingsExtensions.SetUpdate(DG.Tweening.Core.TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions), DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions), DG.Tweening.DOTween.To$2(function () {
                                             return startValue;
                                         }, Bridge.fn.bind(this, function (x) {
                                             startValue = x;
@@ -3434,8 +3578,7 @@ if ( TRACE ) { TRACE( "MoneyBalance#AnimateMoneyChange", this ); }
                                             this._money = targetValue;
                                             this.UpdateText(this._money);
                                             !Bridge.staticEquals(this.OnMoneyChanged, null) ? this.OnMoneyChanged(this._money) : null;
-                                        }));
-                                        !Bridge.staticEquals(this.OnMoneyChanged, null) ? this.OnMoneyChanged(targetValue) : null;
+                                        })), true);
 
                                 }
                                 default: {
@@ -4774,7 +4917,6 @@ if ( TRACE ) { TRACE( "TruckMover#MoveToUnloadAndBackRoutine", this ); }
                                         moveTween2 = DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOMove(this.transform, this._initialPosition.$clone(), this._moveDuration), this._moveEase), Bridge.fn.bind(this, function () {
                                             this._isMoving = false;
                                             this._truck.IsAtUnloadPoint = true;
-                                            UnityEngine.Debug.Log(Bridge.box(this._truck.IsAtUnloadPoint, System.Boolean, System.Boolean.toString));
                                             if (UnityEngine.Component.op_Inequality(this._engineSound, null)) {
                                                 this._engineSound.Stop();
                                             }
@@ -5056,11 +5198,11 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
     /*Build end.*/
 
     /*BuildManager start.*/
-    $m("BuildManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"OnBuildSuccess","t":8,"pi":[{"n":"buildObject","pt":$n[1].GameObject,"ps":0}],"sn":"OnBuildSuccess","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_build1","t":4,"rt":$n[1].GameObject,"sn":"_build1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_build2","t":4,"rt":$n[1].GameObject,"sn":"_build2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_build3","t":4,"rt":$n[1].GameObject,"sn":"_build3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButton1","t":4,"rt":$n[2].Button,"sn":"_buildButton1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButton2","t":4,"rt":$n[2].Button,"sn":"_buildButton2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButton3","t":4,"rt":$n[2].Button,"sn":"_buildButton3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButtonObject1","t":4,"rt":$n[1].GameObject,"sn":"_buildButtonObject1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_buildButtonObject2","t":4,"rt":$n[1].GameObject,"sn":"_buildButtonObject2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moneyController","t":4,"rt":MoneyController,"sn":"_moneyController"}]}; }, $n);
+    $m("BuildManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"GetConstructedBuildingsCount","t":8,"sn":"GetConstructedBuildingsCount","rt":$n[0].Int32,"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"OnBuildSuccess","t":8,"pi":[{"n":"buildObject","pt":$n[1].GameObject,"ps":0}],"sn":"OnBuildSuccess","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"_animator","t":4,"rt":$n[1].Animator,"sn":"_animator"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_build1","t":4,"rt":$n[1].GameObject,"sn":"_build1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_build2","t":4,"rt":$n[1].GameObject,"sn":"_build2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_build3","t":4,"rt":$n[1].GameObject,"sn":"_build3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButton1","t":4,"rt":$n[2].Button,"sn":"_buildButton1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButton2","t":4,"rt":$n[2].Button,"sn":"_buildButton2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButton3","t":4,"rt":$n[2].Button,"sn":"_buildButton3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButtonObject1","t":4,"rt":$n[1].GameObject,"sn":"_buildButtonObject1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"_buildButtonObject2","t":4,"rt":$n[1].GameObject,"sn":"_buildButtonObject2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moneyController","t":4,"rt":MoneyController,"sn":"_moneyController"}]}; }, $n);
     /*BuildManager end.*/
 
     /*ButtonLight start.*/
-    $m("ButtonLight", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"FlashColorRoutine","t":8,"sn":"FlashColorRoutine","rt":$n[3].IEnumerator},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"_flashColor","t":4,"rt":$n[1].Color,"sn":"_flashColor"},{"a":1,"n":"_material","t":4,"rt":$n[1].Material,"sn":"_material"},{"a":1,"n":"_originalColor","t":4,"rt":$n[1].Color,"sn":"_originalColor"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"flashCount","t":4,"rt":$n[0].Int32,"sn":"flashCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"flashSpeed","t":4,"rt":$n[0].Single,"sn":"flashSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pauseBetweenFlashes","t":4,"rt":$n[0].Single,"sn":"pauseBetweenFlashes","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    $m("ButtonLight", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"FlashColorRoutine","t":8,"sn":"FlashColorRoutine","rt":$n[3].IEnumerator},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"StartFlashing","t":8,"sn":"StartFlashing","rt":$n[0].Void},{"a":1,"n":"_flashColor","t":4,"rt":$n[1].Color,"sn":"_flashColor"},{"a":1,"n":"_flashCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"_flashCoroutine"},{"a":1,"n":"_material","t":4,"rt":$n[1].Material,"sn":"_material"},{"a":1,"n":"_originalColor","t":4,"rt":$n[1].Color,"sn":"_originalColor"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"flashCount","t":4,"rt":$n[0].Int32,"sn":"flashCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"flashSpeed","t":4,"rt":$n[0].Single,"sn":"flashSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pauseBetweenFlashes","t":4,"rt":$n[0].Single,"sn":"pauseBetweenFlashes","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*ButtonLight end.*/
 
     /*Character start.*/
@@ -5092,7 +5234,7 @@ if ( TRACE ) { TRACE( "UnloadPoint#CanUnload$1", this ); }
     /*Forklift end.*/
 
     /*GameManager start.*/
-    $m("GameManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CheckBalanceThresholds","t":8,"pi":[{"n":"newBalance","pt":$n[0].Int32,"ps":0}],"sn":"CheckBalanceThresholds","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"CheckPackShotActivation","t":8,"sn":"CheckPackShotActivation","rt":$n[0].Void},{"a":1,"n":"CheckSecondBuilding","t":8,"pi":[{"n":"builtObject","pt":$n[1].GameObject,"ps":0}],"sn":"CheckSecondBuilding","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":2,"n":"DisableTutorial","t":8,"sn":"DisableTutorial","rt":$n[0].Void},{"a":1,"n":"EnableUpgradeButton","t":8,"sn":"EnableUpgradeButton","rt":$n[0].Void},{"a":1,"n":"IdleCoroutine","t":8,"sn":"IdleCoroutine","rt":$n[3].IEnumerator},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"OnSecondButtonClicked","t":8,"sn":"OnSecondButtonClicked","rt":$n[0].Void},{"a":1,"n":"OnUpgradeButtonClicked","t":8,"sn":"OnUpgradeButtonClicked","rt":$n[0].Void},{"a":1,"n":"PackShotIdleCoroutine","t":8,"sn":"PackShotIdleCoroutine","rt":$n[3].IEnumerator},{"a":2,"n":"RegisterUserActivity","t":8,"sn":"RegisterUserActivity","rt":$n[0].Void},{"a":1,"n":"ResetIdleTimer","t":8,"sn":"ResetIdleTimer","rt":$n[0].Void},{"a":1,"n":"ShowFirstTutorial","t":8,"sn":"ShowFirstTutorial","rt":$n[0].Void},{"a":1,"n":"ShowSecondTutorial","t":8,"sn":"ShowSecondTutorial","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"StartIdleCoroutine","t":8,"sn":"StartIdleCoroutine","rt":$n[0].Void},{"a":1,"n":"StartPackShotCoroutine","t":8,"sn":"StartPackShotCoroutine","rt":$n[0].Void},{"a":1,"n":"Tutorial2Coroutine","t":8,"sn":"Tutorial2Coroutine","rt":$n[3].IEnumerator},{"a":2,"n":"Instance","is":true,"t":16,"rt":GameManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":GameManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[GameManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":1,"n":"TUTORIAL2_BALANCE_THRESHOLD","is":true,"t":4,"rt":$n[0].Int32,"sn":"TUTORIAL2_BALANCE_THRESHOLD","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"UPGRADE_BUTTON_BALANCE_THRESHOLD","is":true,"t":4,"rt":$n[0].Int32,"sn":"UPGRADE_BUTTON_BALANCE_THRESHOLD","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"buildManager","t":4,"rt":BuildManager,"sn":"buildManager"},{"a":1,"n":"idleCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"idleCoroutine"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"idleTimeForTutorial","t":4,"rt":$n[0].Single,"sn":"idleTimeForTutorial","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"idleTimer","t":4,"rt":$n[0].Single,"sn":"idleTimer","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"idleTimerForPackShot","t":4,"rt":$n[0].Single,"sn":"idleTimerForPackShot","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isSecondButtonClicked","t":4,"rt":$n[0].Boolean,"sn":"isSecondButtonClicked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isUpgradeClicked","t":4,"rt":$n[0].Boolean,"sn":"isUpgradeClicked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u041f\u0440\u0438\u0432\u044f\u0437\u043a\u0438 \u043a \u0438\u0433\u0440\u043e\u0432\u044b\u043c \u043e\u0431\u044a\u0435\u043a\u0442\u0430\u043c"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"moneyController","t":4,"rt":MoneyController,"sn":"moneyController"},{"a":1,"n":"packShotCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"packShotCoroutine"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"packShotObject","t":4,"rt":$n[1].GameObject,"sn":"packShotObject"},{"a":1,"n":"secondBuildingActive","t":4,"rt":$n[0].Boolean,"sn":"secondBuildingActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"secondRequiredButton","t":4,"rt":$n[2].Button,"sn":"secondRequiredButton"},{"a":1,"n":"tutorial2Coroutine","t":4,"rt":$n[1].Coroutine,"sn":"tutorial2Coroutine"},{"a":1,"n":"tutorial2Shown","t":4,"rt":$n[0].Boolean,"sn":"tutorial2Shown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tutorialAnimator","t":4,"rt":$n[1].Animator,"sn":"tutorialAnimator"},{"at":[new UnityEngine.HeaderAttribute("\u0422\u0443\u0442\u043e\u0440\u0438\u0430\u043b"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tutorialObject","t":4,"rt":$n[1].GameObject,"sn":"tutorialObject"},{"a":1,"n":"tutorialShown","t":4,"rt":$n[0].Boolean,"sn":"tutorialShown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u0411\u0430\u043b\u0430\u043d\u0441 \u0438 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u044f"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"upgradeButton","t":4,"rt":$n[2].Button,"sn":"upgradeButton"},{"a":1,"n":"upgradeButtonEnabled","t":4,"rt":$n[0].Boolean,"sn":"upgradeButtonEnabled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"upgradeButtonGameObject","t":4,"rt":$n[1].GameObject,"sn":"upgradeButtonGameObject"},{"a":1,"n":"userClickedButton","t":4,"rt":$n[0].Boolean,"sn":"userClickedButton","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"userIdle","t":4,"rt":$n[0].Boolean,"sn":"userIdle","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":GameManager,"sn":"Instance"}]}; }, $n);
+    $m("GameManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CheckBalanceThresholds","t":8,"pi":[{"n":"newBalance","pt":$n[0].Int32,"ps":0}],"sn":"CheckBalanceThresholds","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"CheckBuiltBuildingsStatus","t":8,"sn":"CheckBuiltBuildingsStatus","rt":$n[0].Void},{"a":1,"n":"CheckPackShotActivation","t":8,"sn":"CheckPackShotActivation","rt":$n[0].Void},{"a":1,"n":"CheckSecondBuilding","t":8,"pi":[{"n":"builtObject","pt":$n[1].GameObject,"ps":0}],"sn":"CheckSecondBuilding","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":2,"n":"DisableTutorial","t":8,"sn":"DisableTutorial","rt":$n[0].Void},{"a":1,"n":"EnableUpgradeButton","t":8,"sn":"EnableUpgradeButton","rt":$n[0].Void},{"a":1,"n":"HighlightActiveBuildButtons","t":8,"sn":"HighlightActiveBuildButtons","rt":$n[0].Void},{"a":1,"n":"IdleCoroutine","t":8,"sn":"IdleCoroutine","rt":$n[3].IEnumerator},{"a":1,"n":"InitializeBuildButtons","t":8,"sn":"InitializeBuildButtons","rt":$n[0].Void},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"OnSecondButtonClicked","t":8,"sn":"OnSecondButtonClicked","rt":$n[0].Void},{"a":1,"n":"OnUpgradeButtonClicked","t":8,"sn":"OnUpgradeButtonClicked","rt":$n[0].Void},{"a":1,"n":"PackShotIdleCoroutine","t":8,"sn":"PackShotIdleCoroutine","rt":$n[3].IEnumerator},{"a":2,"n":"RegisterUserActivity","t":8,"sn":"RegisterUserActivity","rt":$n[0].Void},{"a":1,"n":"ResetIdleTimer","t":8,"sn":"ResetIdleTimer","rt":$n[0].Void},{"a":1,"n":"ShowFirstTutorial","t":8,"sn":"ShowFirstTutorial","rt":$n[0].Void},{"a":1,"n":"ShowSecondTutorial","t":8,"sn":"ShowSecondTutorial","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"StartIdleCoroutine","t":8,"sn":"StartIdleCoroutine","rt":$n[0].Void},{"a":1,"n":"StartPackShotCoroutine","t":8,"sn":"StartPackShotCoroutine","rt":$n[0].Void},{"a":1,"n":"Tutorial2Coroutine","t":8,"sn":"Tutorial2Coroutine","rt":$n[3].IEnumerator},{"a":2,"n":"Instance","is":true,"t":16,"rt":GameManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":GameManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[GameManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":1,"n":"TUTORIAL2_BALANCE_THRESHOLD","is":true,"t":4,"rt":$n[0].Int32,"sn":"TUTORIAL2_BALANCE_THRESHOLD","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"UPGRADE_BUTTON_BALANCE_THRESHOLD","is":true,"t":4,"rt":$n[0].Int32,"sn":"UPGRADE_BUTTON_BALANCE_THRESHOLD","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.HeaderAttribute("\u041f\u043e\u0434\u0441\u0432\u0435\u0442\u043a\u0430 \u043a\u043d\u043e\u043f\u043e\u043a"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"buildButtonLights","t":4,"rt":$n[4].List$1(ButtonLight),"sn":"buildButtonLights"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"buildManager","t":4,"rt":BuildManager,"sn":"buildManager"},{"a":1,"n":"firstBuildingActive","t":4,"rt":$n[0].Boolean,"sn":"firstBuildingActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"idleCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"idleCoroutine"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"idleTimeForTutorial","t":4,"rt":$n[0].Single,"sn":"idleTimeForTutorial","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"idleTimer","t":4,"rt":$n[0].Single,"sn":"idleTimer","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"idleTimerForPackShot","t":4,"rt":$n[0].Single,"sn":"idleTimerForPackShot","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isLight","t":4,"rt":$n[0].Boolean,"sn":"isLight","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isSecondButtonClicked","t":4,"rt":$n[0].Boolean,"sn":"isSecondButtonClicked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isUpgradeClicked","t":4,"rt":$n[0].Boolean,"sn":"isUpgradeClicked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u041f\u0440\u0438\u0432\u044f\u0437\u043a\u0438 \u043a \u0438\u0433\u0440\u043e\u0432\u044b\u043c \u043e\u0431\u044a\u0435\u043a\u0442\u0430\u043c"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"moneyController","t":4,"rt":MoneyController,"sn":"moneyController"},{"a":1,"n":"packShotCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"packShotCoroutine"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"packShotObject","t":4,"rt":$n[1].GameObject,"sn":"packShotObject"},{"a":1,"n":"secondBuildingActive","t":4,"rt":$n[0].Boolean,"sn":"secondBuildingActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"secondRequiredButton","t":4,"rt":$n[2].Button,"sn":"secondRequiredButton"},{"a":1,"n":"thirdBuildingActive","t":4,"rt":$n[0].Boolean,"sn":"thirdBuildingActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"tutorial2Coroutine","t":4,"rt":$n[1].Coroutine,"sn":"tutorial2Coroutine"},{"a":1,"n":"tutorial2Shown","t":4,"rt":$n[0].Boolean,"sn":"tutorial2Shown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tutorialAnimator","t":4,"rt":$n[1].Animator,"sn":"tutorialAnimator"},{"at":[new UnityEngine.HeaderAttribute("\u0422\u0443\u0442\u043e\u0440\u0438\u0430\u043b"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tutorialObject","t":4,"rt":$n[1].GameObject,"sn":"tutorialObject"},{"a":1,"n":"tutorialShown","t":4,"rt":$n[0].Boolean,"sn":"tutorialShown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u0411\u0430\u043b\u0430\u043d\u0441 \u0438 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u044f"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"upgradeButton","t":4,"rt":$n[2].Button,"sn":"upgradeButton"},{"a":1,"n":"upgradeButtonEnabled","t":4,"rt":$n[0].Boolean,"sn":"upgradeButtonEnabled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"upgradeButtonGameObject","t":4,"rt":$n[1].GameObject,"sn":"upgradeButtonGameObject"},{"a":1,"n":"userClickedButton","t":4,"rt":$n[0].Boolean,"sn":"userClickedButton","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"userIdle","t":4,"rt":$n[0].Boolean,"sn":"userIdle","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":GameManager,"sn":"Instance"}]}; }, $n);
     /*GameManager end.*/
 
     /*Garage start.*/

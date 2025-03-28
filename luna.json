@@ -6505,11 +6505,11 @@
             },
             {
                 "name": "UnityEngine.UI.CoroutineTween.ColorTween.ColorTweenCallback",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.UI.CoroutineTween.ColorTween.ColorTweenMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.UI.CoroutineTween.FloatTween.FloatTweenCallback",
@@ -8449,10 +8449,6 @@
             },
             {
                 "name": "BalanceManager",
-                "excluded": true
-            },
-            {
-                "name": "ClickCta",
                 "excluded": true
             }
         ],
@@ -16791,11 +16787,11 @@
                 "instanceMethods": [
                     {
                         "name": "Invoke",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddListener",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RemoveListener",
@@ -19617,7 +19613,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDestroy",
@@ -19831,7 +19827,7 @@
                     },
                     {
                         "name": "fadeDuration#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fadeDuration#set",
@@ -20131,7 +20127,7 @@
                 "instanceMethods": [
                     {
                         "name": "Start",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Init",
@@ -20139,11 +20135,11 @@
                     },
                     {
                         "name": "StartTween",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "StopTween",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -20309,11 +20305,11 @@
                     },
                     {
                         "name": "CrossFadeColor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CrossFadeColor$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetLayoutDirty",
@@ -23219,7 +23215,7 @@
                     },
                     {
                         "name": "SetUpdate",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetUpdate$1",
@@ -26102,10 +26098,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "FindNearestAvailableUnloadPoint",
-                        "excluded": false
-                    },
-                    {
                         "name": "FindNextAvailableUnloadPoint",
                         "excluded": false
                     },
@@ -26115,7 +26107,19 @@
                     },
                     {
                         "name": "HandleRetryUnloading",
-                        "excluded": true
+                        "excluded": false
+                    },
+                    {
+                        "name": "HandleArrivalAtPoint",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CheckForStuckState",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsAtDestination",
+                        "excluded": false
                     }
                 ]
             },
@@ -27181,7 +27185,7 @@
                     },
                     {
                         "name": "SetColor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DisableRectClipping",
@@ -27351,7 +27355,7 @@
                     },
                     {
                         "name": "RemoveRaycasters",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -27635,7 +27639,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnCanvasHierarchyChanged",
@@ -27735,7 +27739,7 @@
                     },
                     {
                         "name": "startColor#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "targetColor#get",
@@ -27743,7 +27747,7 @@
                     },
                     {
                         "name": "targetColor#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "tweenMode#get",
@@ -27751,39 +27755,39 @@
                     },
                     {
                         "name": "tweenMode#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "duration#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "duration#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ignoreTimeScale#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ignoreTimeScale#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TweenValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddOnChangedCallback",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetIgnoreTimescale",
@@ -27795,7 +27799,7 @@
                     },
                     {
                         "name": "ValidTarget",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getHashCode",
@@ -27807,7 +27811,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -31450,6 +31454,10 @@
                     {
                         "name": "OnBuildSuccess",
                         "excluded": false
+                    },
+                    {
+                        "name": "GetConstructedBuildingsCount",
+                        "excluded": false
                     }
                 ]
             },
@@ -31459,7 +31467,7 @@
                 "instanceMethods": [
                     {
                         "name": "IsFull#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CargoCount#get",
@@ -31667,6 +31675,10 @@
                     },
                     {
                         "name": "UpdateProgressBar",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetAtUnloadPoint",
                         "excluded": false
                     }
                 ]
@@ -32598,6 +32610,10 @@
                     {
                         "name": "FlashColorRoutine",
                         "excluded": false
+                    },
+                    {
+                        "name": "StartFlashing",
+                        "excluded": false
                     }
                 ]
             },
@@ -32606,23 +32622,11 @@
                 "staticMethods": [],
                 "instanceMethods": [
                     {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
                         "name": "Awake",
                         "excluded": false
                     },
                     {
-                        "name": "Start",
-                        "excluded": false
-                    },
-                    {
                         "name": "GetTargetTruck",
-                        "excluded": false
-                    },
-                    {
-                        "name": "FindAvailableTruck",
                         "excluded": false
                     },
                     {
@@ -32653,20 +32657,6 @@
                     },
                     {
                         "name": "StartCanvasAnimationAfterDelay",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "FPSCounter",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Update",
                         "excluded": false
                     }
                 ]
@@ -32753,7 +32743,19 @@
                     },
                     {
                         "name": "Tutorial2Coroutine",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CheckBuiltBuildingsStatus",
                         "excluded": true
+                    },
+                    {
+                        "name": "InitializeBuildButtons",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HighlightActiveBuildButtons",
+                        "excluded": false
                     }
                 ]
             },
@@ -32912,10 +32914,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "Start",
-                        "excluded": false
-                    },
-                    {
                         "name": "OnDestroy",
                         "excluded": true
                     },
@@ -33019,10 +33017,14 @@
                     },
                     {
                         "name": "Stop",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Tick",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Tick\",this)}this.c$-=t;if(this.c$<=0){pc.Application.getApplication().events.off(\"update",
                         "excluded": false
                     }
                 ]
@@ -33061,7 +33063,7 @@
                     },
                     {
                         "name": "Kill",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ManualUpdate",
@@ -33248,6 +33250,16 @@
                     {
                         "name": "SetClass",
                         "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "ClickCta",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Click",
+                        "excluded": false
                     }
                 ]
             }

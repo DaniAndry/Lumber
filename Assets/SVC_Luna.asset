@@ -1159,7 +1159,7 @@ MonoBehaviour:
     - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 665
+  version: 910
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0
@@ -52768,7 +52768,7 @@ MonoBehaviour:
   _sceneLightData:
     PointLightCount: 0
     SpotLightCount: 0
-    DirectionalLightCount: 6
+    DirectionalLightCount: 10
     LightmapOn: 1
     DirlightmapCombined: 1
     DirectionalCookieExists: 0

@@ -54,7 +54,6 @@ public class MoneyBalance : MonoBehaviour
 			_money = targetValue;
 			UpdateText(_money);
 			this.OnMoneyChanged?.Invoke(_money);
-		});
-		this.OnMoneyChanged?.Invoke(targetValue);
+		}).SetUpdate(true);
 	}
 }

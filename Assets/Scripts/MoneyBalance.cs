@@ -36,12 +36,15 @@ public class MoneyBalance : MonoBehaviour
 
     private IEnumerator AnimateMoneyChange(int targetValue, float duration = 0.5f)
     {
-        yield return new WaitForSeconds(duration); 
+        // Возвращаем задержку перед анимацией
+        yield return new WaitForSeconds(duration);
+        
         if (moneyTween != null && moneyTween.IsActive())
             moneyTween.Kill();
 
         int startValue = _money;
 
+        // Вызываем событие только один раз - в конце твина
         moneyTween = DOTween.To(() => startValue, x =>
             {
                 startValue = x;
@@ -52,9 +55,12 @@ public class MoneyBalance : MonoBehaviour
                 _money = targetValue;
                 UpdateText(_money);
                 OnMoneyChanged?.Invoke(_money);
-            });
+            })
+            .SetUpdate(true); // Установка обновления независимо от Time.timeScale
 
-        // Вызываем событие немедленно, чтобы обеспечить реакцию на изменение баланса
-        OnMoneyChanged?.Invoke(targetValue);
+        // Убираем двойной вызов события, который может вызывать проблемы
+        // OnMoneyChanged?.Invoke(targetValue); 
+        
+        yield break;
     }
 }

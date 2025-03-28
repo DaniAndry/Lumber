@@ -1,18 +1,27 @@
+report@config:load 77.94
 Authorized using stored user info.
+report@account:authorize 20.83
 stderr: "rm" �� ���� ����७��� ��� ���譥�
 ��������, �ᯮ��塞�� �ணࠬ��� ��� ������ 䠩���.
 
-Exporting assets from Unity.....................
+Exporting assets from Unity....................
 
 [ Stage1 ] Assets exported from Unity and staged for further processing
-Using D:/UnityProjects/Lumber/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[41932] font
+report@unity:export 17208.91
+report@config:load 47.08
+Using D:/UnityProjects/Lumber/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[41948] font
   Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
-Combined 97 glyphs into bitmap texture at D:/UnityProjects/Lumber/LunaTemp/stage1/tmp/fonts/LiberationSans-41932/output_0.png (56kb)
+Combined 97 glyphs into bitmap texture at D:/UnityProjects/Lumber/LunaTemp/stage1/tmp/fonts/LiberationSans-41948/output_0.png (56kb)
 Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
   {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset","isOverride":true}
 Resources:
 {}
+report@assets:stage2 5391.44
+report@assets:stage3 512.71
 [ Stage2 ] Assets postprocessed and bundled successfully
+report@config:unity 0.20
+report@config:load 42.36
+report@config:unity 0.24
 ﻿
 [ error ] $﻿
 Diagnostics gathered successfully
@@ -22,67 +31,63 @@ Diagnostics gathered successfully
 © Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
 
-UnityProjects\Lumber\Assets\Scripts\Truck\TruckManager.cs(8,42): warning CS0649: Полю "TruckManager._trucks" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(9,62): warning CS0649: Полю "GameManager.tutorialObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Points\UnloadPoint.cs(5,36): warning CS0649: Полю "UnloadPoint._targetTruck" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\MoneyBalance.cs(10,46): warning CS0649: Полю "MoneyBalance._text" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Truck\Truck.cs(9,47): warning CS0649: Полю "Truck._cargoSlots" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(16,41): warning CS0649: Полю "GameManager.upgradeButtonGameObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(10,39): warning CS0649: Полю "GameManager.tutorialAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(13,41): warning CS0649: Полю "BuildManager._build2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Points\MovePoint.cs(6,36): warning CS0649: Полю "MovePoint.moveDuration" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0.
-UnityProjects\Lumber\Assets\Scripts\Audio\SimpleAudioManager.cs(7,40): warning CS0649: Полю "SimpleAudioManager.progressBarSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Characters\ChopperManager.cs(8,44): warning CS0169: Поле "ChopperManager._choppers" никогда не используется.
-UnityProjects\Lumber\Assets\Scripts\UI\MoneyFlyAnimation.cs(17,44): warning CS0649: Полю "MoneyFlyAnimation.uiTargetPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Audio\SimpleAudioManager.cs(11,40): warning CS0649: Полю "SimpleAudioManager.houseAppearSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Characters\CharactersMover.cs(8,44): warning CS0649: Полю "CharactersMover._unloadPoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(10,41): warning CS0649: Полю "BuildManager._buildButtonObject2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(7,37): warning CS0649: Полю "BuildManager._buildButton2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Characters\CharactersMover.cs(9,42): warning CS0649: Полю "CharactersMover._defaultUnloadPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(14,41): warning CS0649: Полю "BuildManager._build3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(19,41): warning CS0649: Полю "GameManager.packShotObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(9,41): warning CS0649: Полю "BuildManager._buildButtonObject1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(18,37): warning CS0649: Полю "GameManager.secondRequiredButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 UnityProjects\Lumber\Assets\Scripts\Builds\BuildButton.cs(5,41): warning CS0649: Полю "Build.building" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(24,43): warning CS0169: Поле "GameManager.buildManager" никогда не используется.
-UnityProjects\Lumber\Assets\Scripts\Points\TruckUnloadPoint.cs(6,40): warning CS0649: Полю "TruckUnloadPoint._truckStopPosition" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(12,41): warning CS0649: Полю "BuildManager._build1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(6,37): warning CS0649: Полю "BuildManager._buildButton1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 
-UnityProjects\Lumber\Assets\Scripts\UI\MoneyFlyAnimation.cs(9,41): warning CS0649: Полю "MoneyFlyAnimation.moneyPrefab3D" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(8,37): warning CS0649: Полю "BuildManager._buildButton3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\MoneyController.cs(8,48): warning CS0649: Полю "MoneyController._moneyFlyAnimation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Audio\SimpleAudioManager.cs(8,40): warning CS0649: Полю "SimpleAudioManager.conveyorAnimationSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Characters\CharactersMover.cs(9,42): warning CS0649: Полю "CharactersMover._defaultUnloadPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Truck\TruckManager.cs(9,47): warning CS0169: Поле "TruckManager._unloadPoint" никогда не используется.
+UnityProjects\Lumber\Assets\Scripts\Characters\ChopperManager.cs(8,44): warning CS0169: Поле "ChopperManager._choppers" никогда не используется.
+UnityProjects\Lumber\Assets\Scripts\Truck\Truck.cs(9,47): warning CS0649: Полю "Truck._cargoSlots" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 UnityProjects\Lumber\Assets\Scripts\Points\MovePoint.cs(5,36): warning CS0649: Полю "MovePoint.delay" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0.
 UnityProjects\Lumber\Assets\Scripts\Audio\SimpleAudioManager.cs(9,40): warning CS0649: Полю "SimpleAudioManager.logLoadSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Truck\TruckMover.cs(15,42): warning CS0649: Полю "TruckMover._engineSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Audio\SimpleAudioManager.cs(10,40): warning CS0649: Полю "SimpleAudioManager.buttonClickSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Characters\CharactersMover.cs(7,42): warning CS0649: Полю "CharactersMover._normalRoutePoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(16,46): warning CS0649: Полю "BuildManager._moneyController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\MoneyController.cs(7,43): warning CS0649: Полю "MoneyController._moneyBalance" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\Truck\TruckManager.cs(9,47): warning CS0169: Поле "TruckManager._unloadPoint" никогда не используется.
-UnityProjects\Lumber\Assets\Scripts\Conveyor.cs(6,39): warning CS0649: Полю "Conveyor.canvasAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(14,20): warning CS0649: Полю "GameManager.upgradeButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 UnityProjects\Lumber\Assets\Scripts\Characters\Character.cs(7,47): warning CS0649: Полю "Character._cargo" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Audio\SimpleAudioManager.cs(11,40): warning CS0649: Полю "SimpleAudioManager.houseAppearSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Audio\SimpleAudioManager.cs(10,40): warning CS0649: Полю "SimpleAudioManager.buttonClickSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+
+UnityProjects\Lumber\Assets\Scripts\MoneyController.cs(8,48): warning CS0649: Полю "MoneyController._moneyFlyAnimation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Truck\TruckMover.cs(15,42): warning CS0649: Полю "TruckMover._engineSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(11,39): warning CS0649: Полю "GameManager.tutorialAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Truck\TruckManager.cs(8,42): warning CS0649: Полю "TruckManager._trucks" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(18,20): warning CS0649: Полю "GameManager.upgradeButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(28,43): warning CS0649: Полю "GameManager.buildManager" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\MoneyController.cs(7,43): warning CS0649: Полю "MoneyController._moneyBalance" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(20,41): warning CS0649: Полю "GameManager.upgradeButtonGameObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Characters\CharactersMover.cs(8,44): warning CS0649: Полю "CharactersMover._unloadPoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+
+UnityProjects\Lumber\Assets\Scripts\Points\MovePoint.cs(6,36): warning CS0649: Полю "MovePoint.moveDuration" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(22,37): warning CS0649: Полю "GameManager.secondRequiredButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Audio\SimpleAudioManager.cs(7,40): warning CS0649: Полю "SimpleAudioManager.progressBarSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(23,41): warning CS0649: Полю "GameManager.packShotObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\UI\MoneyFlyAnimation.cs(17,44): warning CS0649: Полю "MoneyFlyAnimation.uiTargetPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 UnityProjects\Lumber\Assets\Scripts\Builds\Garage.cs(6,41): warning CS0649: Полю "Garage.chopper" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\MoneyBalance.cs(10,46): warning CS0649: Полю "MoneyBalance._text" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Characters\CharactersMover.cs(7,42): warning CS0649: Полю "CharactersMover._normalRoutePoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\UI\MoneyFlyAnimation.cs(9,41): warning CS0649: Полю "MoneyFlyAnimation.moneyPrefab3D" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+
+UnityProjects\Lumber\Assets\Scripts\Conveyor.cs(6,39): warning CS0649: Полю "Conveyor.canvasAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Points\TruckUnloadPoint.cs(6,40): warning CS0649: Полю "TruckUnloadPoint._truckStopPosition" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(10,62): warning CS0649: Полю "GameManager.tutorialObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Audio\SimpleAudioManager.cs(8,40): warning CS0649: Полю "SimpleAudioManager.conveyorAnimationSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Points\UnloadPoint.cs(5,36): warning CS0649: Полю "UnloadPoint._targetTruck" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+UnityProjects\Lumber\Assets\Scripts\Builds\BuildManager.cs(16,46): warning CS0649: Полю "BuildManager._moneyController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 UnityProjects\Lumber\Assets\Scripts\Truck\Truck.cs(13,37): warning CS0414: Полю "Truck._logLoadSoundName" присвоено значение, но оно ни разу не использовано.
 UnityProjects\Lumber\Assets\Scripts\Truck\Truck.cs(15,35): warning CS0414: Полю "Truck._playCargoSounds" присвоено значение, но оно ни разу не использовано.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(235,18): warning CS0414: Полю "GameManager.isUpgradeClicked" присвоено значение, но оно ни разу не использовано.
 UnityProjects\Lumber\Assets\Scripts\Truck\Truck.cs(14,37): warning CS0414: Полю "Truck._truckFullSoundName" присвоено значение, но оно ни разу не использовано.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(34,19): warning CS0414: Полю "GameManager.idleTimerForPackShot" присвоено значение, но оно ни разу не использовано.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(236,18): warning CS0414: Полю "GameManager.isSecondButtonClicked" присвоено значение, но оно ни разу не использовано.
 UnityProjects\Lumber\Assets\Scripts\Truck\Truck.cs(21,18): warning CS0414: Полю "Truck._isAtUnloadPoint" присвоено значение, но оно ни разу не использовано.
-UnityProjects\Lumber\Assets\Scripts\GameManager.cs(32,18): warning CS0414: Полю "GameManager.userIdle" присвоено значение, но оно ни разу не использовано.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(328,18): warning CS0414: Полю "GameManager.isUpgradeClicked" присвоено значение, но оно ни разу не использовано.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(329,18): warning CS0414: Полю "GameManager.isSecondButtonClicked" присвоено значение, но оно ни разу не использовано.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(36,18): warning CS0414: Полю "GameManager.userIdle" присвоено значение, но оно ни разу не использовано.
+UnityProjects\Lumber\Assets\Scripts\GameManager.cs(39,19): warning CS0414: Полю "GameManager.idleTimerForPackShot" присвоено значение, но оно ни разу не использовано.
 
 Usercode compiled successfully!
 .NET Core 3 runtime not found.
 .NET Core 3 runtime not found.
 code-v2:compose complete successfully!
+report@code-v2:compose 0.90
 Authorized using stored user info.
+report@account:authorize 7.96
 MSBuild version 17.6.3+07e294721 for .NET Framework
 
-Сборка начата 26.03.2025 18:59:52.
+Сборка начата 27.03.2025 19:13:49.
 
 
 
@@ -117,7 +122,6 @@ CoreClean:
   Файл "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll" удаляется.
 
   Файл "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll" удаляется.
-
   Файл "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml" удаляется.
 
   Файл "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml" удаляется.
@@ -150,95 +154,113 @@ GenerateTargetFrameworkMonikerAttribute:
 CoreCompile:
   C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_58 /highentropyva+ /reference:D:\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:D:\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:D:\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:D:\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:D:\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:D:\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:D:\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:D:\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:D:\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:D:\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:D:\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:D:\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:D:\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\AdaptiveCameraPosition.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BalanceManager.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Build.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\ButtonLight.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Character.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Chopper.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\ChopperManager.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\ClickCta.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Conveyor.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\DG\Tweening\DOTweenCYInstruction.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\DG\Tweening\DOTweenModuleAudio.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\DG\Tweening\DOTweenModulePhysics.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\DG\Tweening\DOTweenModulePhysics2D.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\DG\Tweening\DOTweenModuleSprite.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\DG\Tweening\DOTweenModuleUI.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\DG\Tweening\DOTweenModuleUnityVersion.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\DG\Tweening\DOTweenModuleUtils.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Forklift.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Garage.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\LoadPoint.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyBalance.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyController.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyFlyAnimation.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MovePoint.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Properties\AssemblyInfo.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimplePoint.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Tree.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckManager.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckMover.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckProgressBarSetup.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckUnloadPoint.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\UnloadPoint.cs D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Wall.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
 
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(18,20): warning CS0649: Полю "SimpleAudioManager.houseAppearSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MovePoint.cs(6,16): warning CS0649: Полю "MovePoint.delay" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(13,17): warning CS0649: Полю "BuildManager._buildButton3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\ChopperManager.cs(7,24): warning CS0169: Поле "ChopperManager._choppers" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyFlyAnimation.cs(29,24): warning CS0649: Полю "MoneyFlyAnimation.uiTargetPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(15,20): warning CS0649: Полю "SimpleAudioManager.buttonClickSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(22,21): warning CS0649: Полю "BuildManager._build1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(7,22): warning CS0649: Полю "CharactersMover._normalRoutePoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(35,23): warning CS0169: Поле "GameManager.buildManager" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyFlyAnimation.cs(29,24): warning CS0649: Полю "MoneyFlyAnimation.uiTargetPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckMover.cs(19,22): warning CS0649: Полю "TruckMover._engineSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(28,21): warning CS0649: Полю "GameManager.packShotObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(12,20): warning CS0649: Полю "SimpleAudioManager.logLoadSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(9,20): warning CS0649: Полю "SimpleAudioManager.conveyorAnimationSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(19,21): warning CS0649: Полю "BuildManager._buildButtonObject2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckUnloadPoint.cs(9,20): warning CS0649: Полю "TruckUnloadPoint._truckStopPosition" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(16,21): warning CS0649: Полю "BuildManager._buildButtonObject1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(22,21): warning CS0649: Полю "GameManager.upgradeButtonGameObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyFlyAnimation.cs(10,21): warning CS0649: Полю "MoneyFlyAnimation.moneyPrefab3D" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckManager.cs(11,27): warning CS0169: Поле "TruckManager._unloadPoint" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(18,20): warning CS0649: Полю "SimpleAudioManager.houseAppearSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyController.cs(8,23): warning CS0649: Полю "MoneyController._moneyBalance" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(6,20): warning CS0649: Полю "SimpleAudioManager.progressBarSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyBalance.cs(10,26): warning CS0649: Полю "MoneyBalance._text" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(28,21): warning CS0649: Полю "BuildManager._build3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\UnloadPoint.cs(6,16): warning CS0649: Полю "UnloadPoint._targetTruck" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(13,22): warning CS0649: Полю "CharactersMover._defaultUnloadPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(10,17): warning CS0649: Полю "BuildManager._buildButton2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(7,17): warning CS0649: Полю "BuildManager._buildButton1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(31,26): warning CS0649: Полю "BuildManager._moneyController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Build.cs(6,21): warning CS0649: Полю "Build.building" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckManager.cs(8,22): warning CS0649: Полю "TruckManager._trucks" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(9,21): warning CS0649: Полю "GameManager.tutorialObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MovePoint.cs(6,16): warning CS0649: Полю "MovePoint.delay" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MovePoint.cs(9,16): warning CS0649: Полю "MovePoint.moveDuration" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(25,17): warning CS0649: Полю "GameManager.secondRequiredButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(19,17): warning CS0649: Полю "GameManager.upgradeButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Character.cs(8,27): warning CS0649: Полю "Character._cargo" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(11,27): warning CS0649: Полю "Truck._cargoSlots" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\ChopperManager.cs(7,24): warning CS0169: Поле "ChopperManager._choppers" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(10,24): warning CS0649: Полю "CharactersMover._unloadPoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(12,19): warning CS0649: Полю "GameManager.tutorialAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Garage.cs(6,21): warning CS0649: Полю "Garage.chopper" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(25,21): warning CS0649: Полю "BuildManager._build2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyController.cs(8,23): warning CS0649: Полю "MoneyController._moneyBalance" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Character.cs(8,27): warning CS0649: Полю "Character._cargo" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(10,21): warning CS0649: Полю "GameManager.tutorialObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(31,26): warning CS0649: Полю "BuildManager._moneyController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(27,21): warning CS0649: Полю "GameManager.upgradeButtonGameObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(30,17): warning CS0649: Полю "GameManager.secondRequiredButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyController.cs(11,28): warning CS0649: Полю "MoneyController._moneyFlyAnimation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(40,23): warning CS0649: Полю "GameManager.buildManager" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(13,22): warning CS0649: Полю "CharactersMover._defaultUnloadPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckUnloadPoint.cs(9,20): warning CS0649: Полю "TruckUnloadPoint._truckStopPosition" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(24,17): warning CS0649: Полю "GameManager.upgradeButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(33,21): warning CS0649: Полю "GameManager.packShotObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\UnloadPoint.cs(6,16): warning CS0649: Полю "UnloadPoint._targetTruck" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Conveyor.cs(7,19): warning CS0649: Полю "Conveyor.canvasAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(47,15): warning CS0414: Полю "GameManager.userIdle" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(24,15): warning CS0414: Полю "Truck._playCargoSounds" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(51,16): warning CS0414: Полю "GameManager.idleTimerForPackShot" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(12,20): warning CS0649: Полю "SimpleAudioManager.logLoadSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyFlyAnimation.cs(10,21): warning CS0649: Полю "MoneyFlyAnimation.moneyPrefab3D" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(13,19): warning CS0649: Полю "GameManager.tutorialAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckManager.cs(8,22): warning CS0649: Полю "TruckManager._trucks" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(9,20): warning CS0649: Полю "SimpleAudioManager.conveyorAnimationSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckManager.cs(11,27): warning CS0169: Поле "TruckManager._unloadPoint" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(7,22): warning CS0649: Полю "CharactersMover._normalRoutePoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Garage.cs(6,21): warning CS0649: Полю "Garage.chopper" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyBalance.cs(10,26): warning CS0649: Полю "MoneyBalance._text" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Build.cs(6,21): warning CS0649: Полю "Build.building" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MovePoint.cs(9,16): warning CS0649: Полю "MovePoint.moveDuration" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(18,17): warning CS0414: Полю "Truck._logLoadSoundName" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(21,17): warning CS0414: Полю "Truck._truckFullSoundName" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(65,15): warning CS0414: Полю "GameManager.isSecondButtonClicked" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(74,15): warning CS0414: Полю "GameManager.isUpgradeClicked" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(24,15): warning CS0414: Полю "Truck._playCargoSounds" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(52,15): warning CS0414: Полю "GameManager.userIdle" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
 D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(34,15): warning CS0414: Полю "Truck._isAtUnloadPoint" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(63,15): warning CS0414: Полю "GameManager.isUpgradeClicked" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  CompilerServer: server - server processed compilation - ceb7d631-55c5-4327-ac3b-ce08a6771c71
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(58,16): warning CS0414: Полю "GameManager.idleTimerForPackShot" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(76,15): warning CS0414: Полю "GameManager.isSecondButtonClicked" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - 68e5ebd1-084d-4a5a-aed2-0e65d2b9118e
 
 _CopyFilesMarkedCopyLocal:
-  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
-  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
 
-  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
-  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
-
-  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
 
-  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
-  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
 
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
 
   Копирование файла из "D:\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
 
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
 
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
 
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
-
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
 
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
@@ -246,6 +268,7 @@ _CopyFilesMarkedCopyLocal:
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
 
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
 
   Копирование файла из "D:\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" в "D:\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
@@ -273,74 +296,69 @@ BridgeNetCompilerTask:
 Сборка успешно завершена.
 
 
-
 "D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (целевой объект Rebuild ) (1) ->
 (Целевой объект CoreCompile) -> 
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(18,20): warning CS0649: Полю "SimpleAudioManager.houseAppearSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(13,17): warning CS0649: Полю "BuildManager._buildButton3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\ChopperManager.cs(7,24): warning CS0169: Поле "ChopperManager._choppers" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyFlyAnimation.cs(29,24): warning CS0649: Полю "MoneyFlyAnimation.uiTargetPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(15,20): warning CS0649: Полю "SimpleAudioManager.buttonClickSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(22,21): warning CS0649: Полю "BuildManager._build1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(7,22): warning CS0649: Полю "CharactersMover._normalRoutePoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(35,23): warning CS0169: Поле "GameManager.buildManager" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckMover.cs(19,22): warning CS0649: Полю "TruckMover._engineSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(28,21): warning CS0649: Полю "GameManager.packShotObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(12,20): warning CS0649: Полю "SimpleAudioManager.logLoadSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(9,20): warning CS0649: Полю "SimpleAudioManager.conveyorAnimationSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(19,21): warning CS0649: Полю "BuildManager._buildButtonObject2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckUnloadPoint.cs(9,20): warning CS0649: Полю "TruckUnloadPoint._truckStopPosition" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(16,21): warning CS0649: Полю "BuildManager._buildButtonObject1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(22,21): warning CS0649: Полю "GameManager.upgradeButtonGameObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyFlyAnimation.cs(10,21): warning CS0649: Полю "MoneyFlyAnimation.moneyPrefab3D" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckManager.cs(11,27): warning CS0169: Поле "TruckManager._unloadPoint" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(6,20): warning CS0649: Полю "SimpleAudioManager.progressBarSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyBalance.cs(10,26): warning CS0649: Полю "MoneyBalance._text" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(28,21): warning CS0649: Полю "BuildManager._build3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\UnloadPoint.cs(6,16): warning CS0649: Полю "UnloadPoint._targetTruck" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(13,22): warning CS0649: Полю "CharactersMover._defaultUnloadPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(10,17): warning CS0649: Полю "BuildManager._buildButton2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(7,17): warning CS0649: Полю "BuildManager._buildButton1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(31,26): warning CS0649: Полю "BuildManager._moneyController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Build.cs(6,21): warning CS0649: Полю "Build.building" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckManager.cs(8,22): warning CS0649: Полю "TruckManager._trucks" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(9,21): warning CS0649: Полю "GameManager.tutorialObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MovePoint.cs(6,16): warning CS0649: Полю "MovePoint.delay" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MovePoint.cs(9,16): warning CS0649: Полю "MovePoint.moveDuration" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(25,17): warning CS0649: Полю "GameManager.secondRequiredButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(19,17): warning CS0649: Полю "GameManager.upgradeButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Character.cs(8,27): warning CS0649: Полю "Character._cargo" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(11,27): warning CS0649: Полю "Truck._cargoSlots" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(10,24): warning CS0649: Полю "CharactersMover._unloadPoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(12,19): warning CS0649: Полю "GameManager.tutorialAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Garage.cs(6,21): warning CS0649: Полю "Garage.chopper" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(25,21): warning CS0649: Полю "BuildManager._build2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(15,20): warning CS0649: Полю "SimpleAudioManager.buttonClickSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyFlyAnimation.cs(29,24): warning CS0649: Полю "MoneyFlyAnimation.uiTargetPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckMover.cs(19,22): warning CS0649: Полю "TruckMover._engineSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(18,20): warning CS0649: Полю "SimpleAudioManager.houseAppearSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyController.cs(8,23): warning CS0649: Полю "MoneyController._moneyBalance" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(6,20): warning CS0649: Полю "SimpleAudioManager.progressBarSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(11,27): warning CS0649: Полю "Truck._cargoSlots" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\ChopperManager.cs(7,24): warning CS0169: Поле "ChopperManager._choppers" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(10,24): warning CS0649: Полю "CharactersMover._unloadPoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Character.cs(8,27): warning CS0649: Полю "Character._cargo" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(10,21): warning CS0649: Полю "GameManager.tutorialObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\BuildManager.cs(31,26): warning CS0649: Полю "BuildManager._moneyController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(27,21): warning CS0649: Полю "GameManager.upgradeButtonGameObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(30,17): warning CS0649: Полю "GameManager.secondRequiredButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyController.cs(11,28): warning CS0649: Полю "MoneyController._moneyFlyAnimation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Conveyor.cs(7,19): warning CS0649: Полю "Conveyor.canvasAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(47,15): warning CS0414: Полю "GameManager.userIdle" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(24,15): warning CS0414: Полю "Truck._playCargoSounds" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(51,16): warning CS0414: Полю "GameManager.idleTimerForPackShot" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(40,23): warning CS0649: Полю "GameManager.buildManager" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(13,22): warning CS0649: Полю "CharactersMover._defaultUnloadPoint" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckUnloadPoint.cs(9,20): warning CS0649: Полю "TruckUnloadPoint._truckStopPosition" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(24,17): warning CS0649: Полю "GameManager.upgradeButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(33,21): warning CS0649: Полю "GameManager.packShotObject" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\UnloadPoint.cs(6,16): warning CS0649: Полю "UnloadPoint._targetTruck" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Conveyor.cs(7,19): warning CS0649: Полю "Conveyor.canvasAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(12,20): warning CS0649: Полю "SimpleAudioManager.logLoadSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyFlyAnimation.cs(10,21): warning CS0649: Полю "MoneyFlyAnimation.moneyPrefab3D" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(13,19): warning CS0649: Полю "GameManager.tutorialAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckManager.cs(8,22): warning CS0649: Полю "TruckManager._trucks" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\SimpleAudioManager.cs(9,20): warning CS0649: Полю "SimpleAudioManager.conveyorAnimationSound" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\TruckManager.cs(11,27): warning CS0169: Поле "TruckManager._unloadPoint" никогда не используется. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\CharactersMover.cs(7,22): warning CS0649: Полю "CharactersMover._normalRoutePoints" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Garage.cs(6,21): warning CS0649: Полю "Garage.chopper" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MoneyBalance.cs(10,26): warning CS0649: Полю "MoneyBalance._text" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Build.cs(6,21): warning CS0649: Полю "Build.building" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\MovePoint.cs(9,16): warning CS0649: Полю "MovePoint.moveDuration" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(18,17): warning CS0414: Полю "Truck._logLoadSoundName" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(21,17): warning CS0414: Полю "Truck._truckFullSoundName" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(65,15): warning CS0414: Полю "GameManager.isSecondButtonClicked" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(74,15): warning CS0414: Полю "GameManager.isUpgradeClicked" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(24,15): warning CS0414: Полю "Truck._playCargoSounds" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(52,15): warning CS0414: Полю "GameManager.userIdle" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\Truck.cs(34,15): warning CS0414: Полю "Truck._isAtUnloadPoint" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(63,15): warning CS0414: Полю "GameManager.isUpgradeClicked" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(58,16): warning CS0414: Полю "GameManager.idleTimerForPackShot" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\Lumber\LunaTemp\Assemblies\stage_2\decompiled\GameManager.cs(76,15): warning CS0414: Полю "GameManager.isSecondButtonClicked" присвоено значение, но оно ни разу не использовано. [D:\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-    Предупреждений: 50
+    Предупреждений: 42
     Ошибок: 0
 
 
-Прошло времени 00:00:16.78
+Прошло времени 00:00:19.64
 
 Source code compiled successfully!
 ﻿
 [ error ] $﻿
 Diagnostics gathered successfully
+report@code:build 24726.16
+report@diagnostics:verify 0.66
+report@diagnostics:upload 2065.02
+report@code:stage 13537.73
 [ Stage3 ] Code compiled and bundled successfully.
+report@code:bundle 50962.39
+report@package:stage 170062.73
 [ Stage4 ] Target platform: playground
 [ Stage4 ] Package bundled successfully
-[ Stage4 ] Package uploaded successfully
+report@assets:stats 0.75
